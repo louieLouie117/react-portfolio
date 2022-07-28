@@ -33,10 +33,30 @@ function HeroBanner(props) {
             {/* {myProcess.map((myProcess)=>{ 
             if(myProcess.category === "MySkills")
             return(   */}
-                <li><p>Test Skill</p></li>
-                <li><p>Test Skill</p></li>
-                <li><p>Test Skill</p></li>
-                <li><p>Test Skill</p></li>
+                <li><p>Problem-solving</p></li>
+                <li><p>Critical Thinking</p></li>
+                <li><p>Creative Thinker</p></li>
+
+                <li><p>Communication</p></li>
+                <li><p>Attention to detail</p></li>
+                <li><p>People skills</p></li>
+
+                <li><p>Public Speaking</p></li>
+                <li><p>Self-motivated</p></li>
+                <li><p>Charismatic</p></li>
+
+                <li><p>Leadership</p></li>
+                <li><p>Time Management</p></li>
+                <li><p>Teamwork</p></li>
+
+                <li><p>Intuition</p></li>
+                <li><p>Optimistic</p></li>
+                <li><p>Patient</p></li>
+
+      
+
+
+
                     
                     {/* <li><p>{myProcess.title}</p></li> */}
             {/* );})} */}
