@@ -1079,7 +1079,7 @@ html{
     grid-template-rows: 35px;
     background: white;
     padding: 20px;
-    height: 20px;
+    /* height: 20px; */
     overflow-y: hidden;
     width: 300px;
     align-items: flex-start;
@@ -1141,11 +1141,11 @@ html{
   
   }
   
-  .myFocus-container ul li:first-of-type{
+  /* .myFocus-container ul li:first-of-type{
     grid-column: 1/2;
     grid-row: 1/4;
     
-   }
+   } */
   
   .mySkills-container h1{
     padding: 0;
@@ -1190,7 +1190,7 @@ html{
     float: left;
     overflow-x: scroll;
     overflow-y: hidden;
-    width: 99vw;
+    width: 98vw;
     column-gap: 5px; 
   }
   

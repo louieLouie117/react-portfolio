@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 function HeroBanner(props) {
+
 
   
   return (
@@ -43,8 +45,8 @@ function HeroBanner(props) {
 
 
           </ul>
-            </div>
-
+      </div>
+     
         
     </div>
 
