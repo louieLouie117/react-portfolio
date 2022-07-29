@@ -11,17 +11,17 @@ function ToolsTechnologies(props) {
             <ul>
                     <li>
                     <h2>Languages</h2>
-                    <h3>JavaScript, and ...</h3>
+                    <h3>JavaScript, C#, Python, Html5, CSS, Markdown</h3>
                     </li>
 
                     <li>
                     <h2>Database</h2>
-                    <h3>This is the databse items</h3>
+                    <h3>MySQL, MongoDB, SQLServer</h3>
                     </li>
 
                     <li>
                     <h2>Version Control</h2>
-                    <h3>Version Control</h3>
+                    <h3>Git, GitHub</h3>
                     </li>
 
                     <li></li>
@@ -35,7 +35,7 @@ function ToolsTechnologies(props) {
             <ul>
                     <li id="frameworks">
                     <h2>Frameworks</h2>
-                    <h3>React, Express,</h3>
+                    <h3>React, Express, Node, Express-fileupload, ASP.NET, Entity Framework, jQuery, SASS</h3>
                     </li>
 
                 
