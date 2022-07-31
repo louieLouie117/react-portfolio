@@ -20,7 +20,7 @@ function Goals(props) {
                     </li>
 
                     <li>
-                      <h2>Single Page App SPA</h2>
+                      <h2>SPA and PWA</h2>
                       <p>I love the structure and complexity that SPA development comes with. SPA incress productivity when developing, debugging, and maintaining the website.</p>
 
                     </li>
@@ -78,6 +78,7 @@ function Goals(props) {
 
                 
                 </ul>
+                <button>See All</button>
 
                 {/* <ul>  
                 {myProcess.map((myProcess)=>{ 
