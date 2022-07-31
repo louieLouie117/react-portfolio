@@ -78,7 +78,7 @@ function Goals(props) {
 
                 
                 </ul>
-                <button>See All</button>
+                <button>see more</button>
 
                 {/* <ul>  
                 {myProcess.map((myProcess)=>{ 
