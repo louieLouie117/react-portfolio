@@ -807,6 +807,12 @@ html{
     
   
   }
+
+  .myHeader-container header{
+    display: grid;
+    justify-content: center;
+
+  }
   
   .myHeader-container aside{
     display: block;
@@ -940,17 +946,13 @@ html{
   }
   
   .name-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    grid-template-rows: 90px;
-    /* justify-items: left; */
+    display: flex;
+    column-gap: 15px;
     row-gap: 5px;
     width: 350px;
     margin: 0 auto;
     padding: 20px 0;
     color: whitesmoke;
-  
-  
   
   }
   
@@ -976,16 +978,24 @@ html{
   .name-container header{
     display: grid;
     align-self: center;
+    font: 1em sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   
   }
   .name-container h1{
     font: 1.7em sans-serif;
     color: whitesmoke;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-  
-  
+
   }
+
+
+  .name-container h2{
+    font: 1.7em sans-serif;
+    color: whitesmoke;
+
+  }
+  
   
   .name-container h3{
     font: 1.1em sans-serif;
