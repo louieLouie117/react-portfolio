@@ -64,20 +64,13 @@ window.onload = function() {
             {/* <img src="/img/portfolioImg.png" alt=""/> */}
 
                 <header>
-                <h3>{timeLabel},</h3>
-
-                <h2>my name is </h2>
-                <div>
+                <h2>{timeLabel},</h2>
+                <h3>my name is </h3>
                 <h1>Luis Cardona</h1>
-
                 <p>Full-Stack Developer</p>
-                </div>
-            
-
             </header>
+
             <img src="/img/portfolioImg.png" alt=""/>
-
-
             </div>
          </header>
 

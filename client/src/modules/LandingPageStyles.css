@@ -799,7 +799,8 @@ html{
   .myHeader-container{
     display: grid;
     background: #2862AF;
-    background: linear-gradient(to bottom, #136DC0 93%, #00aecd);
+    background: linear-gradient(to bottom, #00aecd, #136DC0 45%);
+    /* background: linear-gradient(to bottom, #136DC0 60%, #00aecd); */
     justify-items: center;
     font: 1em sans-serif;
     padding-top: 20px;
@@ -949,10 +950,12 @@ html{
     display: flex;
     column-gap: 15px;
     row-gap: 5px;
-    width: 350px;
+    width: 100vw;
+    justify-content: center;
     margin: 0 auto;
     padding: 20px 0;
     color: whitesmoke;
+
   
   }
   
@@ -980,36 +983,58 @@ html{
     align-self: center;
     font: 1em sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    max-width: 350px;
 
   
   }
+
+
+
   .name-container h1{
-    font: 1.7em sans-serif;
+    font: 1.8em sans-serif;
     color: whitesmoke;
 
   }
 
 
   .name-container h2{
-    font: 1.7em sans-serif;
+    font: 1.1em sans-serif;
     color: whitesmoke;
 
   }
   
   
   .name-container h3{
-    font: 1.1em sans-serif;
+    font: 1.8em sans-serif;
     color: whitesmoke;
   
   }
   
   .name-container p{
-    font: 1.07em sans-serif;
+    font: 1.1em sans-serif;
     color: whitesmoke;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
   
     
   }
+
+  @media screen and (min-width: 1050px){
+     
+    .name-container header{
+      display: flex;
+      column-gap: 10px;
+    justify-items: center;
+    align-self: center;
+      font: 1em sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      max-width: none;
+  
+  
+    
+    }
+  
+    }
   
   .name-container img{
     border: solid 2px whitesmoke;
