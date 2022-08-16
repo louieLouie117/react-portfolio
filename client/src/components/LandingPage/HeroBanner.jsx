@@ -8,7 +8,7 @@ function HeroBanner(props) {
   return (
     <div className="myHeader-container">
         <header>
-                <div   div className="name-container">
+                <div className="name-container">
                 <header>
                 <h3>Hello, my name is </h3>
                 <div>

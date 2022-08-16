@@ -171,8 +171,14 @@ if(e.target.id === "PizzeriaId"){
                                     </div>
 
                                   <aside>
-                                  <button>Watch Video</button>
+                                    <a href="https://github.com/louieLouie117/GarageSally">
+                                  <button>GitHub</button>
+                                  </a>
+
+                                  <a href="https://garagesallyapp.com/">
                                   <button>Website</button>
+                                  </a>
+                                 
                                 </aside>
 
                                 </div>
@@ -216,8 +222,14 @@ if(e.target.id === "PizzeriaId"){
                                         <p>Date Base</p>   
                                     </div>
                                 <aside>
-                                  <button>Github</button>
+                                <a href="https://github.com/louieLouie117/GarageSally">
+                                  <button>GitHub</button>
+                                  </a>
+
+                                  <a href="https://www.deltabarandgrill.com/">
                                   <button>Website</button>
+                                  </a>
+                                  
                                 </aside>
                                 </div>
                             
@@ -250,7 +262,9 @@ if(e.target.id === "PizzeriaId"){
                                             </div>
                                             
                                     <aside>
-                                      <button>Website</button>
+                                        <a href="https://www.deltabarandgrill.com/">
+                                          <button>Website</button>
+                                        </a>
                                     </aside>
                                     </div>
                                     <footer>                                 
@@ -278,9 +292,11 @@ if(e.target.id === "PizzeriaId"){
                                 <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
                                 <p>Behavior</p>
                             </div>
-                                    <aside>
-                                      <button>Website</button>
-                                    </aside>
+                            <aside>
+                              <a href="https://www.jrprolandscaping.com/">
+                                  <button>Website</button>
+                              </a>
+                            </aside>
                                   </div>
 
                                 <footer>                                                                          
@@ -305,9 +321,12 @@ if(e.target.id === "PizzeriaId"){
                                 <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
                                 <p>Behavior</p>
                             </div>
-                                    <aside>
-                                      <button>Website</button>
-                                    </aside>
+                            <aside>
+                              <a href="https://icy-flower-0ac939810.1.azurestaticapps.net/">
+                                  <button>Website</button>
+                              </a>
+                            </aside>
+                                    
                                   </div>
 
                                 <footer>                                                                          
@@ -331,9 +350,11 @@ if(e.target.id === "PizzeriaId"){
                                 <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
                                 <p>Behavior</p>
                             </div>
-                                    <aside>
-                                      <button>Website</button>
-                                    </aside>
+                                <aside>
+                                <a href="https://www.ibupholstery.com/">
+                                  <button>Website</button>
+                              </a>
+                                </aside>
                                   </div>
 
                                 <footer>                                                                          

@@ -319,12 +319,12 @@ html{
   }
   
   .cardItems footer button {
-    background: whitesmoke;
+    background: rgb(236, 236, 236);
     color: black;
     height: 35px;
     border-radius: 7px;
     cursor: pointer;
-    border: solid 0.5px;
+    border: solid 0.5px rgb(145, 145, 145);
     width: 100%;
   }
   
@@ -410,7 +410,7 @@ html{
   .tools-container{
     grid-row: 2/3;
     grid-column: 1/2;
-    background: whitesmoke;
+    background: white;
     display: grid;
     z-index: 2;
     height: 95%;
@@ -431,6 +431,13 @@ html{
 
   .tools-container aside button{
     padding: 10px;
+    /* background: linear-gradient(to right, #136DC0, #00aecd); */
+    background: rgb(236, 236, 236);
+    border: solid 0.5px rgb(145, 145, 145);
+    /* color: white; */
+    border-radius: 3px;
+    cursor: pointer;
+
   }
 
   
@@ -792,6 +799,7 @@ html{
   .myHeader-container{
     display: grid;
     background: #2862AF;
+    background: linear-gradient(to bottom, #136DC0 93%, #00aecd);
     justify-items: center;
     font: 1em sans-serif;
     padding-top: 20px;
@@ -1053,7 +1061,7 @@ html{
     min-width: 170px;
     padding: 0 10px;
     background: #2862AF;
-    border-radius: 10px;
+    border-radius: 7px;
     font: 1em sans-serif;
     cursor: default;
     color: whitesmoke;
@@ -1096,12 +1104,28 @@ html{
   
   .myFocus-container ul{
     display: grid;
-    row-gap: 20px;
-    height: 170px;
+    row-gap: 10px;
+    padding: 10px;
+    height: 200px;
     overflow: hidden;
+    
+  
+  }
+
+
+  @media screen and (min-width < 550px){
+
+      
+  .myFocus-container ul{
+    display: grid;
+    row-gap: 10px;
+    height: auto;
+    overflow: none;
     padding: 10px;
     
   
+  }
+    
   }
   
   .myFocus-container h1{
@@ -1114,14 +1138,14 @@ html{
     display: grid;
     height: 20px;
     grid-template-rows: 35px;
+    border-radius: 7px;
     background: white;
     padding: 20px;
-    /* height: 20px; */
     overflow-y: hidden;
     width: 270px;
     align-items: flex-start;
     max-width: 350px;
-    box-shadow:  0 0 5px rgba(128, 128, 128, 0.562);
+    box-shadow:  0 0 3px rgba(128, 128, 128, 0.562);
     /* z-index: 1; */
   
   }
