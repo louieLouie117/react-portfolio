@@ -196,7 +196,7 @@ if(e.target.id === "PizzeriaId"){
 
                     <li>
                       <aside>
-                        <h2>Ticket Management</h2>
+                        <h2>Blog</h2>
                       </aside>
 
                       <img src="img/projects/progresslyPage.png" alt=''/>
@@ -282,7 +282,7 @@ if(e.target.id === "PizzeriaId"){
                         <aside>
                         <h2>JR Landscaping</h2>
                         </aside>
-                        <img src="img/projects/JRlandscaping.png" alt=''/>
+                        <img src="img/projects/jrlandscaping.png" alt=''/>
                         <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
                           <div id="icon-container">
                             <div><img src="/img/Icons/iconXD.png" alt=""/></div>
@@ -311,7 +311,7 @@ if(e.target.id === "PizzeriaId"){
                         <aside>
                         <h2>Pace Builders</h2>
                         </aside>
-                        <img src="img/projects/PaceBuilders.png" alt=''/>
+                        <img src="img/projects/paceBuilders.png" alt=''/>
                         <div className="tools-container" style={{ display: PaceBuilders ? "grid" : "none"}}>
                           <div id="icon-container">
                             <div><img src="/img/Icons/iconXD.png" alt=""/></div>
