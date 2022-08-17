@@ -282,7 +282,7 @@ if(e.target.id === "PizzeriaId"){
                         <aside>
                         <h2>JR Landscaping</h2>
                         </aside>
-                        <img src="img/projects/jrlandscaping.png" alt=''/>
+                        <img src="img/projects/jrlandScaping.png" alt=''/>
                         <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
                           <div id="icon-container">
                             <div><img src="/img/Icons/iconXD.png" alt=""/></div>
