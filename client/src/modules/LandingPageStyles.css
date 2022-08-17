@@ -950,7 +950,7 @@ html{
     display: flex;
     column-gap: 15px;
     row-gap: 5px;
-    width: 100vw;
+    width: 99vw;
     justify-content: center;
     margin: 0 auto;
     padding: 20px 0;
@@ -999,7 +999,7 @@ html{
 
 
   .name-container h2{
-    font: 1.1em sans-serif;
+    font: 1.19em sans-serif;
     color: whitesmoke;
 
   }
@@ -1024,14 +1024,11 @@ html{
     .name-container header{
       display: flex;
       column-gap: 10px;
-    justify-items: center;
-    align-self: center;
+      justify-items: center;
+      align-self: center;
       font: 1em sans-serif;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       max-width: none;
-  
-  
-    
     }
   
     }
