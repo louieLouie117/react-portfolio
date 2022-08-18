@@ -222,13 +222,13 @@ if(e.target.id === "PizzeriaId"){
                                         <p>Date Base</p>   
                                     </div>
                                 <aside>
-                                <a href="https://github.com/louieLouie117/GarageSally">
+                                <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
                                   <button>GitHub</button>
                                   </a>
 
-                                  <a href="https://www.deltabarandgrill.com/">
+                                  {/* <a href="https://www.deltabarandgrill.com/">
                                   <button>Website</button>
-                                  </a>
+                                  </a> */}
                                   
                                 </aside>
                                 </div>
