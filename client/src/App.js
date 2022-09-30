@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <LandingPage path="/"/>
-        <Dashboard path="Dashboard"/>
+        <Dashboard path="/Dashboard"/>
       </Router>
 
      
