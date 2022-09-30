@@ -28,6 +28,11 @@ html{
   li ::-webkit-scrollbar {
     display: none;
   }
+
+  .LandingPage-Container{
+    display: grid;
+    justify-items: center;
+  }
   
   
   @media screen and (min-width: 1100px) {
@@ -1347,4 +1352,11 @@ html{
     column-gap: 30px; 
     }
   
+  }
+
+  .about-me{
+    display: grid;
+    background-color: red;
+    max-width: 65em;
+    justify-self: center;
   }

@@ -4,6 +4,7 @@ import ToolsTechnologies from '../components/LandingPage/ToolsTechnologies'
 import WorkExperience from '../components/LandingPage/WorkExperience'
 import Goals from '../components/LandingPage/Goals'
 import LandingPageStyles from '../modules/LandingPageStyles.css'
+import AboutMe from '../components/LandingPage/AboutMe'
 
 function LandingPage(props) {
 
@@ -16,6 +17,7 @@ function LandingPage(props) {
       <Goals></Goals>
       <WorkExperience></WorkExperience>
       <ToolsTechnologies></ToolsTechnologies>
+      {/* <AboutMe></AboutMe> */}
     </div>
   )
 }
