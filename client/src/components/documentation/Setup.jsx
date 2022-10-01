@@ -7,9 +7,9 @@ const Setup = props => {
         <h2>React SWA Setup</h2>
     
         <pre>
-        <code>
+        <code >
 
-            <ReactCodeSinppet lang="json" code={
+            <ReactCodeSinppet  style={{backgroundColor: "red"}} lang="json" code={
                 `
                 {
                     "navigationFallback": {

@@ -3,7 +3,7 @@ import Setup from '../components/documentation/Setup'
 
 const Documentation = props => {
   return (
-    <div>
+    <div className='Documentation-View'>
       <h1>React Documentation and Libraries</h1>
       <Setup></Setup>
         

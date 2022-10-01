@@ -77,7 +77,7 @@ window.onload = function() {
   
                   </header>
   
-                  <img id="PortfolioImg" src="/img/portfolioImg.png" alt=""/>
+                  <img id="PortfolioImg" src="/img/portfolioImg.png" alt="" />
                   </div>
 
                     
