@@ -1,6 +1,5 @@
 import React from 'react'
-
-// import ReactCodeSinppet from 'react-code-snippet'
+import ReactCodeSinppet from 'react-code-snippet'
 
 const Setup = props => {
   return (
@@ -10,7 +9,7 @@ const Setup = props => {
         <pre>
         <code>
 
-            {/* <ReactCodeSinppet lang="json" code={
+            <ReactCodeSinppet lang="json" code={
                 `
                 {
                     "navigationFallback": {
@@ -26,7 +25,7 @@ const Setup = props => {
             }>
 
 
-            </ReactCodeSinppet> */}
+            </ReactCodeSinppet>
 
       
         </code>
