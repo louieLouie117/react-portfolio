@@ -1,35 +1,52 @@
 import React from 'react'
-import ReactCodeSinppet from 'react-code-snippet'
+import copy from 'copy-to-clipboard';
+
+
 
 const Setup = props => {
+
+    const install =`npx create-react-app client`
+
+    const obj = `
+    {
+        "navigationFallback": {
+            "rewrite": "index.html",
+            "exclude": ["/static/images/*.{png,jpg,gif}", "/static/css/*"]
+        },
+        "mimeTypes": {
+            ".json": "text/json"
+        }
+    }
+       `;
+
+
+    const copyReact= `
+    <button  onClick={() =>  navigator.clipboard.writeText(obj)}>Copy</button>
+    `
   return (
     <div>
-        <h2>React SWA Setup</h2>
-    
+
+        <h1>Get Started with React.js</h1>
         <pre>
-        <code >
+            <code>{install}</code>
+            <button  onClick={() =>  navigator.clipboard.writeText(obj)}>Copy</button>
 
-            <ReactCodeSinppet  style={{backgroundColor: "red"}} lang="json" code={
-                `
-                {
-                    "navigationFallback": {
-                        "rewrite": "index.html",
-                        "exclude": ["/static/images/*.{png,jpg,gif}", "/static/css/*"]
-                    },
-                    "mimeTypes": {
-                        ".json": "text/json"
-                    }
-                }
-                
-                `
-            }>
-
-
-            </ReactCodeSinppet>
-
-      
-        </code>
         </pre>
+
+        <pre>
+            <code className='testCopy'>{obj}</code>
+                <button  onClick={() =>  navigator.clipboard.writeText(obj)}>Copy</button>
+            
+
+        </pre>
+
+        <h2>How to copy to clipboard in React</h2>
+        <pre>
+            <code>{copyReact}</code>
+        </pre>
+      
+     
+
     </div>
   )
 }

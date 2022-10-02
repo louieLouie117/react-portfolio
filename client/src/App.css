@@ -39,15 +39,39 @@
 
 
 .Documentation-View{
-  background-color: rgb(33, 33, 33);
+  display: grid;
 
 }
 
 
 code{
+  display: block;
   padding: 30px;
-  border: solid red 1px;
-  width: 100vw;
-  background-color: aqua;
+  width: auto;
   height: auto;
+  color: rgb(135, 189, 255);
+ 
+}
+
+
+pre {
+  padding: 1rem;
+  overflow: scroll;
+  border-radius: 3px;
+  max-width: 90vw;
+  border-radius: 7px;
+  background-color: rgb(28, 28, 28);
+}
+
+pre code {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+}
+
+pre::-webkit-scrollbar{
+  display: none;
 }
