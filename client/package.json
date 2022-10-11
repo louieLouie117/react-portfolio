@@ -1,5 +1,4 @@
 {
-  
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +13,7 @@
     "@types/react-dom": "^18.0.6",
     "copy-to-clipboard": "^3.3.2",
     "markdown-it": "^13.0.1",
+    "preact-router": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
