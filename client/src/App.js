@@ -7,6 +7,8 @@ import Documentation from './views/Documentation';
 import React from "react"
 import { Router } from "@reach/router"
 
+
+
 function App() {
 
 
@@ -14,7 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <LandingPage path="/"/>
-        <Dashboard path="/Dashboard"/>
+        <Dashboard path="Dashboard"/>
         <Documentation path="doc"/>
       </Router>
 
