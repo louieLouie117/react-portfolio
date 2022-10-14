@@ -40,27 +40,40 @@
 
 .Documentation-View{
   display: grid;
+}
+
+.codDoc-Container{
+  display: grid;
+  justify-self: center;
 
 }
 
 
+.codDoc-Container>section{
+  display: grid;
+}
 code{
-  display: block;
-  padding: 30px;
+  display: grid;
+  padding: 20px;
   width: auto;
   height: auto;
-  color: rgb(135, 189, 255);
- 
+  color: rgb(113, 175, 251);
+  /* color: white; */
+  justify-items: center;
+
 }
 
 
 pre {
-  padding: 1rem;
+  padding: .5rem;
   overflow: scroll;
   border-radius: 3px;
-  max-width: 90vw;
+  max-width: 75em;
   border-radius: 7px;
   background-color: rgb(28, 28, 28);
+  /* background: linear-gradient(to bottom, #00aecd, #136DC0 20%); */
+  background-color: black;
+
 }
 
 pre code {
