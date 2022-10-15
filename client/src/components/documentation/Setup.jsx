@@ -37,11 +37,66 @@ const Setup = props => {
     
     }`;
 
+    const registerSW = `<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>`;
+
+
+  const swFile = `// This is the "Offline page" service worker
+
+  importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+  
+  const CACHE = "pwabuilder-page";
+  
+  // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+  const offlineFallbackPage = "ToDo-replace-this-name.html";
+  
+  self.addEventListener("message", (event) => {
+    if (event.data && event.data.type === "SKIP_WAITING") {
+      self.skipWaiting();
+    }
+  });
+  
+  self.addEventListener('install', async (event) => {
+    event.waitUntil(
+      caches.open(CACHE)
+        .then((cache) => cache.add(offlineFallbackPage))
+    );
+  });
+  
+  if (workbox.navigationPreload.isSupported()) {
+    workbox.navigationPreload.enable();
+  }
+  
+  self.addEventListener('fetch', (event) => {
+    if (event.request.mode === 'navigate') {
+      event.respondWith((async () => {
+        try {
+          const preloadResp = await event.preloadResponse;
+  
+          if (preloadResp) {
+            return preloadResp;
+          }
+  
+          const networkResp = await fetch(event.request);
+          return networkResp;
+        } catch (error) {
+  
+          const cache = await caches.open(CACHE);
+          const cachedResp = await cache.match(offlineFallbackPage);
+          return cachedResp;
+        }
+      })());
+    }
+  });`;
+
 
 
 
   return (
-    <div>
+    <div className='codDoc-Container'>
 
         <h1>Get Started with React.js</h1>
         <pre>
@@ -95,6 +150,27 @@ const Setup = props => {
         <pre>
             <code>{typescriptConfigFile}</code>
             <button  onClick={() =>  navigator.clipboard.writeText(typescriptConfigFile)}>Copy</button>
+        </pre>
+        </section>
+
+
+        <section>
+
+        <h2>Set up service works 1 of 2</h2>
+        <p>You need to add register your sw on the index.html</p>
+        <pre>
+            <code>{registerSW}</code>
+            <button  onClick={() =>  navigator.clipboard.writeText(registerSW)}>Copy</button>
+        </pre>
+        </section>
+
+        <section>
+
+        <h2>Set up service works 2 of 2</h2>
+        <p>You need to add your sw.js file to your project root folder</p>
+        <pre>
+            <code>{swFile}</code>
+            <button  onClick={() =>  navigator.clipboard.writeText(swFile)}>Copy</button>
         </pre>
         </section>
 
