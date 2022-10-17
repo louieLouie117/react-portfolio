@@ -1,8 +1,9 @@
 import React from 'react'
+// import { useState } from 'react'
 
-function EasyAlgos({}) {
 
-
+function EasyAlgos() {
+    // const [twoNumberSolutionBlur, setTwoNumberSolutionBlur] = useState(false);
     const twoSumExample = `
     array = [3, 5, -4, 8, 11, 1, -1, 6];
     targetSum = 10;
@@ -13,8 +14,9 @@ function EasyAlgos({}) {
     `
     const twoSumNested = `
     function twoSumNested(array, targetSum) {
-        const newArrayResult = [];
         console.log("targetNumber:", targetSum)
+
+        const newArrayResult = [];
         
            for (let index = 0; index < array.length - 1; index++) {
               let sum1 = array[index];
@@ -37,42 +39,65 @@ function EasyAlgos({}) {
             } 
          }
         return [];
-    
     `
 
-    const twoSumSorted = `
-    var twoSum = function(nums, target) {
-        function sortNumber(a,b){
-            return a - b;
+    const twoSumObject = `
+    function twoNumberSum(array, targetSum) {
+        console.log("data", array, "target", targetSum);
+        let nums = {};
+        
+        for (let index = 0; index < array.length; index++) {    
+          let num = array[index];
+          let potentialMatch = targetSum - num;
+          
+          if(potentialMatch in nums){
+            console.log("Final object data", nums)
+            console.log("found two sums", [potentialMatch, num])         
+            return [potentialMatch, num]
+          }else{
+            console.log("add to object", nums) 
+            nums[num] = "check";
+            
+          } 
+          
+        }  
+        
+        return [];
+      }
+    `
+
+
+    const twoSumPointers = `
+    function twoNumberSum(array, targetSum) {
+        function sortNumber(a, b) {
+         return a - b;
         }
+
+        array.sort(sortNumber);
+        console.log(array);
         
-        nums.sort(sortNumber);
-        console.log("sorted array", nums);
-        
-        leftPointer = 0;
-        rightPointer = nums.length -1;
-        
-        while(leftPointer < rightPointer){
-            let currentSum = nums[leftPointer] + nums[rightPointer];
-            
-            if(currentSum === target){
-                console.log("found two sums", leftPointer, rightPointer);
-                return [[leftPointer], [rightPointer]]
-            }else if(currentSum < target){
-                console.log("move left pointer");        
-                leftPointer += 1;
-            }else if(currentSum > target){
-                console.log("move right pointer");
-                rightPointer -= 1;
-            }
-            
-            
+        let startPointer = 0;
+        let endPointer = array.length -1;
+      
+        while (startPointer < endPointer){
+            let currentSum = array[startPointer] + array[endPointer];
+            if(currentSum === targetSum){
+              console.log("return both sums")
+              return [array[startPointer], array[endPointer] ]
+              
+              }else if(currentSum < targetSum){
+                  console.log("increase the left pointer")
+                  startPointer += 1;
+              }else if (currentSum > targetSum ){
+                console.log("decrease the right pointer")
+                  endPointer -= 1;
+              }
+          
         }
-        
-        return;  
-       
-    };
-    
+        return [];
+      
+      }
+      
     `
     
 
@@ -83,34 +108,36 @@ function EasyAlgos({}) {
         <section>
             <header>
                 <h2>1. Two number sum</h2>
+                
                 <h3>Questions: </h3>
                 <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
-                <h3>Example:</h3>
-                <p>array: [2,7,11,15] target: 9 </p>
                 <h3>Solutions:</h3>
                 <p>There is 3 ways to solve this algorithm. The questions may ask you to return the index or the numbers that equal to the target, therefore make sure that your return is either the numbers or the index's.</p>
+                <h3>Category</h3>
+                <p>Arrays</p>
                 <aside>
                     <h3>Try it</h3>
                     <code>
                     <pre>
-                                <button  onClick={() => navigator.clipboard.writeText(twoSumExample)}>Copy</button>
-                                <code>
-                                    {twoSumExample}
-                                </code>
-                            </pre>    
+                        
+                    <button  onClick={() => navigator.clipboard.writeText(twoSumExample)}>Copy</button>
+                        <code>
+                            {twoSumExample}
+                        </code>
+                    </pre>    
                     </code>
                 </aside>
             </header>
-
-         
-           
           
                 <ul>
                     <li>
-                    <h4>Solution 1</h4>    
-                    <p>One way to solve this algorithm is with nested loops, a new array, and a conditional statement.</p>
+                    <h4>Solution 1: Nested Loop</h4>    
+                    <p>One way to solve this algorithm is with a new array, nested loop, variables and a conditional statement, and return. The nested loops will be use to track the two possible sums. The new array will contain the two numbers that are equal to the target. The conditional statement will be use to check when the two numbers are equal to the target.</p>
                         <pre>
+                        <button>Show</button>
+
                             <button  onClick={() => navigator.clipboard.writeText(twoSumNested)}>Copy</button>
+                            {/* <code style={ { filter: twoNumberSolutionBlur ? "blur(0px)" : "blur(5px)" }}> */}
                             <code>
                                 {twoSumNested}
                             </code>
@@ -118,21 +145,23 @@ function EasyAlgos({}) {
                     </li>
 
                     <li>
-                    <h4>Solution 2</h4>    
+                    <h4>Solution 2: Object</h4>    
+                    <p>The second way to solve this algorithm is is by using an object, a loop, variables, and a conditional statement. The object to will be use to store the </p>
                         <pre>
-                            <button  onClick={() => navigator.clipboard.writeText(twoSumSorted)}>Copy</button>
+                            <button  onClick={() => navigator.clipboard.writeText(twoSumObject)}>Copy</button>
                             <code>
-                                {twoSumSorted}
+                                {twoSumObject}
                             </code>
                         </pre>                    
                     </li>
 
                     <li>
-                    <h4>Solution 3</h4>    
+                    <h4>Solution 3: Pointers</h4>    
+                    <p>The last way possible way to solve this algorithm is with pointers, while loop, variables, and conditional statement. However this solutions will only work if the array is sorted. Therefore you most sort the array first. With the pointers you will set a start pointer that start that will move to the right and a end pointer that will move to the left. The while loop is to keep checking as log as the two pointer have not crossed each each other. The conditional statement will check if two numbers are equal to the target if they are not the pointers will need to move.</p>
                         <pre>
-                            <button  onClick={() => navigator.clipboard.writeText(twoSumSorted)}>Copy</button>
+                            <button  onClick={() => navigator.clipboard.writeText(twoSumPointers)}>Copy</button>
                             <code>
-                                {twoSumSorted}
+                                {twoSumPointers}
                             </code>
                         </pre>                    
                     </li>
@@ -144,7 +173,7 @@ function EasyAlgos({}) {
 
         <section>
         <header>
-                <h2>1. Two number sum</h2>
+                <h2>2. </h2>
                 <h3>Questions: </h3>
                 <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
                 <h3>Example:</h3>
@@ -168,9 +197,9 @@ function EasyAlgos({}) {
                     <h4>Solution 1</h4>    
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit explicabo perspiciatis quam, culpa non earum tempore. Illum itaque corporis quia excepturi ut impedit corrupti blanditiis ipsam? Recusandae ab deserunt voluptatum?</p>
                         <pre>
-                            <button  onClick={() => navigator.clipboard.writeText(twoSumSorted)}>Copy</button>
+                            <button  onClick={() => navigator.clipboard.writeText(twoSumExample)}>Copy</button>
                             <code>
-                                {twoSumSorted}
+                                {twoSumExample}
                             </code>
                         </pre>                    
                     </li>
