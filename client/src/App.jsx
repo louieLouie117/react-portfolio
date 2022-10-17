@@ -7,6 +7,7 @@ import Documentation from './views/Documentation';
 
 import React from "react"
 import { Router } from "@reach/router"
+import EasyAlgos from './components/Algorithms/EasyAlgos';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <LandingPage path="/"/>
         <Dashboard path="Dashboard"/>
         <Documentation path="doc"/>
+        <EasyAlgos path='easy-algorithms'/>
       </Router>
 
      
