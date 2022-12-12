@@ -73,7 +73,9 @@ window.onload = function() {
                     <h3>my name is </h3>
                     <h1>Luis Cardona</h1>
   
-                  <p>Full-Stack Developer.</p>
+                  <p>LC Solutions</p>
+                
+                  
   
                   </header>
   
@@ -94,7 +96,8 @@ window.onload = function() {
                     <h1>Luis Cardona</h1>
                     <img id="PortfolioImg" src="/img/portfolioImg.png" alt=""/>
   
-                  <p>Full-Stack Developer.</p>
+                  <p>LC Solutions</p>
+    
   
                   </header>
   
@@ -104,8 +107,20 @@ window.onload = function() {
                     )}
                     })()}
 
+                    
+                    <button>Contact me</button>
 
          </header>
+                  
+                  <div className='Contact-Container'>
+                 
+                      <button>Close</button>
+                      <button>Call</button>
+                      <button>Text</button>
+                      <button>Email</button>
+               
+
+                    </div>
 
       
         <div className="mySkills-container">
