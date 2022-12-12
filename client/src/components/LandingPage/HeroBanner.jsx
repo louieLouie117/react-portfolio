@@ -50,6 +50,17 @@ window.onload = function() {
 }
 
 
+const [contactOptions, setContactOptions] = useState(false)
+
+const ContactMeHandler = e =>{
+  if(e.target.innerText === "Contact me"){
+    setContactOptions(true)
+  }else{
+    setContactOptions(false)
+  }
+
+}
+
 
 
 
@@ -108,16 +119,38 @@ window.onload = function() {
                     })()}
 
                     
-                    <button>Contact me</button>
+                    <button onClick={ContactMeHandler}>Contact me</button>
 
          </header>
                   
-                  <div className='Contact-Container'>
-                 
-                      <button>Close</button>
+                  <div className='Contact-Container' style={{display: contactOptions ? "grid" : "none"}}>
+
+                      <header>
+                        <button onClick={ContactMeHandler}>Close</button>
+                      </header>
+
+                      <main>
+                      <a href="tel:925-809-2738">
+                        <img src="/img/Icons/IconPhone.png" alt="" />
                       <button>Call</button>
+
+                      </a>
+
+                      <a href="sms:925-809-2738?body=Hello, Luis Cardona">
+                        <img src="/img/Icons/IconText.png" alt="" />
                       <button>Text</button>
-                      <button>Email</button>
+                      </a>
+
+                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
+                        <img src="/img/Icons/IconEmail.png" alt="" />
+                        <button>Email</button>
+                      </a>
+                      <a href="https://www.instagram.com/garagesally.founder/">
+                        <img src="/img/Icons/IconInsta.png" alt="" />
+                      <button>DM</button>
+                      </a>
+
+                      </main>
                
 
                     </div>
