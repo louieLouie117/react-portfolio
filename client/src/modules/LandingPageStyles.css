@@ -814,11 +814,94 @@ html{
   
   }
 
-  .myHeader-container header{
+  .myHeader-container>header{
     display: grid;
     justify-content: center;
+    justify-items: center;
 
   }
+
+  .myHeader-container>header button{
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    height: 40px;
+    font: 1.1em sans-serif;
+    color: #0080BF;
+    width: 310px;
+    margin: 20px 40px;
+
+  }
+
+
+
+  .Contact-Container{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 70px ;
+    position: absolute;
+    left: 0;
+    top: 155px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+    align-items: center;
+    width: 340px;
+    background-color: whitesmoke;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.146);
+
+  }
+
+  .Contact-Container>header{
+    display: grid;
+
+  }
+
+  .Contact-Container>header button{
+    height: 80px;
+    padding-top: 20px;
+    cursor: pointer;
+    margin-left: -40px;
+    width: 60px;
+    color: grey;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    border: none;
+    background-color: whitesmoke;
+  }
+
+  .Contact-Container>main{
+    display: flex;
+    column-gap: 10px;
+    justify-self: center;
+    padding-top: 5px;
+
+  }
+
+  .Contact-Container>main a{
+    display: grid;
+    text-decoration: none;
+    justify-items: center;
+    row-gap: 3px;
+    padding: 5px;
+    width: 45px;
+
+  }
+
+  .Contact-Container>main a button{
+    cursor: pointer;
+    color: #0080BF;
+    font: .8em sans-serif;
+    border: none;
+    background-color: whitesmoke;
+
+  }
+
+
   
   .myHeader-container aside{
     display: block;
@@ -938,7 +1021,7 @@ html{
   
   }
   
-  .myHeader-container main{
+  .myHeader-container>main{
     background: whitesmoke;
     width: 100%;
     justify-content: center;
@@ -1335,6 +1418,7 @@ html{
     width: 450px;
   
   }
+
   
   
   

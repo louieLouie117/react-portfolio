@@ -92,7 +92,7 @@ pre::-webkit-scrollbar{
 
 .algorithm-container{
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 20em 1fr;
   row-gap: 20px;
   justify-content: center;
   /* width: 100vw; */
@@ -123,7 +123,8 @@ pre::-webkit-scrollbar{
 
 .algorithm-container>header nav ul li a{
   color: white;
-  font: 1.1em sans-serif;
+  font: 1.2em sans-serif;
+  text-decoration: none;
 }
 
 .algorithm-container>main section ul::-webkit-scrollbar{
