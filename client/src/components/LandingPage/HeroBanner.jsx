@@ -83,11 +83,8 @@ const ContactMeHandler = e =>{
                     <h2>{timeLabel},</h2>
                     <h3>my name is </h3>
                     <h1>Luis Cardona</h1>
-  
-                  <p>LC Solutions</p>
+            
                 
-                  
-  
                   </header>
   
                   <img id="PortfolioImg" src="/img/portfolioImg.png" alt="" />
@@ -119,7 +116,12 @@ const ContactMeHandler = e =>{
                     })()}
 
                     
+                    <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
+                    <button>My Services</button>
+                    </a>
+
                     <button onClick={ContactMeHandler}>Contact me</button>
+
 
          </header>
                   
@@ -136,7 +138,7 @@ const ContactMeHandler = e =>{
 
                       </a>
 
-                      <a href="sms:925-809-2738?body=Hello, Luis Cardona">
+                      <a href="sms:925-809-2738">
                         <img src="/img/Icons/IconText.png" alt="" />
                       <button>Text</button>
                       </a>
@@ -157,14 +159,11 @@ const ContactMeHandler = e =>{
 
       
         <div className="mySkills-container">
-              <h1>My Skills</h1>
+              <h1>I love designing and developing website. If you need a website see my services. I you have any questions call me.</h1>
             
 
-
-          <ul>
-            {/* {myProcess.map((myProcess)=>{ 
-            if(myProcess.category === "MySkills")
-            return(   */}
+              {/* <ul>
+          
                 <li><p>Problem-solving</p></li>
                 <li><p>Critical Thinking</p></li>
                 <li><p>Creative Thinker</p></li>
@@ -188,15 +187,11 @@ const ContactMeHandler = e =>{
       
 
 
-
-                    
-                    {/* <li><p>{myProcess.title}</p></li> */}
-            {/* );})} */}
-
           
 
 
-          </ul>
+          </ul> */}
+         
       </div>
      
         
