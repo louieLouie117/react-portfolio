@@ -31,7 +31,7 @@ html{
 
   .LandingPage-Container{
     display: grid;
-    justify-items: center;
+    /* justify-items: center; */
   }
   
   
@@ -157,14 +157,30 @@ html{
   .projectsPage-container{
     height: auto;
     display: grid;
-    background: whitesmoke;
+    /* background: whitesmoke; */
+    /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
+
   }
   
-  .projectsPage-container h1{
-    color: #2862AF;
-    font: 2em sans-serif;
+  .projectsPage-container>h1{
+    color: black;
+    background-color: white;
+    font: 1.5em sans-serif;
     justify-self: center;
     margin-bottom: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.373);
+    padding: 20px;
+    border-radius: 7px ;
+    /* border: solid #136DC0 4px; */
+    margin-top: 20px;
+    /* color: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
+    
+  }
+
+  .projectsPage-container>h2{
+    font: 1.5em sans-serif;
+    justify-self: center;
+    padding: 20px 60px;
   }
   
   
@@ -255,7 +271,7 @@ html{
     margin-left: 30px;
     border-radius: 15px;
     margin-top: 10px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.20);
     justify-content: center;
     
   }   
@@ -829,7 +845,7 @@ html{
     font: 1.1em sans-serif;
     color: #0080BF;
     width: 310px;
-    margin: 20px 40px;
+    margin: 5px 40px;
 
   }
 
@@ -841,7 +857,6 @@ html{
     grid-template-rows: 70px ;
     position: absolute;
     left: 0;
-    top: 155px;
     row-gap: 10px;
     column-gap: 10px;
     padding: 20px;
@@ -1142,7 +1157,7 @@ html{
   .mySkills-container{
     display: grid;
     color: white;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     
   
   
@@ -1163,10 +1178,11 @@ html{
   
   
   
-  .mySkills-container h1{
-    padding: 0 20px;
-    font: 1.7em cursive;
-    color: whitesmoke;
+  .mySkills-container>h1{
+    padding: 40px;
+    font: 1.5em cursive;
+    color: white;
+    text-align: center;
   
   
   }

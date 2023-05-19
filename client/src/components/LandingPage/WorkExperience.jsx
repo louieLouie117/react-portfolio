@@ -131,21 +131,23 @@ if(e.target.id === "PizzeriaId"){
   return (
     <div >
       <div className="projectsPage-container">
-        <h1>Work Experience</h1>
+        <h1>LC Website Solutions</h1>
+      
+        <h2>Get the perfect website for your business.</h2>
 
 
         <main>
-                <picture class="headerImage-container">
+                {/* <picture class="headerImage-container">
                     <source media="(min-width: 1300px)" srcset="/img/desktopImg.png" />
                     <source media="(min-width: 725px)" srcset="/img/tabletImg.png" />
                     <img src="/img/mobileImgLarge.png" alt="" />
-                </picture>
+                </picture> */}
         
                 <div className="cardItems">
                   <ul>
                     <li>
                             <header>
-                              <h2>Garage Sally</h2>
+                              <h2>Application</h2>
                             </header>
                             <img src="img/projects/garageSally.png" alt=''/>
 
