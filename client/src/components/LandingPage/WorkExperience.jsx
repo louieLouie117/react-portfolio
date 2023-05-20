@@ -504,7 +504,7 @@ if(e.target.id === "PizzeriaId"){
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
                                     </a>
-                                    <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
+                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
 
                                 </footer>
                         </li>
@@ -515,7 +515,7 @@ if(e.target.id === "PizzeriaId"){
                   </div>
                   
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
-                    <iframe width="640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdUMFU1RE1CMDlQS0tPRk5XN1EzRzZXNElOMy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"100vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                    <iframe title='CustomWebsiteForm' width="640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdUMFU1RE1CMDlQS0tPRk5XN1EzRzZXNElOMy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"100vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
                   </div>
 
                   </main>
