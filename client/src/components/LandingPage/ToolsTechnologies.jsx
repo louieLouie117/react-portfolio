@@ -24,38 +24,17 @@ function ToolsTechnologies(props) {
                     <h3>Git, GitHub</h3>
                     </li>
 
-                    <li></li>
-                </ul>
-              </section>
-
-              
-            <section>
-            <div className="blueLine"></div>
-
-            <ul>
                     <li id="frameworks">
                     <h2>Frameworks</h2>
                     <h3>React, Express, Node, Express-fileupload, ASP.NET, Entity Framework, jQuery, SASS</h3>
                     </li>
 
-                
-
+                    <li></li>
                 </ul>
-            {/* {myInfo.map((myInfo)=>{
-            return(
-                <ul>
-                    <li id="frameworks">
-                    <h2>Languages</h2>
-                    <h3>{myInfo.frameworksLibraries}</h3>
-                    </li>
+              </section>
 
-                
-
-                </ul>
-
-        );})} */}
-
-            </section>
+              
+          
 
 
               

@@ -13,11 +13,13 @@ function LandingPage(props) {
 
   return (
     <div className='LandingPage-Container'>
-      {/* <Goals></Goals> */}
-      <WorkExperience></WorkExperience>
       <HeroBanner></HeroBanner>
 
+      {/* <Goals></Goals> */}
+      <div>
+      <WorkExperience></WorkExperience>
       <ToolsTechnologies></ToolsTechnologies>
+      </div>
       {/* <AboutMe></AboutMe> */}
     </div>
   )
