@@ -1366,6 +1366,12 @@ html{
   }
 
 
+  .CustomWebsite-Container{
+    max-width: 65em;
+    justify-self: center;
+  }
+
+
 
   
 

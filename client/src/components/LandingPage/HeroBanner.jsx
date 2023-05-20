@@ -96,7 +96,7 @@ const ContactMeHandler = e =>{
 
                     
 <footer>
-<h2>I help businesses in Clarksville TN get online.</h2>
+<h2>I help businesses in Montgomery TN get online.</h2>
 
 </footer>
 <div className='GridContainer'>
