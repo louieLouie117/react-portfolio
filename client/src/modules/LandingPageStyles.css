@@ -8,6 +8,11 @@ html{
     background: whitesmoke;
   
   }
+
+  .GridContainer{
+    display: grid;
+    justify-content: center;
+  }
   h1, p, h2{
    margin: 0;
   }
@@ -29,14 +34,20 @@ html{
     display: none;
   }
 
+
+  .FilterWebsite-Container>ul::-webkit-scrollbar {
+    display: none;
+  }
   .LandingPage-Container{
     display: grid;
+  
     /* justify-items: center; */
   }
   
+
   
   @media screen and (min-width: 1100px) {
-  
+
   
   /* width */
   .cardItems ::-webkit-scrollbar {
@@ -156,6 +167,7 @@ html{
   
   .projectsPage-container{
     height: auto;
+    border-radius: 10px;
     display: grid;
     /* background: whitesmoke; */
     /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
@@ -242,6 +254,7 @@ html{
     padding: 0;
     height: auto;
     align-self: center;
+    /* margin-top: -150px; */
     /* box-shadow: -5px 10px 13px rgba(0, 0, 0, 0.11); */
   }
   
@@ -260,10 +273,10 @@ html{
     margin-left: 20px;
   }
   
+ 
   
   
-  
-  .cardItems ul li {
+  .cardItems>ul>li {
     display: grid;
     grid-template-columns: 300px;
     /* grid-template-rows: 60px 1fr 60px; */
@@ -273,15 +286,12 @@ html{
     margin-top: 10px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.20);
     justify-content: center;
+    height: 450px;
     
   }   
   
   @media screen and (min-width: 1200px){
-    .cardItems ul{
-      margin: 33px 0;
-      padding: 70px 0;
-
-    }
+ 
     .cardItems ul li {
       margin-left: 50px;
       padding-bottom: 7px;
@@ -296,6 +306,12 @@ html{
     background: none;
     box-shadow: none;
     width: 7px;
+  }
+
+  .cardItems>ul>li>aside{
+    display: grid;
+    justify-items: center;
+    align-items: center;
   }
   
   
@@ -325,7 +341,6 @@ html{
   
   
   .cardItems footer {
-    display: flex;
     column-gap: 10px;
     align-self: center;
     /* box-shadow: 0px -7px 5px rgba(0, 0, 0, 0.137); */
@@ -338,18 +353,7 @@ html{
     width: 60px;
     padding: 5px;
   }
-  
-  .cardItems footer button {
-    background: rgb(236, 236, 236);
-    color: black;
-    height: 35px;
-    border-radius: 7px;
-    cursor: pointer;
-    border: solid 0.5px rgb(145, 145, 145);
-    width: 100%;
-  }
-  
-  
+    
   .project1-container footer button {
     background: #52B1A2;
   }
@@ -790,30 +794,7 @@ html{
     /* last */
   }
   
-  @media screen and (min-width: 1100px){
-  
-    .linkCard-container{
-      grid-template-columns: 1fr 1fr;
-      padding-top: 100px;
-      margin-top: 0;
-    }
-  
-    .linkCard-container>header{
-      grid-row: 1/2;
-      grid-column: 2/3;
-      align-self: center;
-    }
-  
-    .linkCard-container>main{
-      grid-row: 1/2;
-      grid-column: 1/2;
-      align-self: center;
-      padding: 40px;
-    }
-  
-    
-  
-  }
+ 
   
   /* My header styles---------------------------------------------------- */
   
@@ -826,15 +807,27 @@ html{
     font: 1em sans-serif;
     padding-top: 20px;
     margin-top: -4px;
-    
+  
   
   }
 
-  .myHeader-container>header{
+  .myHeader-container>header>footer{
     display: grid;
     justify-content: center;
     justify-items: center;
+    row-gap: 20px;
+    padding-top: 50px;
+  }
 
+  .myHeader-container>header>footer>h2{
+    color: white;
+    font: 2.2em sans-serif;
+    width: 300px;
+  }
+
+  .myHeader-container>header>footer>p{
+    font: 1.5em sans-serif;
+    color: white;
   }
 
   .myHeader-container>header button{
@@ -857,6 +850,7 @@ html{
     grid-template-rows: 70px ;
     position: absolute;
     left: 0;
+    top: 160px;
     row-gap: 10px;
     column-gap: 10px;
     padding: 20px;
@@ -1013,28 +1007,7 @@ html{
   }
   
   
-  
-  @media screen and (min-width: 750px){
-  
-    .myHeader-container{
-    row-gap: 40px;
-  
-    }
-    .myHeader-container aside{
-      position: absolute;
-      padding: 200px 0;
-  
-    
-      }
-  
-      
-  
-    .myHeader-container aside form{
-      padding:  40px 150px ;
-  
-    }
-  
-  }
+
   
   .myHeader-container>main{
     background: whitesmoke;
@@ -1053,7 +1026,7 @@ html{
     display: flex;
     column-gap: 15px;
     row-gap: 5px;
-    width: 99vw;
+    /* width: 99vw; */
     justify-content: center;
     margin: 0 auto;
     padding: 20px 0;
@@ -1122,19 +1095,10 @@ html{
     
   }
 
-  @media screen and (min-width: 1050px){
-     
-    .name-container header{
-      display: flex;
-      column-gap: 10px;
-      justify-items: center;
-      align-self: center;
-      font: 1em sans-serif;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      max-width: none;
-    }
-  
-    }
+
+
+
+
   
   .name-container img{
     border: solid 2px whitesmoke;
@@ -1179,12 +1143,18 @@ html{
   
   
   .mySkills-container>h1{
-    padding: 40px;
-    font: 1.5em cursive;
+    padding: 10px 40px;
     color: white;
     text-align: center;
+    font: 1.5em sans-serif;
   
-  
+  }
+
+  .mySkills-container>p{
+    font: 1.5em sans-serif;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
   }
   
   
@@ -1248,21 +1218,7 @@ html{
   
   }
 
-
-  @media screen and (min-width < 550px){
-
-      
-  .myFocus-container ul{
-    display: grid;
-    row-gap: 10px;
-    height: auto;
-    overflow: none;
-    padding: 10px;
-    
   
-  }
-    
-  }
   
   .myFocus-container h1{
     color: whitesmoke;
@@ -1305,61 +1261,7 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
   }
-  
-  
-  @media screen and (min-width: 750px){
-    
-  
-    .mySkills-container ul {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      row-gap: 3px;
-      column-gap: 35px;
-      padding: 35px;
-      width: 62em;
-    }
-  
-    
-    .mySkills-container ul li{
-      min-width: 120px;
-      font-weight: normal;
-    }
-  
-  
-  
-    
-    
-  .myFocus-container ul{
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 20px;
-  }
-  .myFocus-container>button{
-    text-align: left;
-  }
 
-  .myFocus-container ul li{
-    width: auto;
-  }
-
-  .myFocus-container ul::-webkit-scrollbar{
-    display: none;
-    width: 0;
-  }
-  
-  /* .myFocus-container ul li:first-of-type{
-    grid-column: 1/2;
-    grid-row: 1/4;
-    
-   } */
-  
-  .mySkills-container h1{
-    padding: 0;
-  }
-  
-  
-  }
-  
-  
   .devTools-container{
     display: grid;
     justify-content: center;
@@ -1391,7 +1293,7 @@ html{
   .devTools-container ul{
     grid-column: 1/2;
     grid-row: 1/2;
-    display: flex;
+    display: grid;
     float: left;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -1431,9 +1333,139 @@ html{
   
   
   #frameworks{
-    width: 450px;
+    width: 250px;
   
   }
+
+
+  .FreeBTN-Container>a>button{
+    background: rgb(236, 236, 236);
+    color: black;
+    height: 35px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: solid 0.5px rgb(145, 145, 145);
+    width: 130px;
+  }
+  
+  .FilterWebsite-Container>ul{
+    display: flex;
+    column-gap: 10px;
+    overflow: scroll;
+    width: 95vw;
+    padding-left: 20px;
+  }
+
+  .FilterBTN{
+    background-color: whitesmoke;
+    color: #0080BF;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+  }
+
+
+
+  
+
+  @media screen and (min-width: 1050px){
+  
+    .name-container>header{
+      display: grid;
+      column-gap: 10px;
+      align-self: center;
+      font: 1em sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      max-width: none;
+    }
+
+    .devTools-container ul{
+  
+      display: flex;
+       
+    }
+    
+  
+  }
+
+
+  @media screen and (min-width: 500px){
+
+  
+
+        
+    .myFocus-container ul{
+      display: grid;
+      row-gap: 10px;
+      height: auto;
+      overflow: none;
+      padding: 10px;
+      
+    
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 750px){
+    
+  
+    .mySkills-container ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 3px;
+      column-gap: 35px;
+      padding: 35px;
+      width: 62em;
+    }
+  
+    
+    .mySkills-container ul li{
+      min-width: 120px;
+      font-weight: normal;
+    }
+
+    
+    .myFocus-container ul{
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 20px;
+    }
+    .myFocus-container>button{
+      text-align: left;
+    }
+
+    .myFocus-container ul li{
+      width: auto;
+    }
+
+    .myFocus-container ul::-webkit-scrollbar{
+      display: none;
+      width: 0;
+    }
+    
+    /* .myFocus-container ul li:first-of-type{
+      grid-column: 1/2;
+      grid-row: 1/4;
+      
+    } */
+    
+    .mySkills-container h1{
+      padding: 0;
+    }
+    
+  
+  }
+  
+  
+  
+  @media screen and (width: 375px) {
+    .myHeader-container{
+      display: grid;
+    }
+  
+      
+    }
 
   
   
@@ -1460,3 +1492,63 @@ html{
     max-width: 65em;
     justify-self: center;
   }
+
+
+    
+  @media screen and (min-width: 750px){
+  
+    .myHeader-container{
+      row-gap: 20px;
+      display: grid;
+      align-items: flex-start;
+  
+    }
+    .myHeader-container aside{
+      position: absolute;
+      padding: 200px 0;
+  
+    
+      }
+  
+      
+  
+    .myHeader-container aside form{
+      padding:  40px 150px ;
+  
+    }
+  
+  }
+
+  @media screen and (min-width: 1100px){
+
+    .myHeader-container>header>footer>h2{
+      width: auto;
+    }
+    #frameworks{
+      width: 450px;
+    
+    }
+  
+    
+      .linkCard-container{
+        grid-template-columns: 1fr 1fr;
+        padding-top: 100px;
+        margin-top: 0;
+      }
+    
+      .linkCard-container>header{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: center;
+      }
+    
+      .linkCard-container>main{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: center;
+        padding: 40px;
+      }
+    
+      
+    
+    }

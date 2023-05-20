@@ -74,15 +74,14 @@ const ContactMeHandler = e =>{
 
 
 
-                {(() =>{
-                if (window.innerWidth < "550") {
-                  return(
                     <div className="name-container">
 
                     <header>
                     <h2>{timeLabel},</h2>
                     <h3>my name is </h3>
                     <h1>Luis Cardona</h1>
+                  <p>LC Website Solutions</p>
+
             
                 
                   </header>
@@ -91,36 +90,24 @@ const ContactMeHandler = e =>{
                   </div>
 
                     
-                    )}
-                    })()}
-                                    {(() =>{
-                if (window.innerWidth > "751") {
-                  return(
-                    <div className="name-container">
+         
 
-                    <header>
-                    <h2>{timeLabel},</h2>
-                    <h3>my name is </h3>
-                    <h1>Luis Cardona</h1>
-                    <img id="PortfolioImg" src="/img/portfolioImg.png" alt=""/>
-  
-                  <p>LC Solutions</p>
-    
-  
-                  </header>
-  
-                  </div>
+                
 
                     
-                    )}
-                    })()}
+<footer>
+<h2>I help businesses in Clarksville TN get online.</h2>
 
-                    
-                    <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
-                    <button>My Services</button>
-                    </a>
+</footer>
+<div className='GridContainer'>
+                    {/* <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
+                      <button>My Services</button>
+                    </a> */}
 
                     <button onClick={ContactMeHandler}>Contact me</button>
+
+                    </div>
+                
 
 
          </header>
@@ -159,7 +146,7 @@ const ContactMeHandler = e =>{
 
       
         <div className="mySkills-container">
-              <h1>I love designing and developing website. If you need a website see my services. I you have any questions call me.</h1>
+     
             
 
               {/* <ul>
