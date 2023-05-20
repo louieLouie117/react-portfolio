@@ -222,8 +222,102 @@ if(e.target.id === "PizzeriaId"){
         
         <div className="cardItems">
           
-                  <ul style={{display: CustomerWebsite ? "flex" : "none"}}>
+                  <ul style={{display: CustomerWebsite ? "flex" : "none"}}>              
+
                     <li>
+
+                        <aside>
+                            <h2>Website</h2>
+                        </aside>
+                        <img src="img/projects/deltaSportsBar.png" alt=''/>
+                                      <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
+                                      <div id="icon-container">
+                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                                <p>Mockup UX/UI</p>
+
+                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                                <p>Responsive Layout</p>
+
+                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                                <p>Behavior</p>
+                                            </div>
+                                            
+                                    <aside>
+                                        <a href="https://www.deltabarandgrill.com/">
+                                          <button>Website</button>
+                                        </a>
+                                    </aside>
+                                    </div>
+                                    <footer>                                 
+
+                                    <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Tools and Technologies</button> 
+
+                                </footer>
+                                                
+                          
+                        </li>
+
+
+                        <li>
+
+                        <aside>
+                        <h2>Website</h2>
+                        </aside>
+                        <img src="img/projects/jrlandScaping.png" alt=''/>
+                        <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
+                          <div id="icon-container">
+                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                <p>Mockup UX/UI</p>
+                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                <p>Responsive Layout</p>
+                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                <p>Behavior</p>
+                            </div>
+                            <aside>
+                              <a href="https://www.jrprolandscaping.com/">
+                                  <button>Website</button>
+                              </a>
+                            </aside>
+                                  </div>
+
+                                <footer>                                                                          
+                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
+                                </footer>
+                        </li>
+
+                        
+
+                      
+                  
+
+                   <li>
+
+                        <aside>
+                        <h2>Website</h2>
+                        </aside>
+                        <img src="img/projects/IbUpholstery.png" alt=''/>
+                        <div className="tools-container" style={{ display: IbUpholstery ? "grid" : "none"}}>
+                          <div id="icon-container">
+                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                <p>Mockup UX/UI</p>
+                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                <p>Responsive Layout</p>
+                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                <p>Behavior</p>
+                            </div>
+                                <aside>
+                                <a href="https://www.ibupholstery.com/">
+                                  <button>Website</button>
+                              </a>
+                                </aside>
+                                  </div>
+
+                                <footer>                                                                          
+                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
+                                </footer>
+                        </li>   
+
+                         <li>
                             <header>
                               <h2>Application</h2>
                             </header>
@@ -276,7 +370,7 @@ if(e.target.id === "PizzeriaId"){
 
                     <li>
                       <aside>
-                        <h2>Blog</h2>
+                        <h2>Application</h2>
                       </aside>
 
                       <img src="img/projects/progresslyPage.png" alt=''/>
@@ -320,101 +414,7 @@ if(e.target.id === "PizzeriaId"){
                                             
                       
                     </li>
-
-                 
-
-                    <li>
-
-                        <aside>
-                            <h2>Delta Sports Bar</h2>
-                        </aside>
-                        <img src="img/projects/deltaSportsBar.png" alt=''/>
-                                      <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
-                                      <div id="icon-container">
-                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                                <p>Mockup UX/UI</p>
-
-                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                                <p>Responsive Layout</p>
-
-                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                                <p>Behavior</p>
-                                            </div>
-                                            
-                                    <aside>
-                                        <a href="https://www.deltabarandgrill.com/">
-                                          <button>Website</button>
-                                        </a>
-                                    </aside>
-                                    </div>
-                                    <footer>                                 
-
-                                    <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Tools and Technologies</button> 
-
-                                </footer>
-                                                
-                          
-                        </li>
-
-
-                        <li>
-
-                        <aside>
-                        <h2>JR Landscaping</h2>
-                        </aside>
-                        <img src="img/projects/jrlandScaping.png" alt=''/>
-                        <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                <p>Responsive Layout</p>
-                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                <p>Behavior</p>
-                            </div>
-                            <aside>
-                              <a href="https://www.jrprolandscaping.com/">
-                                  <button>Website</button>
-                              </a>
-                            </aside>
-                                  </div>
-
-                                <footer>                                                                          
-                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
-                                </footer>
-                        </li>
-
-                        
-
-                      
-                  
-
-                   <li>
-
-                        <aside>
-                        <h2>IB Upholstery</h2>
-                        </aside>
-                        <img src="img/projects/IbUpholstery.png" alt=''/>
-                        <div className="tools-container" style={{ display: IbUpholstery ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                <p>Responsive Layout</p>
-                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                <p>Behavior</p>
-                            </div>
-                                <aside>
-                                <a href="https://www.ibupholstery.com/">
-                                  <button>Website</button>
-                              </a>
-                                </aside>
-                                  </div>
-
-                                <footer>                                                                          
-                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
-                                </footer>
-                        </li>                
+             
 
                  
                     <li></li>
@@ -477,7 +477,7 @@ if(e.target.id === "PizzeriaId"){
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button  onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeDesign'>Get Website</button> 
                                     </a>
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                                    <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View</a>
 
                                 </footer>
                         </li>
@@ -504,7 +504,7 @@ if(e.target.id === "PizzeriaId"){
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
                                     </a>
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                                    <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
 
                                 </footer>
                         </li>
@@ -514,9 +514,8 @@ if(e.target.id === "PizzeriaId"){
                   </ul>
                   </div>
                   
-                  <div style={{display: CustomWebsite ? "grid" : "none"}}>
-                    <h1>Get a custom website</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae animi voluptate iste! Harum ex iste dolor beatae molestias inventore, doloremque nesciunt, voluptas eum officia commodi quas, impedit obcaecati accusantium.</p>
+                  <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
+                    <iframe width="640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdUMFU1RE1CMDlQS0tPRk5XN1EzRzZXNElOMy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"100vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
                   </div>
 
                   </main>
