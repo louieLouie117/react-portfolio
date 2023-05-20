@@ -477,7 +477,7 @@ if(e.target.id === "PizzeriaId"){
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button  onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeDesign'>Get Website</button> 
                                     </a>
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                                    <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View</a>
 
                                 </footer>
                         </li>
@@ -504,7 +504,7 @@ if(e.target.id === "PizzeriaId"){
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
                                     </a>
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                                    <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
 
                                 </footer>
                         </li>
