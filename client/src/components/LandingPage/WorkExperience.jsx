@@ -45,7 +45,7 @@ const FilterBTNHandler =(e) =>{
   }
 
 
-  if(e.target.innerText === "Customer Review"){
+  if(e.target.innerText === "Customer Reviews"){
     setFreeWebsiteBTN(false)
     setCustomerReviewBTN(true)
     setCustomWebsiteBTN(false)
@@ -202,7 +202,7 @@ if(e.target.id === "PizzeriaId"){
                     <li><button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
                     style={{ 
                     color: CustomerReviewBTN ? "White" : "#0080BF", 
-                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Customer Review</button></li>
+                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Customer Reviews</button></li>
 
                     <li><button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                     style={{ 
@@ -420,6 +420,8 @@ if(e.target.id === "PizzeriaId"){
                     <li></li>
                   </ul>
 
+                
+
                   <ul style={{display: FreeWebsites ? "flex" : "none"}}>    
 
                         <li>
@@ -509,9 +511,18 @@ if(e.target.id === "PizzeriaId"){
                                 </footer>
                         </li>
 
+      \
                  
                     <li></li>
+
+                
                   </ul>
+
+                                            
+                  <section style={{display: FreeWebsites ? "flex" : "none"}}>
+
+                  <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                  </section>
 
                   </div>
 
@@ -519,8 +530,8 @@ if(e.target.id === "PizzeriaId"){
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
 
                   <section>
-                    <h1>Having a mobile website is crucial for any business in today’s digital age. </h1>
-                    <a  href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
+                    <h1>Having a website is crucial for any business in today’s digital age. </h1>
+                    <a  href="https://buy.stripe.com/test_8wM7tiaThayB6kMdQR">
                     <button className='MainBTN' >View My Services</button>
                     </a>
                   </section>
