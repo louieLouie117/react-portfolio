@@ -511,7 +511,6 @@ if(e.target.id === "PizzeriaId"){
                                 </footer>
                         </li>
 
-      \
                  
                     <li></li>
 
@@ -538,7 +537,7 @@ if(e.target.id === "PizzeriaId"){
 
                   <picture>
                      <source media="(min-width: 1100px)" srcset="/img/DesktopFocusMobile.png"/>               
-                    <img src="/img/MobileWEbsite.png" alt="" />
+                    <img src="/img/MobileWebsite.png" alt="" />
                   </picture>
                     
                       <section>
