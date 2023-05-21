@@ -34,7 +34,7 @@ const CouponCodeFreeWebsite = (e) =>{
 
 const FilterBTNHandler =(e) =>{
   console.log(e)
-  if(e.target.innerText === "Free Websites"){
+  if(e.target.innerText === "Free"){
     setFreeWebsiteBTN(true)
     setCustomerReviewBTN(false)
     setCustomWebsiteBTN(false)
@@ -196,7 +196,7 @@ if(e.target.id === "PizzeriaId"){
                     <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                       style={{ 
                         color: FreeWebsiteBTN ? "White" : "#0080BF", 
-                        background: FreeWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Free Websites</button>
+                        background: FreeWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Free</button>
                     </li>
 
                     <li><button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
@@ -427,7 +427,7 @@ if(e.target.id === "PizzeriaId"){
                       
                         <img src="img/projects/paceBuilders.png" alt=''/>
                         <aside>
-                        <h2>Free Design and Development</h2>
+                        <h2>Free Website</h2>
 
 
                         </aside>
@@ -512,10 +512,30 @@ if(e.target.id === "PizzeriaId"){
                  
                     <li></li>
                   </ul>
+
                   </div>
+
                   
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
-                    <iframe title='CustomWebsiteForm' width="640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdUMFU1RE1CMDlQS0tPRk5XN1EzRzZXNElOMy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"100vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+                  <section>
+                    <h1>Having a mobile website is crucial for any business in today’s digital age. </h1>
+                    <a  href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
+                    <button className='MainBTN' >View My Services</button>
+                    </a>
+                  </section>
+
+                  <picture>
+                     <source media="(min-width: 1100px)" srcset="/img/DesktopFocusMobile.png"/>               
+                    <img src="/img/MobileWEbsite.png" alt="" />
+                  </picture>
+                    
+                      <section>
+                      <p>A website makes your business appear more professional and credible, and it allows you to reach a wider audience than ever before.</p>
+                      <p>With a well-designed website, you can generate leads and sales for your business, showcase your work, and provide valuable information to repeat customers. </p>
+                      <p>In addition, through the use of modern SEO tactics, you can beat your competitors online and establish yourself as a leader in your industry.</p>
+                      </section>
+             
                   </div>
 
                   </main>
