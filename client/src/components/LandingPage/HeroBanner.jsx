@@ -119,13 +119,13 @@ const ContactMeHandler = e =>{
                       </header>
 
                       <main>
-                      <a href="tel:925-809-2738">
+                      <a href="tel:931-401-7238">
                         <img src="/img/Icons/IconPhone.png" alt="" />
                       <button>Call</button>
 
                       </a>
 
-                      <a href="sms:925-809-2738">
+                      <a href="sms:931-401-7238">
                         <img src="/img/Icons/IconText.png" alt="" />
                       <button>Text</button>
                       </a>
