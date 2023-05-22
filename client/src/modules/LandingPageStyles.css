@@ -13,6 +13,12 @@ html{
     display: grid;
     justify-content: center;
   }
+
+
+  .AlignTop{
+    align-self: flex-start;
+    
+  }
   h1, p, h2{
    margin: 0;
   }
@@ -170,7 +176,7 @@ html{
     position: relative;
     border-radius: 10px;
     display: grid;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     background-color: whitesmoke;
     margin-top: -20px;
     /* background: whitesmoke; */
@@ -1270,9 +1276,12 @@ html{
 
   .devTools-container{
     display: grid;
+    position: relative;background-color: whitesmoke;
     justify-content: center;
     row-gap: 20px;
     width: auto;
+
+
   }
   
   .devTools-container section{
