@@ -9,6 +9,7 @@ import React from "react"
 import { Router } from "@reach/router"
 import EasyAlgos from './components/Algorithms/EasyAlgos';
 import AfterPayment from './components/LandingPage/AfterPayment';
+import Review from './components/Review';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Documentation path="doc"/>
         <EasyAlgos path='easy-algorithms'/>
         <AfterPayment path="Payment"/>
+        <Review path="review" />
       </Router>
 
      
