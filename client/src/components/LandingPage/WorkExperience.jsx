@@ -528,7 +528,7 @@ if(e.target.id === "PizzeriaId"){
                   
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
 
-                  <section>
+                  <section className='AlignTop'>
                     <h1>Having a website is crucial for any business in today’s digital age. </h1>
                     <p>Get a custom website.</p>
                     <a  href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
