@@ -41,6 +41,7 @@ html{
   }
 
 
+
   .FilterWebsite-Container>ul::-webkit-scrollbar {
     display: none;
   }
@@ -176,7 +177,7 @@ html{
     position: relative;
     border-radius: 10px;
     display: grid;
-    border-radius: 20px 20px 0 0;
+    /* border-radius: 20px 20px 0 0; */
     background-color: whitesmoke;
     margin-top: -20px;
     /* background: whitesmoke; */
@@ -331,7 +332,6 @@ html{
     text-align: center;
     align-self: center;
     padding: 10px;
-    z-index: 1;
   
   }
   
@@ -492,10 +492,7 @@ html{
   }
   
   
-  nav{
-    max-width: 400px;
-  
-  }
+ 
   
   .mainNav-container nav{
     display: grid;
@@ -1362,6 +1359,16 @@ html{
     border: solid 0.5px rgb(145, 145, 145);
     width: 130px;
   }
+
+  .FilterWebsite-Container{
+    width: 100%;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    border-radius: 20px 20px 0 0;
+
+  }
+
   
   .FilterWebsite-Container>ul{
     display: flex;
@@ -1572,7 +1579,7 @@ html{
 
   .about-me{
     display: grid;
-    background-color: red;
+    /* background-color: red; */
     max-width: 65em;
     justify-self: center;
   }

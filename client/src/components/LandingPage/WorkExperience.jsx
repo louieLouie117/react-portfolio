@@ -188,26 +188,37 @@ if(e.target.id === "PizzeriaId"){
 
   return (
     <div >
-      <div className="projectsPage-container">
+      <div className="projectsPage-container" id='PageTop'>
       <nav className='FilterWebsite-Container'>
 
                   <ul>
                     <li>
+                      <a href="#PageTop">
                     <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                       style={{ 
                         color: FreeWebsiteBTN ? "White" : "#0080BF", 
                         background: FreeWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Free</button>
+                        </a>
                     </li>
 
-                    <li><button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
+                    <li>
+                    <a href="#PageTop">   
+                      <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
                     style={{ 
                     color: CustomerReviewBTN ? "White" : "#0080BF", 
-                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Customer Reviews</button></li>
+                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Customer Reviews</button>
+                    </a>
+                    </li>
 
-                    <li><button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
+                    <li>
+                    <a href="#PageTop">
+                      
+                      <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                     style={{ 
                     color: CustomWebsiteBTN ? "White" : "#0080BF", 
-                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Custom Website </button></li>
+                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Custom Website </button></a>
+                    
+                    </li>
 
 
                   </ul>
