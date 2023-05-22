@@ -6,6 +6,9 @@ const [ToolsGarageSally, setToolsGarageSally] = useState(false);
 const [ToolsTicketManagement, setToolsTicketManagement] = useState(false);
 const [ToolsDeltaSportsBar, setToolsDeltaSportsBar] = useState(false);
 const [ToolsJRlandscaping, setToolsJRlandscaping] = useState(false);
+const [ToolsIsmaelRealtor, setToolsIsmaelRealtor] = useState(false);
+
+
 const [PaceBuilders, setPaceBuilders] = useState(false);
 const [IbUpholstery, setIbUpholstery] = useState(false);
 const [WeedingLee, setWeedingLee] = useState(false);
@@ -24,10 +27,10 @@ const [CustomWebsiteBTN, setCustomWebsiteBTN ] = useState(false);
 const CouponCodeFreeWebsite = (e) =>{
  console.log(e.target.id)
  if(e.target.id === "FreeWebsite"){
-  alert("Please go to view details use code SAV1000 on to make this website free. Your website will be live in 24hr and includes hosting and maintenance." )
+  alert("Add Code SAV1000 ang get this website free. Your website will be live in 24hr and includes hosting and maintenance." )
  }
  if(e.target.id === "FreeDesign"){
-  alert("Please go to view details use code SAV500 on to get free website design. Your website will be ready in 3 business days and includes hosting and maintenance." )
+  alert("Add Code SAV500 to get free design. Your website will be ready in 3 business days and includes hosting and maintenance." )
  }
 
 }
@@ -45,7 +48,7 @@ const FilterBTNHandler =(e) =>{
   }
 
 
-  if(e.target.innerText === "Customer Reviews"){
+  if(e.target.innerText === "Portfolio"){
     setFreeWebsiteBTN(false)
     setCustomerReviewBTN(true)
     setCustomWebsiteBTN(false)
@@ -56,7 +59,7 @@ const FilterBTNHandler =(e) =>{
   }
 
 
-  if(e.target.innerText === "Custom Website"){
+  if(e.target.innerText === "Services"){
     setFreeWebsiteBTN(false)
     setCustomerReviewBTN(false)
     setCustomWebsiteBTN(true)
@@ -76,11 +79,25 @@ const ToolsTechnologiesHandler = (e)=>{
   console.log("Tools", e.target.innerText)
   console.log("Tools", e.target.id)
 
+  
+  if(e.target.id === "ToolsIsmaelRealtorId"){
+    if(e.target.innerText === "Close"){
+        setToolsIsmaelRealtor(false)
+        e.target.innerText = "Review Read"
+        return
+      }else{
+      setToolsIsmaelRealtor(true)
+      e.target.innerText = "Close"
+        return
+  }
+
+}
+
 
   if(e.target.id === "GarageSallyId"){
         if(e.target.innerText === "Close"){
             setToolsGarageSally(false)
-            e.target.innerText = "Tools and Technologies"
+            e.target.innerText = "Review Read"
             return
           }else{
           setToolsGarageSally(true)
@@ -93,7 +110,7 @@ const ToolsTechnologiesHandler = (e)=>{
     if(e.target.id === "TicketManagementId"){
       if(e.target.innerText === "Close"){
         setToolsTicketManagement(false)
-        e.target.innerText = "Tools and Technologies"
+        e.target.innerText = "Review Read"
         return
       }else{
       setToolsTicketManagement(true)
@@ -105,7 +122,7 @@ const ToolsTechnologiesHandler = (e)=>{
     if(e.target.id === "DeltaSportsBarId"){
       if(e.target.innerText === "Close"){
         setToolsDeltaSportsBar(false)
-        e.target.innerText = "Tools and Technologies"
+        e.target.innerText = "Review Read"
         return
       }else{
       setToolsDeltaSportsBar(true)
@@ -118,7 +135,7 @@ const ToolsTechnologiesHandler = (e)=>{
   if(e.target.id === "JRlandscapingId"){
     if(e.target.innerText === "Close"){
       setToolsJRlandscaping(false)
-      e.target.innerText = "Tools and Technologies"
+      e.target.innerText = "Review Read"
       return
     }else{
     setToolsJRlandscaping(true)
@@ -131,7 +148,7 @@ const ToolsTechnologiesHandler = (e)=>{
 if(e.target.id === "PaceBuildersId"){
   if(e.target.innerText === "Close"){
     setPaceBuilders(false)
-    e.target.innerText = "Tools and Technologies"
+    e.target.innerText = "Review Read"
     return
   }else{
   setPaceBuilders(true)
@@ -144,7 +161,7 @@ if(e.target.id === "PaceBuildersId"){
 if(e.target.id === "IbUpholsteryId"){
   if(e.target.innerText === "Close"){
     setIbUpholstery(false)
-    e.target.innerText = "Tools and Technologies"
+    e.target.innerText = "Review Read"
     return
   }else{
   setIbUpholstery(true)
@@ -157,7 +174,7 @@ if(e.target.id === "IbUpholsteryId"){
 if(e.target.id === "WeedingLeeId"){
   if(e.target.innerText === "Close"){
     setWeedingLee(false)
-    e.target.innerText = "Tools and Technologies"
+    e.target.innerText = "Review Read"
     return
   }else{
   setWeedingLee(true)
@@ -169,13 +186,16 @@ if(e.target.id === "WeedingLeeId"){
 if(e.target.id === "PizzeriaId"){
     if(e.target.innerText === "Close"){
       setPizzeria(false)
-      e.target.innerText = "Tools and Technologies"
+      e.target.innerText = "Review Read"
       return
     }else{
     setPizzeria(true)
     e.target.innerText = "Close"
       return
   }
+
+
+  
 }
 
 
@@ -206,7 +226,7 @@ if(e.target.id === "PizzeriaId"){
                       <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
                     style={{ 
                     color: CustomerReviewBTN ? "White" : "#0080BF", 
-                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Customer Reviews</button>
+                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Portfolio</button>
                     </a>
                     </li>
 
@@ -216,7 +236,7 @@ if(e.target.id === "PizzeriaId"){
                       <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                     style={{ 
                     color: CustomWebsiteBTN ? "White" : "#0080BF", 
-                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Custom Website </button></a>
+                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button></a>
                     
                     </li>
 
@@ -240,8 +260,8 @@ if(e.target.id === "PizzeriaId"){
                         <aside>
                             <h2>Website</h2>
                         </aside>
-                        <img src="img/projects/deltaSportsBar.png" alt=''/>
-                                      <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
+                        <img src="img/projects/SugaRay.png" alt=''/>
+                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
                                       <div id="icon-container">
                                                 <div><img src="/img/Icons/iconXD.png" alt=""/></div>
                                                 <p>Mockup UX/UI</p>
@@ -254,19 +274,119 @@ if(e.target.id === "PizzeriaId"){
                                             </div>
                                             
                                     <aside>
-                                        <a href="https://www.deltabarandgrill.com/">
+                                        <a href="https://www.ismaelbanuelosrealtor.com/">
                                           <button>Website</button>
                                         </a>
                                     </aside>
                                     </div>
                                     <footer>                                 
 
-                                    <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Tools and Technologies</button> 
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
 
                                 </footer>
                                                 
                           
                         </li>
+
+                        
+                    <li>
+
+                      <aside>
+                          <h2>Website</h2>
+                      </aside>
+                      <img src="img/projects/TheHookUp.png" alt=''/>
+                                    <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
+                                    <div id="icon-container">
+                                              <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                              <p>Mockup UX/UI</p>
+
+                                              <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                              <p>Responsive Layout</p>
+
+                                              <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                              <p>Behavior</p>
+                                          </div>
+                                          
+                                  <aside>
+                                      <a href="https://www.thesugarayssweettea.com/">
+                                        <button>Website</button>
+                                      </a>
+                                  </aside>
+                                  </div>
+                                  <footer>                                 
+
+                                  <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+
+                              </footer>
+                                              
+                        
+                      </li>
+
+                         <li>
+
+                        <aside>
+                            <h2>Website</h2>
+                        </aside>
+                        <img src="img/projects/IsmaelRealtor.png" alt=''/>
+                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
+                                      <div id="icon-container">
+                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                                <p>Mockup UX/UI</p>
+
+                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                                <p>Responsive Layout</p>
+
+                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                                <p>Behavior</p>
+                                            </div>
+                                            
+                                    <aside>
+                                        <a href="https://www.ismaelbanuelosrealtor.com/">
+                                          <button>Website</button>
+                                        </a>
+                                    </aside>
+                                    </div>
+                                    <footer>                                 
+
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+
+                                </footer>
+                                                
+                          
+                        </li>
+
+                        <li>
+
+                    <aside>
+                        <h2>Website</h2>
+                    </aside>
+                    <img src="img/projects/deltaSportsBar.png" alt=''/>
+                                  <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
+                                  <div id="icon-container">
+                                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                            <p>Mockup UX/UI</p>
+
+                                            <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                            <p>Responsive Layout</p>
+
+                                            <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                            <p>Behavior</p>
+                                        </div>
+                                        
+                                <aside>
+                                    <a href="https://www.deltabarandgrill.com/">
+                                      <button>Website</button>
+                                    </a>
+                                </aside>
+                                </div>
+                                <footer>                                 
+
+                                <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+
+                            </footer>
+                                            
+                      
+                    </li>
 
 
                         <li>
@@ -292,14 +412,45 @@ if(e.target.id === "PizzeriaId"){
                                   </div>
 
                                 <footer>                                                                          
-                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
+                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
                                 </footer>
                         </li>
 
                         
 
                       
-                  
+                        <li>
+
+                        <aside>
+                            <h2>Website</h2>
+                        </aside>
+                        <img src="img/projects/StMichealCardImg.png" alt=''/>
+                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
+                                      <div id="icon-container">
+                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
+                                                <p>Mockup UX/UI</p>
+
+                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
+                                                <p>Responsive Layout</p>
+
+                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
+                                                <p>Behavior</p>
+                                            </div>
+                                            
+                                    <aside>
+                                        <a href="https://www.ismaelbanuelosrealtor.com/">
+                                          <button>Website</button>
+                                        </a>
+                                    </aside>
+                                    </div>
+                                    <footer>                                 
+
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+
+                                </footer>
+                                                
+                          
+                        </li>
 
                    <li>
 
@@ -324,7 +475,7 @@ if(e.target.id === "PizzeriaId"){
                                   </div>
 
                                 <footer>                                                                          
-                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
+                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
                                 </footer>
                         </li>   
 
@@ -371,7 +522,7 @@ if(e.target.id === "PizzeriaId"){
 
                                 <footer>                                  
 
-                              <button id='GarageSallyId' onClick={ (e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button>
+                              <button id='GarageSallyId' onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Comming Soon</button>
                            
 
 
@@ -420,7 +571,7 @@ if(e.target.id === "PizzeriaId"){
                             
 
                             <footer>
-                              <button id="TicketManagementId" onClick={(e) => ToolsTechnologiesHandler(e)}>Tools and Technologies</button> 
+                              <button id="TicketManagementId" onClick={(e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
                             </footer>
                                             
                       
@@ -431,7 +582,12 @@ if(e.target.id === "PizzeriaId"){
                     <li></li>
                   </ul>
 
-                
+                <section className='AboutFree-Container' style={{display: FreeWebsites ? "grid" : "none"}}>
+
+                  <h2>About my free website designs.</h2>
+                  <p>All free websites are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
+                  </section>
+
 
                   <ul style={{display: FreeWebsites ? "flex" : "none"}}>    
 
@@ -530,9 +686,12 @@ if(e.target.id === "PizzeriaId"){
 
                                             
                   <section style={{display: FreeWebsites ? "flex" : "none"}}>
+                                        
 
                   <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
                   </section>
+
+
 
                   </div>
 
@@ -540,8 +699,8 @@ if(e.target.id === "PizzeriaId"){
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
 
                   <section className='AlignTop'>
-                    <h1>Having a website is crucial for any business in today’s digital age. </h1>
-                    <p>Get a custom website.</p>
+                    <h1>Having a unique website is crucial for any business in today’s digital age. </h1>
+                    <p>I can design, develop, and maintain your website.</p>
                     <a  href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
                     <button className='MainBTN' >View My Services</button>
                     </a>
