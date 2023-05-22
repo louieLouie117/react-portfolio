@@ -807,8 +807,6 @@ html{
   
   .myHeader-container{
     display: grid;
-    position: sticky;
-    top: 0;
     background: #2862AF;
     background: linear-gradient(to bottom, #00aecd, #136DC0 45%);
     /* background: linear-gradient(to bottom, #136DC0 60%, #00aecd); */
