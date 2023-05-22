@@ -85,21 +85,12 @@ const ContactMeHandler = e =>{
             
                 
                   </header>
+                  
   
                   <img id="PortfolioImg" src="/img/portfolioImg.png" alt="" />
                   </div>
 
-                    
-         
-
-                
-
-                    
-<footer>
-<h2>I help businesses in Montgomery TN get online.</h2>
-
-</footer>
-<div className='GridContainer'>
+                  <div className='GridContainer'>
                     {/* <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
                       <button>My Services</button>
                     </a> */}
@@ -107,6 +98,16 @@ const ContactMeHandler = e =>{
                     <button onClick={ContactMeHandler}>Contact me</button>
 
                     </div>
+         
+
+                
+
+                                  
+              <footer>
+              <h2>I help businesses in Montgomery TN get online.</h2>
+
+              </footer>
+
                 
 
 

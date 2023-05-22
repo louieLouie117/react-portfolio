@@ -167,8 +167,12 @@ html{
   
   .projectsPage-container{
     height: auto;
+    position: relative;
     border-radius: 10px;
     display: grid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-top: -20px;
     /* background: whitesmoke; */
     /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
 
@@ -800,6 +804,8 @@ html{
   
   .myHeader-container{
     display: grid;
+    position: sticky;
+    top: 0;
     background: #2862AF;
     background: linear-gradient(to bottom, #00aecd, #136DC0 45%);
     /* background: linear-gradient(to bottom, #136DC0 60%, #00aecd); */
@@ -1402,7 +1408,6 @@ html{
     font: 1em sans-serif;
     background-color: white;
     border-radius: 10px;
-    width: 25em;
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.435);
 
   }
