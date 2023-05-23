@@ -214,7 +214,7 @@ const FilterBTNHandler =(e) =>{
                    <li>
 
                        
-                        <img src="img/Portfolio/IbUpholsteryWebsite.png" alt=''/>
+                        <img src="img/Portfolio/IBUpholsteryWebsite.png" alt=''/>
                   
 
                                 <footer>                                                                          
