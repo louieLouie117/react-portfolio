@@ -9,10 +9,7 @@ const [ToolsJRlandscaping, setToolsJRlandscaping] = useState(false);
 const [ToolsIsmaelRealtor, setToolsIsmaelRealtor] = useState(false);
 
 
-const [PaceBuilders, setPaceBuilders] = useState(false);
 const [IbUpholstery, setIbUpholstery] = useState(false);
-const [WeedingLee, setWeedingLee] = useState(false);
-const [Pizzeria, setPizzeria] = useState(false);
 
 
 const [FreeWebsites, setFreeWebsites ] = useState(true);
@@ -145,17 +142,7 @@ const ToolsTechnologiesHandler = (e)=>{
 }
 
 
-if(e.target.id === "PaceBuildersId"){
-  if(e.target.innerText === "Close"){
-    setPaceBuilders(false)
-    e.target.innerText = "Review Read"
-    return
-  }else{
-  setPaceBuilders(true)
-  e.target.innerText = "Close"
-    return
-}
-}
+
 
 
 if(e.target.id === "IbUpholsteryId"){
@@ -171,32 +158,6 @@ if(e.target.id === "IbUpholsteryId"){
 }
 
 
-if(e.target.id === "WeedingLeeId"){
-  if(e.target.innerText === "Close"){
-    setWeedingLee(false)
-    e.target.innerText = "Review Read"
-    return
-  }else{
-  setWeedingLee(true)
-  e.target.innerText = "Close"
-    return
-}
-}
-
-if(e.target.id === "PizzeriaId"){
-    if(e.target.innerText === "Close"){
-      setPizzeria(false)
-      e.target.innerText = "Review Read"
-      return
-    }else{
-    setPizzeria(true)
-    e.target.innerText = "Close"
-      return
-  }
-
-
-  
-}
 
 
 
@@ -213,30 +174,30 @@ if(e.target.id === "PizzeriaId"){
 
                   <ul>
                     <li>
-                      <a href="#PageTop">
+                      
                     <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                       style={{ 
                         color: FreeWebsiteBTN ? "White" : "#0080BF", 
                         background: FreeWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Free</button>
-                        </a>
+                        
                     </li>
 
                     <li>
-                    <a href="#PageTop">   
+                       
                       <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
                     style={{ 
                     color: CustomerReviewBTN ? "White" : "#0080BF", 
                     background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Portfolio</button>
-                    </a>
+                    
                     </li>
 
                     <li>
-                    <a href="#PageTop">
+                    
                       
                       <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
                     style={{ 
                     color: CustomWebsiteBTN ? "White" : "#0080BF", 
-                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button></a>
+                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button>
                     
                     </li>
 
@@ -257,9 +218,7 @@ if(e.target.id === "PizzeriaId"){
 
                     <li>
 
-                        <aside>
-                            <h2>Website</h2>
-                        </aside>
+                        
                         <img src="img/projects/SugaRay.png" alt=''/>
                                       <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
                                       <div id="icon-container">
@@ -281,7 +240,7 @@ if(e.target.id === "PizzeriaId"){
                                     </div>
                                     <footer>                                 
 
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                                 </footer>
                                                 
@@ -291,9 +250,6 @@ if(e.target.id === "PizzeriaId"){
                         
                     <li>
 
-                      <aside>
-                          <h2>Website</h2>
-                      </aside>
                       <img src="img/projects/TheHookUp.png" alt=''/>
                                     <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
                                     <div id="icon-container">
@@ -315,7 +271,7 @@ if(e.target.id === "PizzeriaId"){
                                   </div>
                                   <footer>                                 
 
-                                  <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+                                  <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                               </footer>
                                               
@@ -324,9 +280,7 @@ if(e.target.id === "PizzeriaId"){
 
                          <li>
 
-                        <aside>
-                            <h2>Website</h2>
-                        </aside>
+                        
                         <img src="img/projects/IsmaelRealtor.png" alt=''/>
                                       <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
                                       <div id="icon-container">
@@ -348,7 +302,7 @@ if(e.target.id === "PizzeriaId"){
                                     </div>
                                     <footer>                                 
 
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                                 </footer>
                                                 
@@ -357,9 +311,7 @@ if(e.target.id === "PizzeriaId"){
 
                         <li>
 
-                    <aside>
-                        <h2>Website</h2>
-                    </aside>
+                   
                     <img src="img/projects/deltaSportsBar.png" alt=''/>
                                   <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
                                   <div id="icon-container">
@@ -381,7 +333,7 @@ if(e.target.id === "PizzeriaId"){
                                 </div>
                                 <footer>                                 
 
-                                <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+                                <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                             </footer>
                                             
@@ -391,9 +343,7 @@ if(e.target.id === "PizzeriaId"){
 
                         <li>
 
-                        <aside>
-                        <h2>Website</h2>
-                        </aside>
+                     
                         <img src="img/projects/jrlandScaping.png" alt=''/>
                         <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
                           <div id="icon-container">
@@ -412,7 +362,7 @@ if(e.target.id === "PizzeriaId"){
                                   </div>
 
                                 <footer>                                                                          
-                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
+                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Visit</button> 
                                 </footer>
                         </li>
 
@@ -421,9 +371,7 @@ if(e.target.id === "PizzeriaId"){
                       
                         <li>
 
-                        <aside>
-                            <h2>Website</h2>
-                        </aside>
+                        
                         <img src="img/projects/StMichealCardImg.png" alt=''/>
                                       <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
                                       <div id="icon-container">
@@ -445,7 +393,7 @@ if(e.target.id === "PizzeriaId"){
                                     </div>
                                     <footer>                                 
 
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Review Coming Soon</button> 
+                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                                 </footer>
                                                 
@@ -454,9 +402,7 @@ if(e.target.id === "PizzeriaId"){
 
                    <li>
 
-                        <aside>
-                        <h2>Website</h2>
-                        </aside>
+                       
                         <img src="img/projects/IbUpholstery.png" alt=''/>
                         <div className="tools-container" style={{ display: IbUpholstery ? "grid" : "none"}}>
                           <div id="icon-container">
@@ -475,14 +421,12 @@ if(e.target.id === "PizzeriaId"){
                                   </div>
 
                                 <footer>                                                                          
-                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
+                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Visit</button> 
                                 </footer>
                         </li>   
 
                          <li>
-                            <header>
-                              <h2>Application</h2>
-                            </header>
+                         
                             <img src="img/projects/garageSally.png" alt=''/>
 
                                   <div  className="tools-container" style={{ display: ToolsGarageSally ? "grid" : "none"}}>
@@ -531,9 +475,7 @@ if(e.target.id === "PizzeriaId"){
                     </li>
 
                     <li>
-                      <aside>
-                        <h2>Application</h2>
-                      </aside>
+                   
 
                       <img src="img/projects/progresslyPage.png" alt=''/>
                       <div  className="tools-container" style={{ display: ToolsTicketManagement ? "grid" : "none"}}>                         
@@ -571,7 +513,7 @@ if(e.target.id === "PizzeriaId"){
                             
 
                             <footer>
-                              <button id="TicketManagementId" onClick={(e) => ToolsTechnologiesHandler(e)}>Review Coming Soon</button> 
+                              <button id="TicketManagementId" onClick={(e) => ToolsTechnologiesHandler(e)}>Visit</button> 
                             </footer>
                                             
                       
@@ -584,38 +526,18 @@ if(e.target.id === "PizzeriaId"){
 
                 <section className='AboutFree-Container' style={{display: FreeWebsites ? "grid" : "none"}}>
 
-                  <h2>About my free website designs.</h2>
-                  <p>All free websites are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
+                  <h2>About my free website and free designs.</h2>
+                  <p>All free websites or designs are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
                   </section>
 
 
                   <ul style={{display: FreeWebsites ? "flex" : "none"}}>    
 
                         <li>
-
                       
-                        <img src="img/projects/paceBuilders.png" alt=''/>
-                        <aside>
-                        <h2>Free Website</h2>
-
-
-                        </aside>
-                        <div className="tools-container" style={{ display: PaceBuilders ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                <p>Responsive Layout</p>
-                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                <p>Behavior</p>
-                            </div>
-                            <aside>
-                              <a href="https://icy-flower-0ac939810.1.azurestaticapps.net/">
-                                  <button>Website</button>
-                              </a>
-                            </aside>
-                                    
-                                  </div>
+                        <img src="img/FreeWebsites/FreeWebsite1.png" alt=''/>
+                   
+                 
 
                                 <footer className="FreeBTN-Container">   
                                     <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
@@ -630,17 +552,9 @@ if(e.target.id === "PizzeriaId"){
 
                       <li>
 
-                        <aside>
-                        <h2>Free Design</h2>
-                        </aside>
-                        <img src="img/projects/WeddingLee.png" alt=''/>
-                        <div className="tools-container" style={{ display: WeedingLee ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                            <p>Mockup UX/UI</p>
-                            </div>
-                                 
-                                  </div>
+                     
+                        <img src="img/FreeWebsites/FreeWebsite2.png" alt=''/>
+                       
 
                                   <footer className="FreeBTN-Container">   
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
@@ -655,19 +569,9 @@ if(e.target.id === "PizzeriaId"){
                       <li>
 
                        
-                        <img src="img/projects/Pizzeria.png" alt=''/>
-                        <div className="tools-container" style={{ display: Pizzeria ? "grid" : "none"}}>
-                              <div id="icon-container">
-                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                  
-                              </div>
-                                    
-                        </div>
+                        <img src="img/FreeWebsites/FreeWebsite3.png" alt=''/>
+                        
 
-                        <aside>
-                        <h2>Free Design</h2>
-                        </aside>
 
                         <footer className="FreeBTN-Container">   
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
@@ -699,7 +603,7 @@ if(e.target.id === "PizzeriaId"){
                   <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
 
                   <section className='AlignTop'>
-                    <h1>Having a unique website is crucial for any business in today’s digital age. </h1>
+                    <h1>Having a website is crucial for any business in today’s digital age. </h1>
                     <p>I can design, develop, and maintain your website.</p>
                     <a  href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
                     <button className='MainBTN' >View My Services</button>
