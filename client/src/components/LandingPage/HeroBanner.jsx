@@ -87,7 +87,7 @@ const ContactMeHandler = e =>{
                   </header>
                   
   
-                  <img id="PortfolioImg" src="/img/portfolioImg.png" alt="" />
+                  <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
 
                   <div className='GridContainer'>
