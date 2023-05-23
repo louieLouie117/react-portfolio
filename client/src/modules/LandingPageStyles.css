@@ -1360,6 +1360,7 @@ html{
     /* position: sticky;
     top: 0; */
     border-radius: 20px 20px 0 0;
+ 
 
   }
 
@@ -1563,10 +1564,14 @@ html{
   
   
   
-  @media screen and (width: 375px) {
+  @media screen and (max-width: 375px) {
     .myHeader-container{
       display: grid;
     }
+
+    /* .cardItems>ul>li>img{
+      height: 500px;
+    } */
   
       
     }
