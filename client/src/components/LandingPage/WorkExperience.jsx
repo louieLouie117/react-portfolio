@@ -2,14 +2,6 @@ import React, {useState} from 'react'
 
 function WorkExperience(props) {
 
-const [ToolsGarageSally, setToolsGarageSally] = useState(false);
-const [ToolsTicketManagement, setToolsTicketManagement] = useState(false);
-const [ToolsDeltaSportsBar, setToolsDeltaSportsBar] = useState(false);
-const [ToolsJRlandscaping, setToolsJRlandscaping] = useState(false);
-const [ToolsIsmaelRealtor, setToolsIsmaelRealtor] = useState(false);
-
-
-const [IbUpholstery, setIbUpholstery] = useState(false);
 
 
 const [FreeWebsites, setFreeWebsites ] = useState(true);
@@ -72,99 +64,6 @@ const FilterBTNHandler =(e) =>{
 
 
 
-const ToolsTechnologiesHandler = (e)=>{
-  console.log("Tools", e.target.innerText)
-  console.log("Tools", e.target.id)
-
-  
-  if(e.target.id === "ToolsIsmaelRealtorId"){
-    if(e.target.innerText === "Close"){
-        setToolsIsmaelRealtor(false)
-        e.target.innerText = "Review Read"
-        return
-      }else{
-      setToolsIsmaelRealtor(true)
-      e.target.innerText = "Close"
-        return
-  }
-
-}
-
-
-  if(e.target.id === "GarageSallyId"){
-        if(e.target.innerText === "Close"){
-            setToolsGarageSally(false)
-            e.target.innerText = "Review Read"
-            return
-          }else{
-          setToolsGarageSally(true)
-          e.target.innerText = "Close"
-            return
-      }
-
-    }
-
-    if(e.target.id === "TicketManagementId"){
-      if(e.target.innerText === "Close"){
-        setToolsTicketManagement(false)
-        e.target.innerText = "Review Read"
-        return
-      }else{
-      setToolsTicketManagement(true)
-      e.target.innerText = "Close"
-        return
-    }
-  }
-
-    if(e.target.id === "DeltaSportsBarId"){
-      if(e.target.innerText === "Close"){
-        setToolsDeltaSportsBar(false)
-        e.target.innerText = "Review Read"
-        return
-      }else{
-      setToolsDeltaSportsBar(true)
-      e.target.innerText = "Close"
-        return
-    }
-  }
-
-
-  if(e.target.id === "JRlandscapingId"){
-    if(e.target.innerText === "Close"){
-      setToolsJRlandscaping(false)
-      e.target.innerText = "Review Read"
-      return
-    }else{
-    setToolsJRlandscaping(true)
-    e.target.innerText = "Close"
-      return
-  }
-}
-
-
-
-
-
-if(e.target.id === "IbUpholsteryId"){
-  if(e.target.innerText === "Close"){
-    setIbUpholstery(false)
-    e.target.innerText = "Review Read"
-    return
-  }else{
-  setIbUpholstery(true)
-  e.target.innerText = "Close"
-    return
-}
-}
-
-
-
-
-
-
-
-}
-
   
 
   return (
@@ -173,6 +72,16 @@ if(e.target.id === "IbUpholsteryId"){
       <nav className='FilterWebsite-Container'>
 
                   <ul>
+
+                  <li>
+                    
+                      
+                    <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
+                  style={{ 
+                  color: CustomWebsiteBTN ? "White" : "#0080BF", 
+                  background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button>
+                  
+                  </li>
                     <li>
                       
                     <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
@@ -191,15 +100,7 @@ if(e.target.id === "IbUpholsteryId"){
                     
                     </li>
 
-                    <li>
-                    
-                      
-                      <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
-                    style={{ 
-                    color: CustomWebsiteBTN ? "White" : "#0080BF", 
-                    background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button>
-                    
-                    </li>
+               
 
 
                   </ul>
@@ -359,7 +260,7 @@ if(e.target.id === "IbUpholsteryId"){
                 <section className='AboutFree-Container' style={{display: FreeWebsites ? "grid" : "none"}}>
 
                   <h2>About my free website and free designs.</h2>
-                  <p>All free websites or designs are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
+                  <p>I design a website every month. All free websites or designs are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
                   </section>
 
 
