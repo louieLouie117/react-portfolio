@@ -89,6 +89,10 @@ const ContactMeHandler = e =>{
   
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
+                  <footer>
+                  <h2>I help businesses in Montgomery TN get online.</h2>
+
+                  </footer>
 
                   <div className='GridContainer'>
                     {/* <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
@@ -103,10 +107,7 @@ const ContactMeHandler = e =>{
                 
 
                                   
-              <footer>
-              <h2>I help businesses in Montgomery TN get online.</h2>
-
-              </footer>
+             
 
                 
 
