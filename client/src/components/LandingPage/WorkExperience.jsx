@@ -219,30 +219,13 @@ if(e.target.id === "IbUpholsteryId"){
                     <li>
 
                         
-                        <img src="img/projects/SugaRay.png" alt=''/>
-                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
-                                      <div id="icon-container">
-                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                                <p>Mockup UX/UI</p>
-
-                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                                <p>Responsive Layout</p>
-
-                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                                <p>Behavior</p>
-                                            </div>
-                                            
-                                    <aside>
-                                        <a href="https://www.ismaelbanuelosrealtor.com/">
-                                          <button>Website</button>
-                                        </a>
-                                    </aside>
-                                    </div>
-                                    <footer>                                 
-
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
-
-                                </footer>
+                        <img src="img/Portfolio/SugarRayWebsite.png" alt=''/>
+                                     
+                                    <footer className='CardFooter-Container'>                                 
+                                  <a href="https://www.thesugarayssweettea.com/">
+                                    <button>Visit</button> 
+                                    </a>
+                                    </footer>
                                                 
                           
                         </li>
@@ -250,28 +233,13 @@ if(e.target.id === "IbUpholsteryId"){
                         
                     <li>
 
-                      <img src="img/projects/TheHookUp.png" alt=''/>
-                                    <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
-                                    <div id="icon-container">
-                                              <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                              <p>Mockup UX/UI</p>
+                      <img src="img/Portfolio/TheHookUpWebsite.png" alt=''/>
+                                  
+                                  <footer className='CardFooter-Container'>                                 
 
-                                              <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                              <p>Responsive Layout</p>
-
-                                              <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                              <p>Behavior</p>
-                                          </div>
-                                          
-                                  <aside>
-                                      <a href="https://www.thesugarayssweettea.com/">
-                                        <button>Website</button>
-                                      </a>
-                                  </aside>
-                                  </div>
-                                  <footer>                                 
-
-                                  <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
+                                  <a href="https://www.thehookup671islandbbq.com/">
+                                  <button>Visit</button> 
+                                  </a>
 
                               </footer>
                                               
@@ -281,29 +249,13 @@ if(e.target.id === "IbUpholsteryId"){
                          <li>
 
                         
-                        <img src="img/projects/IsmaelRealtor.png" alt=''/>
-                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
-                                      <div id="icon-container">
-                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                                <p>Mockup UX/UI</p>
-
-                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                                <p>Responsive Layout</p>
-
-                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                                <p>Behavior</p>
-                                            </div>
-                                            
-                                    <aside>
-                                        <a href="https://www.ismaelbanuelosrealtor.com/">
-                                          <button>Website</button>
+                        <img src="img/Portfolio/IsmaelRealtorWebsite.png" alt=''/>
+                     
+                                    <footer className='CardFooter-Container'>                                 
+                                    <a href="https://www.ismaelbanuelosrealtor.com/">
+                                          <button>Visit</button>
                                         </a>
-                                    </aside>
-                                    </div>
-                                    <footer>                                 
-
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
-
+                               
                                 </footer>
                                                 
                           
@@ -312,28 +264,13 @@ if(e.target.id === "IbUpholsteryId"){
                         <li>
 
                    
-                    <img src="img/projects/deltaSportsBar.png" alt=''/>
-                                  <div className="tools-container"  style={{ display: ToolsDeltaSportsBar ? "grid" : "none"}}>
-                                  <div id="icon-container">
-                                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                            <p>Mockup UX/UI</p>
+                    <img src="img/Portfolio/DeltaWebsite.png" alt=''/>
+                           
+                                <footer className='CardFooter-Container'>                                 
 
-                                            <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                            <p>Responsive Layout</p>
-
-                                            <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                            <p>Behavior</p>
-                                        </div>
-                                        
-                                <aside>
-                                    <a href="https://www.deltabarandgrill.com/">
+                                <a href="https://www.deltabarandgrill.com/">
                                       <button>Website</button>
                                     </a>
-                                </aside>
-                                </div>
-                                <footer>                                 
-
-                                <button id="DeltaSportsBarId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                             </footer>
                                             
@@ -344,26 +281,14 @@ if(e.target.id === "IbUpholsteryId"){
                         <li>
 
                      
-                        <img src="img/projects/jrlandScaping.png" alt=''/>
-                        <div className="tools-container" style={{ display: ToolsJRlandscaping ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                <p>Responsive Layout</p>
-                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                <p>Behavior</p>
-                            </div>
-                            <aside>
-                              <a href="https://www.jrprolandscaping.com/">
+                        <img src="img/Portfolio/JRLandscapingWebsite.png" alt=''/>
+                     
+
+                            <footer className='CardFooter-Container'>                                                                          
+                                <a href="https://www.jrprolandscaping.com/">
                                   <button>Website</button>
                               </a>
-                            </aside>
-                                  </div>
-
-                                <footer>                                                                          
-                                    <button id="JRlandscapingId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Visit</button> 
-                                </footer>
+                            </footer>
                         </li>
 
                         
@@ -372,28 +297,13 @@ if(e.target.id === "IbUpholsteryId"){
                         <li>
 
                         
-                        <img src="img/projects/StMichealCardImg.png" alt=''/>
-                                      <div className="tools-container"  style={{ display: ToolsIsmaelRealtor ? "grid" : "none"}}>
-                                      <div id="icon-container">
-                                                <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                                <p>Mockup UX/UI</p>
+                        <img src="img/Portfolio/StMichealWebsite.png" alt=''/>
+                        
+                                    <footer className='CardFooter-Container'>                                 
 
-                                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                                <p>Responsive Layout</p>
-
-                                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                                <p>Behavior</p>
-                                            </div>
-                                            
-                                    <aside>
-                                        <a href="https://www.ismaelbanuelosrealtor.com/">
+                                    <a href="https://www.stmichaeloakgrove.com/">
                                           <button>Website</button>
                                         </a>
-                                    </aside>
-                                    </div>
-                                    <footer>                                 
-
-                                    <button id="ToolsIsmaelRealtorId" onClick={ (e) => ToolsTechnologiesHandler(e)} >Visit</button> 
 
                                 </footer>
                                                 
@@ -403,71 +313,24 @@ if(e.target.id === "IbUpholsteryId"){
                    <li>
 
                        
-                        <img src="img/projects/IbUpholstery.png" alt=''/>
-                        <div className="tools-container" style={{ display: IbUpholstery ? "grid" : "none"}}>
-                          <div id="icon-container">
-                            <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                <p>Mockup UX/UI</p>
-                                <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                <p>Responsive Layout</p>
-                                <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                <p>Behavior</p>
-                            </div>
-                                <aside>
+                        <img src="img/Portfolio/IbUpholsteryWebsite.png" alt=''/>
+                  
+
+                                <footer>                                                                          
                                 <a href="https://www.ibupholstery.com/">
                                   <button>Website</button>
                               </a>
-                                </aside>
-                                  </div>
-
-                                <footer>                                                                          
-                                    <button id="IbUpholsteryId" onClick={ (e) => ToolsTechnologiesHandler(e)}>Visit</button> 
                                 </footer>
                         </li>   
 
                          <li>
                          
-                            <img src="img/projects/garageSally.png" alt=''/>
+                            <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
 
-                                  <div  className="tools-container" style={{ display: ToolsGarageSally ? "grid" : "none"}}>
-                                    <div id="icon-container">
-
-                                        <div><img  src="/img/Icons/iconXD.png" alt="test"/></div>
-                                        <p>Mockup UX/UI</p>
-                                        <div><img  src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                        <p>Responsive Layout</p>
-
-                                        <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                        <p>Behavior</p>
-
-                                        <div><img  src="/img/Icons/iconCSharp.png" alt=""/></div>
-                                        <p>Backend Logic</p>
-
-                                        <div><img  src="/img/Icons/iconNet.png" alt=""/></div>
-                                        <p>Framework</p>
-                                        
-                                        <div><img  src="/img/Icons/iconMySql.png" alt=""/></div>
-                                        <p>Date Base</p>   
-                                    </div>
-
-                                  <aside>
-                                    <a href="https://github.com/louieLouie117/GarageSally">
-                                  <button>GitHub</button>
-                                  </a>
-
-                                  <a href="https://garagesallyapp.com/">
+                                <footer className='CardFooter-Container'>                                  
+                                <a href="https://garagesallyapp.com/">
                                   <button>Website</button>
                                   </a>
-                                 
-                                </aside>
-
-                                </div>
-                             
-
-                                <footer>                                  
-
-                              <button id='GarageSallyId' onClick={ (e) => ToolsTechnologiesHandler(e)}>Review Comming Soon</button>
-                           
 
 
 
@@ -477,43 +340,12 @@ if(e.target.id === "IbUpholsteryId"){
                     <li>
                    
 
-                      <img src="img/projects/progresslyPage.png" alt=''/>
-                      <div  className="tools-container" style={{ display: ToolsTicketManagement ? "grid" : "none"}}>                         
-                                    <div id="icon-container">
-
-                                        <div><img src="/img/Icons/iconXD.png" alt=""/></div>
-                                        <p>Mockup UI</p>
-
-                                        <div><img src="/img/Icons/iconHtmlCss.png" alt=""/></div>
-                                        <p>Responsive Layout</p>
-
-                                        <div><img src="/img/Icons/iconJavaScript.png" alt=""/></div>
-                                        <p>Behavior</p>
-
-                                        <div><img src="/img/Icons/iconCSharp.png" alt=""/></div>
-                                        <p>Backend Logic</p>
-
-                                        <div><img src="/img/Icons/iconNet.png" alt=""/></div>
-                                        <p>Framework</p>
-                                        
-                                        <div><img src="/img/Icons/iconMySql.png" alt=""/></div>
-                                        <p>Date Base</p>   
-                                    </div>
-                                <aside>
-                                <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
-                                  <button>GitHub</button>
+                      <img src="img/Portfolio/JournalPocketWebsite.png" alt=''/>
+                            <footer className='CardFooter-Container'>
+                            <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
+                                  <button>Coming Soon</button>
                                   </a>
 
-                                  {/* <a href="https://www.deltabarandgrill.com/">
-                                  <button>Website</button>
-                                  </a> */}
-                                  
-                                </aside>
-                                </div>
-                            
-
-                            <footer>
-                              <button id="TicketManagementId" onClick={(e) => ToolsTechnologiesHandler(e)}>Visit</button> 
                             </footer>
                                             
                       
@@ -539,7 +371,7 @@ if(e.target.id === "IbUpholsteryId"){
                    
                  
 
-                                <footer className="FreeBTN-Container">   
+                                <footer className="CardFooter-Container">   
                                     <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeWebsite'>Get Website</button> 
                                     </a>
@@ -556,7 +388,7 @@ if(e.target.id === "IbUpholsteryId"){
                         <img src="img/FreeWebsites/FreeWebsite2.png" alt=''/>
                        
 
-                                  <footer className="FreeBTN-Container">   
+                                  <footer className="CardFooter-Container">   
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button  onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeDesign'>Get Website</button> 
                                     </a>
@@ -573,7 +405,7 @@ if(e.target.id === "IbUpholsteryId"){
                         
 
 
-                        <footer className="FreeBTN-Container">   
+                        <footer className="CardFooter-Container">   
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
                                     </a>

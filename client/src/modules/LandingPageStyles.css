@@ -302,7 +302,7 @@ html{
     grid-column: 1/2; */
     /* background-image: cover; */
     border-radius: 12px 12px 0 0;
-    width: 290px;
+    width: 270px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.74);
     justify-content: center;
     height: 550px;
@@ -568,12 +568,7 @@ html{
   
   
     }
-  
-    .projectsPage-container img {
-      width: 110px;
-      justify-self: left;
-    }
-  
+   
   
   
     
@@ -1349,7 +1344,7 @@ html{
   }
 
 
-  .FreeBTN-Container>a>button{
+  .CardFooter-Container>a>button{
     background: rgb(236, 236, 236);
     color: black;
     height: 35px;
@@ -1411,8 +1406,8 @@ html{
     row-gap: 10px;
   }
 
-  .CustomWebsite-Container>img{
-    width: 100%;
+  .CustomWebsite-Container>picture>img{
+    width: 90%;
     
   }
 
