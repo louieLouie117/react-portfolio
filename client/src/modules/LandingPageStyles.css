@@ -182,6 +182,7 @@ html{
     margin-top: -20px;
     /* background: whitesmoke; */
     /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
+    box-shadow:  0 -10px 10px rgba(0, 0, 0, 0.104);
 
   }
   
@@ -251,15 +252,15 @@ html{
   
   
   .projectsPage-container>main>img{
-    width: 100%;
-    height: 450px;
+    width: auto;
+    height: 650px;
   }
   
   /* card items project container-------------------------------------------------- */
   
   .cardItems {
-    grid-row: 1/2;
-    grid-column: 1/2;
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
     display: grid;
     margin: 0;
     padding: 0;
@@ -289,17 +290,28 @@ html{
   
   .cardItems>ul>li {
     display: grid;
-    grid-template-columns: 300px;
-    /* grid-template-rows: 60px 1fr 60px; */
-    background: white;
     margin-left: 30px;
     border-radius: 15px;
     margin-top: 10px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.20);
-    justify-content: center;
-    height: 450px;
     
   }   
+    
+  
+  .cardItems>ul>li>img{
+    /* grid-row: 2/3;
+    grid-column: 1/2; */
+    /* background-image: cover; */
+    border-radius: 12px 12px 0 0;
+    width: 270px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.74);
+    justify-content: center;
+    height: 550px;
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: white;
+
+    
+  }
   
   @media screen and (min-width: 1200px){
  
@@ -336,15 +348,7 @@ html{
   }
   
   
-  
-  
-  .cardItems>ul>li>img{
-    grid-row: 2/3;
-    grid-column: 1/2;
-    /* background-image: cover; */
-    height: 300px;
-    
-  }
+
   
   
   
@@ -352,7 +356,7 @@ html{
   
   .cardItems footer {
     column-gap: 10px;
-    align-self: center;
+    align-self: flex-end;
     /* box-shadow: 0px -7px 5px rgba(0, 0, 0, 0.137); */
     padding: 10px;
   }
@@ -564,17 +568,8 @@ html{
   
   
     }
+   
   
-    .projectsPage-container img {
-      width: 110px;
-      justify-self: left;
-    }
-  
-  
-    .projectsPage-container main img{
-      width: 100%;
-      height: 95%;
-    }
   
     
     .mainNav-container{
@@ -1322,6 +1317,7 @@ html{
     box-shadow:  0 0 5px rgba(128, 128, 128, 0.562);
     text-align: center;
     align-items: center;
+    border-radius: 10px;
     margin: 10px;
     /* z-index: 1; */
   }
@@ -1348,7 +1344,7 @@ html{
   }
 
 
-  .FreeBTN-Container>a>button{
+  .CardFooter-Container>a>button{
     background: rgb(236, 236, 236);
     color: black;
     height: 35px;
@@ -1361,8 +1357,8 @@ html{
   .FilterWebsite-Container{
     width: 100%;
     background-color: whitesmoke;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     border-radius: 20px 20px 0 0;
 
   }
@@ -1410,8 +1406,8 @@ html{
     row-gap: 10px;
   }
 
-  .CustomWebsite-Container>img{
-    width: 100%;
+  .CustomWebsite-Container>picture>img{
+    width: 90%;
     
   }
 
