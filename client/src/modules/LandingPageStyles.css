@@ -11,7 +11,7 @@ html{
 
   .GridContainer{
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
 
@@ -819,6 +819,7 @@ html{
     justify-items: center;
     row-gap: 20px;
     padding-top: 50px;
+    padding-bottom: 10px;
   }
 
   .myHeader-container>header>footer>h2{
@@ -832,6 +833,7 @@ html{
     color: white;
   }
 
+
   .myHeader-container>header button{
     border: none;
     padding: 10px;
@@ -839,8 +841,7 @@ html{
     height: 40px;
     font: 1.1em sans-serif;
     color: #0080BF;
-    width: 310px;
-    margin: 5px 40px;
+    margin-left: 5px;
 
   }
 
@@ -1105,7 +1106,8 @@ html{
   .name-container img{
     border: solid 2px whitesmoke;
     border-radius: 80px;
-    height: 115px;
+    height: 95px;
+    align-self: center;
   }
   
   
@@ -1490,6 +1492,10 @@ html{
   
       display: flex;
        
+    }
+
+    .GridContainer{
+      justify-content: center;
     }
     
   
