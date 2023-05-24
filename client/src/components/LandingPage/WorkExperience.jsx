@@ -169,7 +169,7 @@ const FilterBTNHandler =(e) =>{
                            
                                 <footer className='CardFooter-Container'>                                 
 
-                                <a href="https://www.deltabarandgrill.com/">
+                                <a href="https://www.deltasportsbar.com/">
                                       <button>Website</button>
                                     </a>
 
@@ -310,7 +310,7 @@ const FilterBTNHandler =(e) =>{
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
                                     <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
                                     </a>
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                                    <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
 
                                 </footer>
                         </li>
