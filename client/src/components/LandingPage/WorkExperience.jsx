@@ -47,7 +47,7 @@ function WorkExperience(props) {
                     <li>
                    
 
-                      <img src="img/Portfolio/JournalPocketWebsite.png" alt=''/>
+                      <img src="img/Portfolio/JournalPocketApp.png" alt=''/>
                             <footer className='CardFooter-Container'>
                             <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
                                   <button>Coming Soon</button>
