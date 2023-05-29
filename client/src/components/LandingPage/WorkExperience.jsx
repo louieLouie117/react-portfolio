@@ -1,64 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function WorkExperience(props) {
 
-
-
-const [FreeWebsites, setFreeWebsites ] = useState(true);
-const [CustomerWebsite, setCustomerWebsite ] = useState(false);
-const [CustomWebsite, setCustomWebsite ] = useState(false);
-
-
-const [FreeWebsiteBTN, setFreeWebsiteBTN ] = useState(true);
-const [CustomerReviewBTN, setCustomerReviewBTN  ] = useState(false);
-const [CustomWebsiteBTN, setCustomWebsiteBTN ] = useState(false);
-
-const CouponCodeFreeWebsite = (e) =>{
- console.log(e.target.id)
- if(e.target.id === "FreeWebsite"){
-  alert("Add Code SAV1000 ang get this website free. Your website will be live in 24hr and includes hosting and maintenance." )
- }
- if(e.target.id === "FreeDesign"){
-  alert("Add Code SAV500 to get free design. Your website will be ready in 3 business days and includes hosting and maintenance." )
- }
-
-}
-
-const FilterBTNHandler =(e) =>{
-  console.log(e)
-  if(e.target.innerText === "Free"){
-    setFreeWebsiteBTN(true)
-    setCustomerReviewBTN(false)
-    setCustomWebsiteBTN(false)
-
-    setFreeWebsites(true)
-    setCustomerWebsite(false)
-    setCustomWebsite(false)
-  }
-
-
-  if(e.target.innerText === "Portfolio"){
-    setFreeWebsiteBTN(false)
-    setCustomerReviewBTN(true)
-    setCustomWebsiteBTN(false)
-
-    setFreeWebsites(false)
-    setCustomerWebsite(true)
-    setCustomWebsite(false)
-  }
-
-
-  if(e.target.innerText === "Services"){
-    setFreeWebsiteBTN(false)
-    setCustomerReviewBTN(false)
-    setCustomWebsiteBTN(true)
-
-    setFreeWebsites(false)
-    setCustomerWebsite(false)
-    setCustomWebsite(true)
-  }
-
-}
 
 
 
@@ -71,39 +14,7 @@ const FilterBTNHandler =(e) =>{
       <div className="projectsPage-container" id='PageTop'>
       <nav className='FilterWebsite-Container'>
 
-                  <ul>
-
-                  <li>
-                    
-                      
-                    <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
-                  style={{ 
-                  color: CustomWebsiteBTN ? "White" : "#0080BF", 
-                  background: CustomWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Services</button>
-                  
-                  </li>
-                    <li>
-                      
-                    <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN' 
-                      style={{ 
-                        color: FreeWebsiteBTN ? "White" : "#0080BF", 
-                        background: FreeWebsiteBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}}>Free</button>
-                        
-                    </li>
-
-                    <li>
-                       
-                      <button onClick={(e) => FilterBTNHandler(e)} className='FilterBTN'
-                    style={{ 
-                    color: CustomerReviewBTN ? "White" : "#0080BF", 
-                    background: CustomerReviewBTN ? "linear-gradient(to bottom, #00aecd, #136DC0 45%)" : "whitesmoke"}} >Portfolio</button>
-                    
-                    </li>
-
-               
-
-
-                  </ul>
+                 
                 </nav>
         <main>
                 {/* <picture class="headerImage-container">
@@ -114,8 +25,39 @@ const FilterBTNHandler =(e) =>{
                
         
         <div className="cardItems">
+
+          <h1>My Portfolio</h1>
           
-                  <ul style={{display: CustomerWebsite ? "flex" : "none"}}>              
+                  <ul>   
+
+                      <li>
+                         
+                            <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
+
+                                <footer className='CardFooter-Container'>                                  
+                                <a href="https://garagesallyapp.com/">
+                                  <button>View</button>
+                                  </a>
+
+
+
+                            </footer>
+                    </li>
+
+                    <li>
+                   
+
+                      <img src="img/Portfolio/JournalPocketApp.png" alt=''/>
+                            <footer className='CardFooter-Container'>
+                            <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
+                                  <button>Coming Soon</button>
+                                  </a>
+
+                            </footer>
+                                            
+                      
+                    </li>
+                        
 
                     <li>
 
@@ -124,7 +66,7 @@ const FilterBTNHandler =(e) =>{
                                      
                                     <footer className='CardFooter-Container'>                                 
                                   <a href="https://www.thesugarayssweettea.com/">
-                                    <button>Visit</button> 
+                                    <button>View</button> 
                                     </a>
                                     </footer>
                                                 
@@ -139,7 +81,7 @@ const FilterBTNHandler =(e) =>{
                                   <footer className='CardFooter-Container'>                                 
 
                                   <a href="https://www.thehookup671islandbbq.com/">
-                                  <button>Visit</button> 
+                                  <button>View</button> 
                                   </a>
 
                               </footer>
@@ -170,7 +112,7 @@ const FilterBTNHandler =(e) =>{
                                 <footer className='CardFooter-Container'>                                 
 
                                 <a href="https://www.deltasportsbar.com/">
-                                      <button>Website</button>
+                                      <button>View</button>
                                     </a>
 
                             </footer>
@@ -187,7 +129,7 @@ const FilterBTNHandler =(e) =>{
 
                             <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.jrprolandscaping.com/">
-                                  <button>Website</button>
+                                  <button>View</button>
                               </a>
                             </footer>
                         </li>
@@ -203,7 +145,7 @@ const FilterBTNHandler =(e) =>{
                                     <footer className='CardFooter-Container'>                                 
 
                                     <a href="https://www.stmichaeloakgrove.com/">
-                                          <button>Website</button>
+                                          <button>View</button>
                                         </a>
 
                                 </footer>
@@ -217,123 +159,79 @@ const FilterBTNHandler =(e) =>{
                         <img src="img/Portfolio/IBUpholsteryWebsite.png" alt=''/>
                   
 
-                                <footer>                                                                          
+                                <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.ibupholstery.com/">
-                                  <button>Website</button>
+                                  <button>View</button>
                               </a>
                                 </footer>
                         </li>   
 
-                         <li>
-                         
-                            <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
+                       
 
-                                <footer className='CardFooter-Container'>                                  
-                                <a href="https://garagesallyapp.com/">
-                                  <button>Website</button>
-                                  </a>
-
-
-
-                            </footer>
-                    </li>
 
                     <li>
-                   
+                      
+                      <img src="img/FreeWebsites/FreeWebsite1.png" alt=''/>
+                 
+               
 
-                      <img src="img/Portfolio/JournalPocketWebsite.png" alt=''/>
-                            <footer className='CardFooter-Container'>
-                            <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
-                                  <button>Coming Soon</button>
+                              <footer className="CardFooter-Container">   
+                                  <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
+                                  <button  id='FreeWebsite'>Get Free Website</button> 
                                   </a>
 
-                            </footer>
-                                            
-                      
-                    </li>
-             
+                                  <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
 
-                 
-                    <li></li>
-                  </ul>
+                              </footer>
+                      </li>
+                
 
-                <section className='AboutFree-Container' style={{display: FreeWebsites ? "grid" : "none"}}>
+                    <li>
 
-                  <h2>About my free website and free designs.</h2>
-                  <p>I design a website every month. All free websites or designs are only used once. Ensuring no two businesses have the same website. Once you get the website, we will work together to fit your business needs. </p>
-                  </section>
-
-
-                  <ul style={{display: FreeWebsites ? "flex" : "none"}}>    
-
-                        <li>
-                      
-                        <img src="img/FreeWebsites/FreeWebsite1.png" alt=''/>
                    
-                 
+                      <img src="img/FreeWebsites/FreeWebsite2.png" alt=''/>
+                     
 
                                 <footer className="CardFooter-Container">   
-                                    <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                    <button onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeWebsite'>Get Website</button> 
-                                    </a>
+                                <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
+                                  <button   id='FreeDesign'>Get Free Website</button> 
+                                  </a>
+                                  <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View</a>
 
-                                    <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
+                              </footer>
+                      </li>
 
-                                </footer>
-                        </li>
-                  
-
-                      <li>
+                      
+                    <li>
 
                      
-                        <img src="img/FreeWebsites/FreeWebsite2.png" alt=''/>
-                       
-
-                                  <footer className="CardFooter-Container">   
-                                  <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                    <button  onClick={(e)=> CouponCodeFreeWebsite(e)} id='FreeDesign'>Get Website</button> 
-                                    </a>
-                                    <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View</a>
-
-                                </footer>
-                        </li>
-
-                        
-                      <li>
-
-                       
-                        <img src="img/FreeWebsites/FreeWebsite3.png" alt=''/>
-                        
+                      <img src="img/FreeWebsites/FreeWebsite3.png" alt=''/>
+                      
 
 
-                        <footer className="CardFooter-Container">   
-                                  <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                    <button onClick={(e)=> CouponCodeFreeWebsite(e)} id="FreeDesign">Get Website</button> 
-                                    </a>
-                                    <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
+                      <footer className="CardFooter-Container">   
+                                <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
+                                  <button  id="FreeDesign">Get Free Website</button> 
+                                  </a>
+                                  <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
 
-                                </footer>
-                        </li>
+                              </footer>
+                      </li>
 
                  
                     <li></li>
-
-                
                   </ul>
 
-                                            
-                  <section style={{display: FreeWebsites ? "flex" : "none"}}>
-                                        
-
-                  <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-                  </section>
 
 
+          
+
+                                          
 
                   </div>
 
                   
-                  <div className='CustomWebsite-Container' style={{display: CustomWebsite ? "grid" : "none"}}>
+                  <div className='CustomWebsite-Container' >
 
                   <section className='AlignTop'>
                     <h1>Having a website is crucial for any business in today’s digital age. </h1>
@@ -357,6 +255,12 @@ const FilterBTNHandler =(e) =>{
                   </div>
 
                   </main>
+
+                  <section >
+                                        
+
+                                        <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                                        </section>
                   
 
 

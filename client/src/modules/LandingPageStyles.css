@@ -269,6 +269,11 @@ html{
     /* margin-top: -150px; */
     /* box-shadow: -5px 10px 13px rgba(0, 0, 0, 0.11); */
   }
+
+  .cardItems>h1{
+    font: 2em sans-serif;
+    padding: 20px;
+  }
   
   .cardItems ul {
     display: flex;
