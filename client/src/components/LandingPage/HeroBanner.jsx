@@ -80,10 +80,7 @@ const ContactMeHandler = e =>{
                     <h2>{timeLabel},</h2>
                     <h3>my name is </h3>
                     <h1>Luis Cardona</h1>
-                  <p>LC Website Solutions</p>
-
-
-            
+                    <p>LC Website Solutions</p>
                 
                   </header>
                   
@@ -91,7 +88,7 @@ const ContactMeHandler = e =>{
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
                   <footer>
-                  <h2>I help businesses in Montgomery TN get online.</h2>
+                  <h2>I help <br className='BrakePoint'></br>businesses <br className='BrakePoint'></br>get online, <br className='BrakePoint'></br>market online, <br className='BrakePoint'></br>and remain online.</h2>
 
                   </footer>
 
@@ -100,7 +97,7 @@ const ContactMeHandler = e =>{
                       <button>My Services</button>
                     </a> */}
 
-                    <button onClick={ContactMeHandler}>Contact me</button>
+                    {/* <button onClick={ContactMeHandler}>Contact me</button> */}
 
                     </div>
          
@@ -147,12 +144,12 @@ const ContactMeHandler = e =>{
 
                     </div>
 
-      
+{/*       
         <div className="mySkills-container">
      
             
 
-              {/* <ul>
+              <ul>
           
                 <li><p>Problem-solving</p></li>
                 <li><p>Critical Thinking</p></li>
@@ -180,9 +177,9 @@ const ContactMeHandler = e =>{
           
 
 
-          </ul> */}
+          </ul>
          
-      </div>
+      </div> */}
      
         
     </div>

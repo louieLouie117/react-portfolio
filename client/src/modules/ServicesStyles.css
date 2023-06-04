@@ -1,0 +1,104 @@
+.Services-Container{
+    background-color: rgb(19, 109, 192);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Services-Container>header>h1{
+    font: 2em sans-serif;
+}
+.ServicesCard {
+    display: grid;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
+
+
+}
+
+.ServicesCard>li{
+    display: grid;
+    row-gap: 30px;
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.249);
+
+
+}
+
+.ServicesCard>li>h2{
+    font: 1.7em sans-serif;
+    color: #0080BF;
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    /* cursor: pointer; */
+
+}
+
+
+.ServiceCardInfo{
+    display: grid;
+    justify-items: center;
+    row-gap: 30px;
+}
+
+
+.PeaceOfMind{
+    display: grid;
+    background-color: #009999;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 50vh;
+    justify-items: center;
+}
+
+.PeaceOfMind>h2{
+    font: 2em sans-serif;
+    color: white;
+    align-self: center;
+}
+
+.PeaceOfMind>main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+    height: 300px;
+    row-gap: 50px;
+}
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+    .BrakePoint{
+        display: none;
+    }
+    .ServicesCard {
+        display: flex;
+        column-gap: 20px;
+        padding: 20px;
+        height: 60vh;
+    }
+
+    .ServiceCardInfo{
+        display: grid;
+    }
+    .PeaceOfMind{
+        display: flex;
+        justify-content: center;
+        column-gap: 150px;    
+        height: 70vh;
+        align-items: center;
+    }
+}
