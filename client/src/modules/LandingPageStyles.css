@@ -805,7 +805,7 @@ html{
   .myHeader-container{
     display: grid;
     background: #2862AF;
-    background: linear-gradient(to bottom, #00aecd, #136DC0 45%);
+    background: linear-gradient(to bottom, #00aecd, #136DC0 95%);
     /* background: linear-gradient(to bottom, #136DC0 60%, #00aecd); */
     justify-items: center;
     font: 1em sans-serif;
@@ -1392,7 +1392,7 @@ html{
 
   .MainBTN{
     color: white;
-    background: linear-gradient(rgb(0, 174, 205), rgb(19, 109, 192) 45%);
+    background: linear-gradient(rgb(0, 174, 205), rgb(19, 109, 192) 50%);
     width: 150px;
     height: 40px;
     /* border: solid 1px #136DC0; */

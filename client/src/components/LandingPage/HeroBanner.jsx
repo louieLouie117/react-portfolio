@@ -70,10 +70,7 @@ const ContactMeHandler = e =>{
           <header>
             {/* <img src="/img/portfolioImg.png" alt=""/> */}
 
-               
-
-
-
+              
                     <div className="name-container">
 
                     <header>
@@ -88,7 +85,7 @@ const ContactMeHandler = e =>{
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
                   <footer>
-                  <h2>I help <br className='BrakePoint'></br>businesses <br className='BrakePoint'></br>get online, <br className='BrakePoint'></br>market online, <br className='BrakePoint'></br>and remain online.</h2>
+                  <h2>I help <br className='BrakePoint'></br>businesses <br className='BrakePoint'></br>get online, <br className='BrakePoint'></br>market online, <br className='BrakePoint'></br>and streamline process.</h2>
 
                   </footer>
 

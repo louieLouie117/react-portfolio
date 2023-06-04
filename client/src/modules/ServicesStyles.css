@@ -16,19 +16,46 @@
 
 }
 
+
+.ServiceBackground{
+    background-color: #0080BF;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .ServicesCard>li{
     display: grid;
-    row-gap: 30px;
+    row-gap: 10px;
     background-color: white;
     width: 350px;
-    height: 400px;
-    justify-content: center;
-    justify-items: center;
+    min-height: 400px;
+    height: 450px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.249);
+    align-content: flex-start;
 
 
+
+}
+
+
+.ServicesCard>li{
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.ServicesCard>li>main>h3{
+    font: 1em sans-serif;
+    color: #0080BF;
+}
+
+.ServicesCard>li>header{
+    font: 1em sans-serif;
+}
+
+.ServicesCard>li>header>h2{
+    color: #0080BF;
 }
 
 .ServicesCard>li>h2{
@@ -51,10 +78,10 @@
 
 .PeaceOfMind{
     display: grid;
-    background-color: #009999;
+    background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%);
     padding-top: 40px;
     padding-bottom: 40px;
-    height: 50vh;
+    height: 80vh;
     justify-items: center;
 }
 
@@ -77,6 +104,57 @@
 }
 
 
+.Cost-Container{
+    display: grid;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Cost-Container>main{
+    background-color: #0080BF;
+}
+
+.Cost-Container>header{
+    display: grid;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -90px;
+    
+}
+
+
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: flex-start;
+    
+
+}
+
+.pricing-container>li{
+    display: grid;
+    justify-items: flex-start;
+}
+
+.ServicesCard>li>h3{
+    font: 1em sans-serif;
+    color: #0080BF;
+}
+
+
+.BulletPoint{
+    list-style-type: circle;
+    margin-left: 20px;
+
+}
 
 
 
@@ -88,7 +166,7 @@
         display: flex;
         column-gap: 20px;
         padding: 20px;
-        height: 60vh;
+        height: 70vh;
     }
 
     .ServiceCardInfo{
@@ -100,5 +178,15 @@
         column-gap: 150px;    
         height: 70vh;
         align-items: center;
+    }
+
+
+    .Cost-Container{
+        justify-items: flex-start;
+    }
+
+    .ServiceBackground{
+        width: 96.5vw;
+        height: 95vh;
     }
 }
