@@ -75,7 +75,7 @@ function Services(props) {
                     <ul className='ServicesCard ServiceBackground'>
                         <li>
                             <header>
-                            <h2>Website</h2>
+                            <h2>Website and Marketing</h2>
                             <p>Get your business online.</p>
                             </header>
                             <main>
@@ -112,14 +112,14 @@ function Services(props) {
                             </ul>
                             </main>
                             <footer>
-                            <a href="https://buy.stripe.com/3cs9DRg1K9yr4py3ch">
+                            <a href="https://buy.stripe.com/6oEaF46vZc7fbe0144">
                             <button className='MainBTN'>Get Services</button>
                             </a>
                             </footer>
                         </li>
 
 
-                        <li>
+                        {/* <li>
                             <header>
                             <h2>Marketing</h2>
                             <p>Start growing your business online.</p>
@@ -150,7 +150,7 @@ function Services(props) {
                             <button className='MainBTN'>Start Marketing</button>
                             </a>
                             </footer>
-                        </li>
+                        </li> */}
 
                         <li>
                             <header>

@@ -29,6 +29,32 @@ function WorkExperience(props) {
           <h1>My Portfolio</h1>
           
                   <ul>   
+                  <li>
+                         
+                         <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
+
+                             <footer className='CardFooter-Container'>                                  
+                             <a href="https://garagesallyapp.com/">
+                               <button>View</button>
+                               </a>
+
+
+
+                         </footer>
+                 </li>
+
+                 <li>
+                
+
+                   <img src="img/Portfolio/JournalPocketApp.png" alt=''/>
+                         <footer className='CardFooter-Container'>
+                               <h3>Coming Soon</h3>
+
+                         </footer>
+                                         
+                   
+                 </li>
+                     
 
                   <li>
                       
@@ -38,7 +64,7 @@ function WorkExperience(props) {
 
                               <footer className="CardFooter-Container">   
                                   <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                  <button  id='FreeWebsite'>Purchase Website</button> 
+                                  {/* <button  id='FreeWebsite'>Purchase Website</button>  */}
                                   </a>
 
                                   <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">View</a>
@@ -55,7 +81,7 @@ function WorkExperience(props) {
 
                                 <footer className="CardFooter-Container">   
                                 <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                  <button   id='FreeDesign'>Purchase Website</button> 
+                                  {/* <button   id='FreeDesign'>Purchase Website</button>  */}
                                   </a>
                                   <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View</a>
 
@@ -72,39 +98,14 @@ function WorkExperience(props) {
 
                       <footer className="CardFooter-Container">   
                                 <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-                                  <button  id="FreeDesign">Purchase Website</button> 
+                                  {/* <button  id="FreeDesign">Purchase Website</button>  */}
                                   </a>
                                   <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View</a>
 
                               </footer>
                       </li>
 
-                      <li>
-                         
-                            <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
-
-                                <footer className='CardFooter-Container'>                                  
-                                <a href="https://garagesallyapp.com/">
-                                  <button>View</button>
-                                  </a>
-
-
-
-                            </footer>
-                    </li>
-
-                    <li>
-                   
-
-                      <img src="img/Portfolio/JournalPocketApp.png" alt=''/>
-                            <footer className='CardFooter-Container'>
-                                  <h3>Coming Soon</h3>
-
-                            </footer>
-                                            
-                      
-                    </li>
-                        
+                     
 
                     <li>
 
@@ -235,11 +236,7 @@ function WorkExperience(props) {
 
                   </main>
 
-                  <section >
-                                        
-
-                                        <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-                                        </section>
+         
                   
 
 
