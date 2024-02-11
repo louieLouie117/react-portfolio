@@ -31,8 +31,9 @@
 }
 
 
-.ServicesCard>li{
-    grid-template-rows: 70px 1fr 70px;
+.ServicesCard>li>main{
+    display: grid;
+    padding-bottom: 100px;
 }
 
 .ServicesCard>li>main>h3{
@@ -108,6 +109,7 @@
     max-width: 35em;
     margin: 0 auto;
     border-radius: 20px;
+    padding: 10px;
     
 }
 
@@ -115,9 +117,9 @@
 .Cost-Container>header{
     display: grid;
     background-color: white;
-    height: 250px;
-    width: 250px;
-    border-radius: 250px;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -140,6 +142,7 @@
 .pricing-container>li{
     display: grid;
     justify-items: flex-start;
+    align-items: flex-end;
 }
 
 .ServicesCard>li>h3{
@@ -162,15 +165,40 @@
     
 }
 
+.MonthlyServicesInfo{
+    margin-top: 10px;
+}
+
+.MonthlyOptions{
+    display: flex;
+    width: 100%;
+}
+
+
+.MonthlyOptions>button{
+    font: 1em sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(19, 109, 192);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(19, 109, 192);
+}
+
+.MonthlyOptions>button:first-of-type{
+    background-color: rgb(19, 109, 192);
+    color: white;
+
+
+}
+
+
 
 @media screen and (min-width: 1100px) {
     .BrakePoint{
         display: none;
-    }
-    .ServicesCard {
-        display: flex;
-        column-gap: 20px;
-        padding: 20px;
     }
 
     .ServiceCardInfo{

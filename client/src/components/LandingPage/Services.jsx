@@ -4,6 +4,10 @@ import ServicesStyles from "../../modules/ServicesStyles.css"
 function Services(props) {
 
     <ServicesStyles></ServicesStyles>
+
+    // updated button to link to stripe
+
+
   return (
     <div className='Services-Container'>
         {/* <header>
@@ -18,9 +22,12 @@ function Services(props) {
                         <li>
                             <h2>MVP Application</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/mvpClay.png" alt="" />
-                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).
+                            <img src="/img/mvpFlat.png" alt="" />
+                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).</p>
+                            <p>
                             Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
+                            </p>
+                            <p>
                             By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources.</p>
                             </div>
                             <footer>
@@ -40,7 +47,7 @@ function Services(props) {
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>Have a web expert at your fingertips that you can call any time.</h3>
+                            <h3>Have a expert at your fingertips that you can call any time.</h3>
                             
 
                             </div>
@@ -63,10 +70,17 @@ function Services(props) {
 
                     <main>
                     <ul className='ServicesCard ServiceBackground'>
+                    <div className="MonthlyOptions">
+                                    <button>Basic</button>
+                                    <button>Plus</button>
+                                    <button>Premium</button>
+
+                                </div>
                         <li>
+                            
                             <header>
+                      
                             <h2>MVP Application</h2>
-                            <p>Get your business online.</p>
                             </header>
                             <main className='AppPricing-Container'>
                                 <section>
@@ -86,28 +100,34 @@ function Services(props) {
                                 </ul>
                                 </section>
 
+
                                 <section>
                                 <h3>Monthly Services</h3>
+                                
+                                <div className="MonthlyServicesInfo">
+                            
+                               
+                                </div>
                                 <ul className='pricing-container'>
-                                    <li>Hosting and Maintenance.........</li>
+                                    <li>The basic tier covers essential services, including app maintenance, bug fixes, and minor updates..........</li>
                                     <li>$120.00/m</li>
                                 
                                 </ul>
-                               
                                 </section>
-                                <section>
-                                    
-                                <ul className='pricing-container'>
-                                    <li>Total........................................................</li>
-                                    <li>$3,120.00</li>
-                                
-                                </ul>
-                                </section>
+                              
                             </main>
                             <footer>
-                            <a href="https://buy.stripe.com/6oEaF46vZc7fbe0144">
-                            <button className='MainBTN'>Get Services</button>
+                            <a id="PurchaseLink" href="https://buy.stripe.com/3cscNcg6z1sB0zm4gj">
+                            <button className='MainBTN'>Get Basic</button>
                             </a>
+                            <section>
+                                    
+                                    <ul className='pricing-container'>
+                                        <li>Total........................................................</li>
+                                        <li>$3,120.00</li>
+                                    
+                                    </ul>
+                                    </section>
                             </footer>
                         </li>
 
