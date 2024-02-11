@@ -1,11 +1,39 @@
-import React from 'react'
 import ServicesStyles from "../../modules/ServicesStyles.css"
+import React, { useState } from 'react';
 
 function Services(props) {
 
     <ServicesStyles></ServicesStyles>
 
     // updated button to link to stripe
+    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
+    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+
+// basicServiceHandler
+const basicServiceHandler = () => {
+    setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
+    setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+}
+// plusServiceHandler
+const plusServiceHandler = () => {
+    setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
+
+    setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
+}
+// premiumServiceHandler
+const premiumServiceHandler = () => {
+    setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
+    
+    setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+
+}
+
+
+
 
 
   return (
@@ -71,9 +99,11 @@ function Services(props) {
                     <main>
                     <ul className='ServicesCard ServiceBackground'>
                     <div className="MonthlyOptions">
-                                    <button>Basic</button>
-                                    <button>Plus</button>
-                                    <button>Premium</button>
+                                    <button style={basicServiceBTNStyles} onClick={() => basicServiceHandler()}>Basic</button>
+
+                                    <button style={ plusServiceBTNStyles }  onClick={() => plusServiceHandler()}>Plus</button>
+
+                                    <button style={premiumServiceBTNStyles}  onClick={() => premiumServiceHandler()}>Premium</button>
 
                                 </div>
                         <li>
@@ -117,8 +147,10 @@ function Services(props) {
                               
                             </main>
                             <footer>
-                            <a id="PurchaseLink" href="https://buy.stripe.com/3cscNcg6z1sB0zm4gj">
-                            <button className='MainBTN'>Get Basic</button>
+                            <a id="PurchaseLink" href='/'>
+                            {/* button to update link */}
+                            <button className='MainBTN' >Get Basic</button>
+
                             </a>
                             <section>
                                     
