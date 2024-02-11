@@ -14,29 +14,12 @@ function Services(props) {
             <main>
                 <section>
                     <ul className='ServicesCard'>
-                        <li>
-                            <h2>Website</h2>
-                            <div className='ServiceCardInfo'>
-                            <img src="/img/WebsiteDevices.png" alt="" />
-
-                            <p>Having a website is essential for businesses because it makes the business appear more professional and credible. A website can help businesses reach more people and create a stronger online presence. Finally, having a website can increase the chances of getting leads and generating more revenue.</p>
-                            </div>
-                        </li>
 
                         <li>
-                            <h2>Marketing</h2>
-                            <div className='ServiceCardInfo'>
-                            <img src="/img/MarketingImg.png" alt="" />
-                            <p>Marketing online is a powerful tool that can help take your business to the next level. By creating two-way communication with your customers through social media and other channels, you can build trust and loyalty. So don’t be afraid to get started with internet marketing.</p>
-                            </div>
-
-                        </li>
-
-                        <li>
-                            <h2>Software Application</h2>
+                            <h2>Dedicated Application</h2>
                             <div className='ServiceCardInfo'>
                             <img src="/img/MVPImg.png" alt="" />
-                            <p>A Minimum Viable Product (MVP) is a development technique that allows businesses to streamlining processes is the act of identifying and eliminating repetitive and unnecessary steps or activities in a process to make it more efficient and effective. By streamlining processes, businesses can go paperless, save time and money.</p>
+                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP). Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse. By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources</p>
                             </div>
 
                         </li>
@@ -119,38 +102,7 @@ function Services(props) {
                         </li>
 
 
-                        {/* <li>
-                            <header>
-                            <h2>Marketing</h2>
-                            <p>Start growing your business online.</p>
-                            </header>
-                            <main>
-                            <h3>Google Ads</h3>
-                            <ul className='pricing-container'>
-                                <li>Geo Location Ads.................</li>
-                                <li>$1200.00/y</li>
-                            </ul>
-
-                            <h3>Social Media</h3>
-                            <ul className='pricing-container'>
-                                <li>Instagram/Facebook Ads.................</li>
-                                <li>$720.00/y</li>
-                        
-                            </ul>
-
-                           
-                            <ul className='pricing-container'>
-                                <li>Total........................................................</li>
-                                <li>$1,920.00/y</li>
-                             
-                            </ul>
-                            </main>
-                            <footer>
-                            <a href="https://buy.stripe.com/00gaHV4j24e7e08fZ4">
-                            <button className='MainBTN'>Start Marketing</button>
-                            </a>
-                            </footer>
-                        </li> */}
+                
 
                         <li>
                             <header>
