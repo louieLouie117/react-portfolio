@@ -16,11 +16,18 @@ function Services(props) {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Dedicated Application</h2>
+                            <h2>MVP Application</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/MVPImg.png" alt="" />
-                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP). Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse. By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources</p>
+                            <img src="/img/mvpClay.png" alt="" />
+                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).
+                            Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
+                            By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources.</p>
                             </div>
+                            <footer>
+                            <a href="https://calendly.com/cardona-luis/15min">
+                            <button className='MainBTN'>Schedule Consultation</button>
+                            </a>
+                            </footer>
 
                         </li>
                     </ul>
@@ -33,8 +40,8 @@ function Services(props) {
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>One Call Away</h3>
-                            <p>Have a web expert at your fingertips that you can call any time.</p>
+                            <h3>Have a web expert at your fingertips that you can call any time.</h3>
+                            
 
                             </div>
 
@@ -58,41 +65,44 @@ function Services(props) {
                     <ul className='ServicesCard ServiceBackground'>
                         <li>
                             <header>
-                            <h2>Website and Marketing</h2>
+                            <h2>MVP Application</h2>
                             <p>Get your business online.</p>
                             </header>
-                            <main>
-                            <h3>Design</h3>
-                            <ul className='pricing-container'>
-                                <li>Mobile.................</li>
-                                <li>$500.00</li>
-                                <li>Tablet.................</li>
-                                <li>$500.00</li>
-                                <li>Desktop.................</li>
-                                <li>$500.00</li> 
-                            </ul>
+                            <main className='AppPricing-Container'>
+                                <section>
+                                <h3>App Design</h3>
+                                <ul className='pricing-container'>
+                                    <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$2,500.00</li>
+                                
+                                </ul>
+                                </section>
 
-                            <h3>Development</h3>
-                            <ul className='pricing-container'>
-                                <li>Mobile.................</li>
-                                <li>$500.00</li>
-                                <li>Tablet.................</li>
-                                <li>$500.00</li>
-                                <li>Desktop.................</li>
-                                <li>$500.00</li> 
-                            </ul>
+                                <section>
+                                <h3>App Development</h3>
+                                <ul className='pricing-container'>
+                                <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$2,500.00</li>
+                                </ul>
+                                </section>
 
-                            <h3>Subscription</h3>
-                            <ul className='pricing-container'>
-                                <li>Hosting and Maintenance.........</li>
-                                <li>$120.00/m</li>
-                             
-                            </ul>
-                            <ul className='pricing-container'>
-                                <li>Total........................................................</li>
-                                <li>$3,120.00</li>
-                             
-                            </ul>
+                                <section>
+                                <h3>Monthly Services</h3>
+                                <ul className='pricing-container'>
+                                    <li>Hosting and Maintenance.........</li>
+                                    <li>$120.00/m</li>
+                                
+                                </ul>
+                               
+                                </section>
+                                <section>
+                                    
+                                <ul className='pricing-container'>
+                                    <li>Total........................................................</li>
+                                    <li>$3,120.00</li>
+                                
+                                </ul>
+                                </section>
                             </main>
                             <footer>
                             <a href="https://buy.stripe.com/6oEaF46vZc7fbe0144">
@@ -104,32 +114,7 @@ function Services(props) {
 
                 
 
-                        <li>
-                            <header>
-                            <h2>Software Development</h2>
-                            <p>Go paperless and streamline your business process.</p>
-                            </header>
-                            <main>
-                            <h3>Research, Design, and Develop.</h3>
-
-                            <ul className='BulletPoint'>
-                                <li>Identify the goal or end result.</li>
-                                <li>Break down the process into discrete steps or tasks.</li>
-                                <li>Analyze the process steps, perform value chain analysis, evaluate handoffs, and identify bottlenecks.</li>
-                                <li>Gather input from those who perform the process and related tasks, or who benefit from the process.</li>
-                                <li>Identify unnecessary activities.</li>
-                                <li>Identify redundant activities.</li>
-                                <li>Identify activities that can be automated using technology.</li>
-                            </ul>
-
-                           
-                            </main>
-                            <footer>
-                            <a href="https://calendly.com/cardona-luis/15min">
-                            <button className='MainBTN'>Schedule Consultation</button>
-                            </a>
-                            </footer>
-                        </li>
+                        
 
 
 

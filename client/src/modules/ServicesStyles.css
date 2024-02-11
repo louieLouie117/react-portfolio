@@ -1,7 +1,7 @@
 .Services-Container{
     background-color: rgb(19, 109, 192);
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 180px;
 }
 
 .Services-Container>header>h1{
@@ -17,25 +17,15 @@
 }
 
 
-.ServiceBackground{
-    background-color: #0080BF;
-    width: 100vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 .ServicesCard>li{
     display: grid;
     row-gap: 10px;
     background-color: white;
-    width: 350px;
-    min-height: 400px;
-    height: 450px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.249);
     align-content: flex-start;
-
+    max-width: 45em;
 
 
 }
@@ -74,11 +64,20 @@
     justify-items: center;
     row-gap: 30px;
 }
+.ServiceCardInfo> p{
+    font: 1.3em sans-serif;
+    color: black;
 
+}
+
+.ServiceCardInfo> img{
+    width: 360px;
+    height: auto;
+}
 
 .PeaceOfMind{
     display: grid;
-    background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%);
+    /* background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%); */
     padding-top: 40px;
     padding-bottom: 40px;
     height: 80vh;
@@ -107,13 +106,12 @@
 .Cost-Container{
     display: grid;
     background-color: white;
-    justify-content: center;
-    justify-items: center;
+    max-width: 35em;
+    margin: 0 auto;
+    border-radius: 50px;
+    
 }
 
-.Cost-Container>main{
-    background-color: #0080BF;
-}
 
 .Cost-Container>header{
     display: grid;
@@ -126,6 +124,7 @@
     align-items: center;
     align-content: center;
     margin-top: -90px;
+    justify-self: center;
     
 }
 
@@ -156,6 +155,13 @@
 
 }
 
+.AppPricing-Container{
+    display: grid;
+    row-gap: 20px;
+    font: 1em sans-serif;
+    
+    
+}
 
 
 @media screen and (min-width: 1100px) {
@@ -166,27 +172,20 @@
         display: flex;
         column-gap: 20px;
         padding: 20px;
-        height: 70vh;
     }
 
     .ServiceCardInfo{
         display: grid;
     }
     .PeaceOfMind{
-        display: flex;
         justify-content: center;
-        column-gap: 150px;    
-        height: 70vh;
-        align-items: center;
+      
     }
 
 
-    .Cost-Container{
-        justify-items: flex-start;
-    }
+ 
 
-    .ServiceBackground{
-        width: 96.5vw;
-        height: 95vh;
-    }
+ 
+
+
 }
