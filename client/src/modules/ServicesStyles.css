@@ -25,7 +25,7 @@
     padding: 20px;
     border-radius: 10px;
     align-content: flex-start;
-    max-width: 45em;
+    max-width: 35em;
 
 
 }
@@ -94,8 +94,7 @@
     display: grid;
     justify-items: center;
     align-content: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
     border-radius: 20px;
     background-color: white;
     height: 300px;
@@ -108,7 +107,7 @@
     background-color: white;
     max-width: 35em;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 20px;
     
 }
 
