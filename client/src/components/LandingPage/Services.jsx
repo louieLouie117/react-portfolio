@@ -4,6 +4,16 @@ import React, { useState } from 'react';
 function Services(props) {
 
     <ServicesStyles></ServicesStyles>
+    // service tile
+    const [ServiceTile, setServiceTile] = useState('MVP Basic');
+    // service description
+    const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    // service purchase link
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    // monthly service price
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
+    // purchase button text
+    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
 
     // updated button to link to stripe
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
@@ -12,23 +22,49 @@ function Services(props) {
 
 // basicServiceHandler
 const basicServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Basic');
+    // service description
+    setServiceDescription('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPurchaseLink('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    // set monthly service price
+    setMonthlyServicePrice('120.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Basic');
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Plus');
+    // service description
+    setServiceDescription('MVP Plus Service: Enhance your MVP with additional features and scalability. Rigorous testing ensures quality over time.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
-
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
+    setPurchaseLink('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
+    // set monthly service price
+    setMonthlyServicePrice('240.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Plus');
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Premium');
+    // service description
+    setServiceDescription('MVP Premium Service: Transform your MVP into a robust application. High availability and reliability are our focus.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
-    
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    
+    setPurchaseLink('https://buy.stripe.com/5kAcNc7A3fjr2Hu7sw');
+    // set monthly service price
+    setMonthlyServicePrice('560.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Premium');
 
 }
 
@@ -87,7 +123,7 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                     <header>
                     <img src="/img/CostImg.png" alt="" />
-                    <h2>Cost for Services</h2>
+                    <h2>Cost and Services</h2>
                     {/* <p>You can build a price base on your buisness needs or get full services.</p>
                     <nav>
                     <button>Build a price</button>
@@ -110,7 +146,8 @@ const premiumServiceHandler = () => {
                             
                             <header>
                       
-                            <h2>MVP Application</h2>
+                            <h2>{ServiceTile}</h2>
+                       
                             </header>
                             <main className='AppPricing-Container'>
                                 <section>
@@ -139,24 +176,24 @@ const premiumServiceHandler = () => {
                                
                                 </div>
                                 <ul className='pricing-container'>
-                                    <li>The basic tier covers essential services, including app maintenance, bug fixes, and minor updates..........</li>
-                                    <li>$120.00/m</li>
+                                    <li>{ServiceDescription}..........</li>
+                                    <li  >${monthlyServicePrice}/m</li>
                                 
                                 </ul>
                                 </section>
                               
                             </main>
                             <footer>
-                            <a id="PurchaseLink" href='/'>
+                            <a id="PurchaseLink" href={purchaseLink}>
                             {/* button to update link */}
-                            <button className='MainBTN' >Get Basic</button>
+                            <button className='MainBTN' >{purchaseBTNText}</button>
 
                             </a>
                             <section>
                                     
                                     <ul className='pricing-container'>
                                         <li>Total........................................................</li>
-                                        <li>$3,120.00</li>
+                                        <li>$5,{monthlyServicePrice}</li>
                                     
                                     </ul>
                                     </section>
