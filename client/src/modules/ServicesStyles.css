@@ -1,7 +1,7 @@
 .Services-Container{
     background-color: rgb(19, 109, 192);
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 180px;
 }
 
 .Services-Container>header>h1{
@@ -17,32 +17,23 @@
 }
 
 
-.ServiceBackground{
-    background-color: #0080BF;
-    width: 100vw;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 .ServicesCard>li{
     display: grid;
     row-gap: 10px;
     background-color: white;
-    width: 350px;
-    min-height: 400px;
-    height: 450px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.249);
     align-content: flex-start;
-
+    max-width: 35em;
 
 
 }
 
 
-.ServicesCard>li{
-    grid-template-rows: 70px 1fr 70px;
+.ServicesCard>li>main{
+    display: grid;
+    padding-bottom: 100px;
 }
 
 .ServicesCard>li>main>h3{
@@ -74,11 +65,20 @@
     justify-items: center;
     row-gap: 30px;
 }
+.ServiceCardInfo> p{
+    font: 1.3em sans-serif;
+    color: black;
 
+}
+
+.ServiceCardInfo> img{
+    width: 360px;
+    height: auto;
+}
 
 .PeaceOfMind{
     display: grid;
-    background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%);
+    /* background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%); */
     padding-top: 40px;
     padding-bottom: 40px;
     height: 80vh;
@@ -95,8 +95,7 @@
     display: grid;
     justify-items: center;
     align-content: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
     border-radius: 20px;
     background-color: white;
     height: 300px;
@@ -107,25 +106,26 @@
 .Cost-Container{
     display: grid;
     background-color: white;
-    justify-content: center;
-    justify-items: center;
+    max-width: 35em;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    
 }
 
-.Cost-Container>main{
-    background-color: #0080BF;
-}
 
 .Cost-Container>header{
     display: grid;
     background-color: white;
-    height: 250px;
-    width: 250px;
-    border-radius: 250px;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
     margin-top: -90px;
+    justify-self: center;
     
 }
 
@@ -142,6 +142,7 @@
 .pricing-container>li{
     display: grid;
     justify-items: flex-start;
+    align-items: flex-end;
 }
 
 .ServicesCard>li>h3{
@@ -156,37 +157,63 @@
 
 }
 
+.AppPricing-Container{
+    display: grid;
+    row-gap: 20px;
+    font: 1em sans-serif;
+    
+    
+}
+
+.MonthlyServicesInfo{
+    margin-top: 10px;
+}
+
+.MonthlyOptions{
+    display: flex;
+    width: 100%;
+}
+
+
+.MonthlyOptions>button{
+    font: 1em sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(19, 109, 192);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(19, 109, 192);
+}
+
+.MonthlyOptions>button:first-of-type{
+    background-color: rgb(19, 109, 192);
+    /* background color in # */
+    color: white;
+
+
+}
+
 
 
 @media screen and (min-width: 1100px) {
     .BrakePoint{
         display: none;
     }
-    .ServicesCard {
-        display: flex;
-        column-gap: 20px;
-        padding: 20px;
-        height: 70vh;
-    }
 
     .ServiceCardInfo{
         display: grid;
     }
     .PeaceOfMind{
-        display: flex;
         justify-content: center;
-        column-gap: 150px;    
-        height: 70vh;
-        align-items: center;
+      
     }
 
 
-    .Cost-Container{
-        justify-items: flex-start;
-    }
+ 
 
-    .ServiceBackground{
-        width: 96.5vw;
-        height: 95vh;
-    }
+ 
+
+
 }

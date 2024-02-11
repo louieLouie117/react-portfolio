@@ -23,11 +23,7 @@ function LandingPage(props) {
 
       <WorkExperience></WorkExperience>
       <ToolsTechnologies></ToolsTechnologies>
-      <section >
-                                        
-
-                                        <iframe title='EmailForm' width="2640px" height="880px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__lqWrRdURUVCUUNKRERCSFNDOVNIMUZDS1UySURGVC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style={{border: "none", maxWidth: "100%", maxHeight:"120vh"}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-                                        </section>
+    
 
       <Footer></Footer>
       </div>

@@ -804,29 +804,36 @@ html{
   
   .myHeader-container{
     display: grid;
-    background: #2862AF;
-    background: linear-gradient(to bottom, #00aecd, #136DC0 95%);
-    /* background: linear-gradient(to bottom, #136DC0 60%, #00aecd); */
+    background: linear-gradient(180deg, #00aecd, #136DC0);
     justify-items: center;
     font: 1em sans-serif;
     padding-top: 20px;
     margin-top: -4px;
-  
-  
+    /* animation: liquidBackground 5s infinite alternate; */
   }
+
+
+  /* @keyframes liquidBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+} */
 
   .myHeader-container>header>footer{
     display: grid;
     justify-content: center;
     justify-items: center;
     row-gap: 20px;
-    padding-top: 50px;
     padding-bottom: 10px;
   }
 
   .myHeader-container>header>footer>h2{
     color: white;
-    font: 2.2em sans-serif;
+    font: 2em sans-serif;
+    padding: 30px;
   }
 
   .myHeader-container>header>footer>p{
@@ -1031,9 +1038,9 @@ html{
     column-gap: 15px;
     row-gap: 5px;
     /* width: 99vw; */
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px;
     color: whitesmoke;
 
   
@@ -1390,15 +1397,16 @@ html{
   }
 
   .MainBTN{
+    font: 1.3em sans-serif;
     color: white;
     background: linear-gradient(rgb(0, 174, 205), rgb(19, 109, 192) 50%);
-    width: 150px;
-    height: 40px;
-    /* border: solid 1px #136DC0; */
+    width: 100%;
+    height: 50px;
     border: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.266);
     border-radius: 7px;
     margin: 5px;
+    cursor: pointer;
 
   }
 
@@ -1469,38 +1477,7 @@ html{
 
   
 
-  @media screen and (min-width: 1050px){
-
-  .CustomWebsite-Container{
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    column-gap: 10px;
-    margin: 40px;
-
-  }
-    
-  
-    .name-container>header{
-      display: grid;
-      column-gap: 10px;
-      align-self: center;
-      font: 1em sans-serif;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      max-width: none;
-    }
-
-    .devTools-container ul{
-  
-      display: flex;
-       
-    }
-
-    .GridContainer{
-      justify-content: center;
-    }
-    
-  
-  }
+ 
 
 
   @media screen and (min-width: 500px){
@@ -1567,7 +1544,7 @@ html{
       padding: 0;
     }
     
-  
+   
   }
   
   
@@ -1617,7 +1594,8 @@ html{
     .myHeader-container{
       row-gap: 20px;
       display: grid;
-      align-items: flex-start;
+      align-items: center;
+      height: 75vh;
   
     }
     .myHeader-container aside{
@@ -1671,3 +1649,41 @@ html{
       
     
     }
+
+
+    @media screen and (min-width: 1050px){
+
+      .CustomWebsite-Container{
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        column-gap: 10px;
+        margin: 40px;
+    
+      }
+        
+      
+        .name-container>header{
+          display: grid;
+          column-gap: 10px;
+          align-self: center;
+          font: 1em sans-serif;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          max-width: none;
+        }
+    
+        .devTools-container ul{
+      
+          display: flex;
+           
+        }
+    
+        .GridContainer{
+          justify-content: center;
+        }
+    
+        .name-container{
+          justify-content: center;
+        }
+        
+      
+      }

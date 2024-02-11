@@ -77,7 +77,7 @@ const ContactMeHandler = e =>{
                     <h2>{timeLabel},</h2>
                     <h3>my name is </h3>
                     <h1>Luis Cardona</h1>
-                    <p>LC Solutions</p>
+                    {/* <p>LC Solutions</p> */}
                 
                   </header>
                   
@@ -85,7 +85,9 @@ const ContactMeHandler = e =>{
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
                   <footer>
-                  <h2>I optimize <br className='BrakePoint'></br>business operations<br className='BrakePoint'></br> with a dedicated<br className='BrakePoint'></br> app, tailored to <br className='BrakePoint'></br>their specific needs.</h2>
+                  <h2>I enhance <br className='BrakePoint'></br>operational efficiency <br className='BrakePoint'></br>through a dedicated app <br className='BrakePoint'></br>tailored to business-specific needs.<br className='BrakePoint'></br></h2>
+
+                  
 
                   </footer>
 

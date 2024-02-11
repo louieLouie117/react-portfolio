@@ -1,9 +1,77 @@
-import React from 'react'
 import ServicesStyles from "../../modules/ServicesStyles.css"
+import React, { useState } from 'react';
 
 function Services(props) {
 
     <ServicesStyles></ServicesStyles>
+    // service tile
+    const [ServiceTile, setServiceTile] = useState('MVP Basic');
+    // service description
+    const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    // service purchase link
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    // monthly service price
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
+    // purchase button text
+    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
+
+    // updated button to link to stripe
+    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
+    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+
+// basicServiceHandler
+const basicServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Basic');
+    // service description
+    setServiceDescription('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
+    setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPurchaseLink('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    // set monthly service price
+    setMonthlyServicePrice('120.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Basic');
+}
+// plusServiceHandler
+const plusServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Plus');
+    // service description
+    setServiceDescription('MVP Plus Service: Enhance your MVP with additional features and scalability. Rigorous testing ensures quality over time.');
+    setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
+    setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
+    setPurchaseLink('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
+    // set monthly service price
+    setMonthlyServicePrice('240.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Plus');
+}
+// premiumServiceHandler
+const premiumServiceHandler = () => {
+    //service tile
+    setServiceTile('MVP Premium');
+    // service description
+    setServiceDescription('MVP Premium Service: Transform your MVP into a robust application. High availability and reliability are our focus.');
+    setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
+    setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
+    
+    setPurchaseLink('https://buy.stripe.com/5kAcNc7A3fjr2Hu7sw');
+    // set monthly service price
+    setMonthlyServicePrice('560.00');
+    // set purchase button text
+    setPurchaseBTNText('Get Premium');
+
+}
+
+
+
+
+
   return (
     <div className='Services-Container'>
         {/* <header>
@@ -16,11 +84,21 @@ function Services(props) {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Dedicated Application</h2>
+                            <h2>MVP Application</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/MVPImg.png" alt="" />
-                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP). Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse. By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources</p>
+                            <img src="/img/mvpFlat.png" alt="" />
+                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).</p>
+                            <p>
+                            Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
+                            </p>
+                            <p>
+                            By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources.</p>
                             </div>
+                            <footer>
+                            <a href="https://calendly.com/cardona-luis/15min">
+                            <button className='MainBTN'>Schedule Consultation</button>
+                            </a>
+                            </footer>
 
                         </li>
                     </ul>
@@ -33,8 +111,8 @@ function Services(props) {
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>One Call Away</h3>
-                            <p>Have a web expert at your fingertips that you can call any time.</p>
+                            <h3>Have a expert at your fingertips that you can call any time.</h3>
+                            
 
                             </div>
 
@@ -45,7 +123,7 @@ function Services(props) {
                 <section className='Cost-Container'>
                     <header>
                     <img src="/img/CostImg.png" alt="" />
-                    <h2>Cost for Services</h2>
+                    <h2>Cost and Services</h2>
                     {/* <p>You can build a price base on your buisness needs or get full services.</p>
                     <nav>
                     <button>Build a price</button>
@@ -56,80 +134,76 @@ function Services(props) {
 
                     <main>
                     <ul className='ServicesCard ServiceBackground'>
+                    <div className="MonthlyOptions">
+                                    <button style={basicServiceBTNStyles} onClick={() => basicServiceHandler()}>Basic</button>
+
+                                    <button style={ plusServiceBTNStyles }  onClick={() => plusServiceHandler()}>Plus</button>
+
+                                    <button style={premiumServiceBTNStyles}  onClick={() => premiumServiceHandler()}>Premium</button>
+
+                                </div>
                         <li>
+                            
                             <header>
-                            <h2>Website and Marketing</h2>
-                            <p>Get your business online.</p>
+                      
+                            <h2>{ServiceTile}</h2>
+                       
                             </header>
-                            <main>
-                            <h3>Design</h3>
-                            <ul className='pricing-container'>
-                                <li>Mobile.................</li>
-                                <li>$500.00</li>
-                                <li>Tablet.................</li>
-                                <li>$500.00</li>
-                                <li>Desktop.................</li>
-                                <li>$500.00</li> 
-                            </ul>
+                            <main className='AppPricing-Container'>
+                                <section>
+                                <h3>App Design</h3>
+                                <ul className='pricing-container'>
+                                    <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$2,500.00</li>
+                                
+                                </ul>
+                                </section>
 
-                            <h3>Development</h3>
-                            <ul className='pricing-container'>
-                                <li>Mobile.................</li>
-                                <li>$500.00</li>
-                                <li>Tablet.................</li>
-                                <li>$500.00</li>
-                                <li>Desktop.................</li>
-                                <li>$500.00</li> 
-                            </ul>
+                                <section>
+                                <h3>App Development</h3>
+                                <ul className='pricing-container'>
+                                <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$2,500.00</li>
+                                </ul>
+                                </section>
 
-                            <h3>Subscription</h3>
-                            <ul className='pricing-container'>
-                                <li>Hosting and Maintenance.........</li>
-                                <li>$120.00/m</li>
-                             
-                            </ul>
-                            <ul className='pricing-container'>
-                                <li>Total........................................................</li>
-                                <li>$3,120.00</li>
-                             
-                            </ul>
+
+                                <section>
+                                <h3>Monthly Services</h3>
+                                
+                                <div className="MonthlyServicesInfo">
+                            
+                               
+                                </div>
+                                <ul className='pricing-container'>
+                                    <li>{ServiceDescription}..........</li>
+                                    <li  >${monthlyServicePrice}/m</li>
+                                
+                                </ul>
+                                </section>
+                              
                             </main>
                             <footer>
-                            <a href="https://buy.stripe.com/6oEaF46vZc7fbe0144">
-                            <button className='MainBTN'>Get Services</button>
+                            <a id="PurchaseLink" href={purchaseLink}>
+                            {/* button to update link */}
+                            <button className='MainBTN' >{purchaseBTNText}</button>
+
                             </a>
+                            <section>
+                                    
+                                    <ul className='pricing-container'>
+                                        <li>Total........................................................</li>
+                                        <li>$5,{monthlyServicePrice}</li>
+                                    
+                                    </ul>
+                                    </section>
                             </footer>
                         </li>
 
 
                 
 
-                        <li>
-                            <header>
-                            <h2>Software Development</h2>
-                            <p>Go paperless and streamline your business process.</p>
-                            </header>
-                            <main>
-                            <h3>Research, Design, and Develop.</h3>
-
-                            <ul className='BulletPoint'>
-                                <li>Identify the goal or end result.</li>
-                                <li>Break down the process into discrete steps or tasks.</li>
-                                <li>Analyze the process steps, perform value chain analysis, evaluate handoffs, and identify bottlenecks.</li>
-                                <li>Gather input from those who perform the process and related tasks, or who benefit from the process.</li>
-                                <li>Identify unnecessary activities.</li>
-                                <li>Identify redundant activities.</li>
-                                <li>Identify activities that can be automated using technology.</li>
-                            </ul>
-
-                           
-                            </main>
-                            <footer>
-                            <a href="https://calendly.com/cardona-luis/15min">
-                            <button className='MainBTN'>Schedule Consultation</button>
-                            </a>
-                            </footer>
-                        </li>
+                        
 
 
 
