@@ -304,10 +304,9 @@ html{
     grid-column: 1/2; */
     /* background-image: cover; */
     border-radius: 12px 12px 0 0;
-    width: 275px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.74);
     justify-content: center;
-    height: 550px;
+    height: 450px;
     border: solid black 2px;
     border-radius: 20px;
     background-color: white;
@@ -1356,13 +1355,11 @@ html{
 
 
   .CardFooter-Container>a>button{
-    background: rgb(236, 236, 236);
-    color: black;
-    height: 35px;
+    height: 40px;
     border-radius: 7px;
     cursor: pointer;
     border: solid 0.5px rgb(145, 145, 145);
-    width: 130px;
+    width: 90%;
   }
 
   .FilterWebsite-Container{
