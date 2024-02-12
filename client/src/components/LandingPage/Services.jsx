@@ -9,23 +9,23 @@ function Services(props) {
     // service description
     const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     // service purchase link
-    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
-    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
+    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
     const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$5,1200.00');
+    const [TotalAmount, setTotalAmount] = useState('$6,740.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
     const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#136db0'});
 
     // updated button to link to stripe
-    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
-    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
     // highlight payment
     const [HighlightPayment, setHighlightPayment] = useState({color: '#136db0'});
