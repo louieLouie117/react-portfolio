@@ -5,9 +5,9 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('MVP Basic');
+    const [ServiceTile, setServiceTile] = useState('MVP Plus');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    const [ServiceDescription, setServiceDescription] = useState('MVP Plus Service: Enhance your MVP with additional features and scalability. Rigorous testing ensures quality over time.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
@@ -15,7 +15,7 @@ function Services(props) {
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
-    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+    const [paymentIntegration, setPaymentIntegration] = useState({display: 'grid'});
     // total amount
     const [TotalAmount, setTotalAmount] = useState('$6,740.00');
     // analytics integration
