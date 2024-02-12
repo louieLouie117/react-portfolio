@@ -14,11 +14,21 @@ function Services(props) {
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
+    // payment integration
+    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+    // total amount
+    const [TotalAmount, setTotalAmount] = useState('$5,1200.00');
+    // analytics integration
+    const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
+    // highlight analytics
+    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#136db0'});
 
     // updated button to link to stripe
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    // highlight payment
+    const [HighlightPayment, setHighlightPayment] = useState({color: '#136db0'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
@@ -34,6 +44,12 @@ const basicServiceHandler = () => {
     setMonthlyServicePrice('120.00');
     // set purchase button text
     setPurchaseBTNText('Get Basic');
+    // payment integration
+    setPaymentIntegration({display: 'none'});
+    // total amount
+    setTotalAmount('$5,1200.00');
+    // analytics integration
+    setAnalyticsIntegration({display: 'none'});
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
@@ -49,6 +65,14 @@ const plusServiceHandler = () => {
     setMonthlyServicePrice('240.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
+    // payment integration
+    setPaymentIntegration({display: 'grid'});
+    // total amount
+    setTotalAmount('$6,740.00');
+    // analytics integration
+    setAnalyticsIntegration({display: 'none'});
+    // highlight payment
+    setHighlightPayment({color: '#0092db'});
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
@@ -65,6 +89,16 @@ const premiumServiceHandler = () => {
     setMonthlyServicePrice('560.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
+    // payment integration
+    setPaymentIntegration({display: 'grid'});
+    // total amount
+    setTotalAmount('$8,560.00');
+    // analytics integration
+    setAnalyticsIntegration({display: 'grid'});
+    // highlight payment
+    setHighlightPayment({color: 'black'});
+    // highlight analytics
+    setHighlightAnalytics({color: '#0092db'});
 
 }
 
@@ -86,7 +120,7 @@ const premiumServiceHandler = () => {
                         <li>
                             <h2>MVP Application</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/mvpFlat.png" alt="" />
+                            <img src="/img/mvpComic.png" alt="" />
                             <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).</p>
                             <p>
                             Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
@@ -111,7 +145,7 @@ const premiumServiceHandler = () => {
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>Have a expert at your fingertips that you can call any time.</h3>
+                            <h3>Have a expert at your fingertips.</h3>
                             
 
                             </div>
@@ -123,7 +157,7 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                     <header>
                     <img src="/img/CostImg.png" alt="" />
-                    <h2>Cost and Services</h2>
+                    <h3>Pricing and Services</h3>
                     {/* <p>You can build a price base on your buisness needs or get full services.</p>
                     <nav>
                     <button>Build a price</button>
@@ -167,6 +201,25 @@ const premiumServiceHandler = () => {
                                 </ul>
                                 </section>
 
+                                <section style={paymentIntegration}>
+                                <h3 style={HighlightPayment}>Payment Integration</h3>
+                                <ul className='pricing-container'>
+                                <li style={HighlightPayment}>Accept payment or subscription...........</li>
+                                    <li style={HighlightPayment}>$1,500.00</li>
+                                </ul>
+                                </section>
+
+                                   
+                                <section style={analyticsIntegration}>
+                                <h3 style={HighlightAnalytics}>Analytics Integration</h3>
+                                <ul className='pricing-container'>
+                                <li style={HighlightAnalytics}>Improve user experience with analytics............</li>
+                                    <li style={HighlightAnalytics}>$1,500.00</li>
+                                </ul>
+                                </section>
+
+                                
+
 
                                 <section>
                                 <h3>Monthly Services</h3>
@@ -193,7 +246,7 @@ const premiumServiceHandler = () => {
                                     
                                     <ul className='pricing-container'>
                                         <li>Total........................................................</li>
-                                        <li>$5,{monthlyServicePrice}</li>
+                                        <li>{TotalAmount}</li>
                                     
                                     </ul>
                                     </section>

@@ -33,7 +33,9 @@
 
 .ServicesCard>li>main{
     display: grid;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
+    height: 400px;
+    align-content: flex-start;
 }
 
 .ServicesCard>li>main>h3{
@@ -159,12 +161,21 @@
 
 .AppPricing-Container{
     display: grid;
-    row-gap: 20px;
+    row-gap: 10px;
     font: 1em sans-serif;
     
     
 }
 
+.AppPricing-Container>section>h3{
+   font: 1.3em sans-serif;
+   color: black;
+}
+
+
+.AppPricing-Container>section:last-of-type{
+    padding-top: 40px;
+ }
 .MonthlyServicesInfo{
     margin-top: 10px;
 }

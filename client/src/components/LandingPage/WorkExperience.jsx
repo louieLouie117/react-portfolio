@@ -32,21 +32,23 @@ function WorkExperience(props) {
                   <li>
                 
 
-                <img src="img/Portfolio/JournalPocketApp.png" alt=''/>
-                      <footer className='CardFooter-Container'>
-                            <h3>Coming Soon</h3>
+                    <img src="img/Portfolio/journalPocket414.png" alt=''/>
+                          <footer className='CardFooter-Container'>
+                          <a href="https://journalpocketapp.com/">
+                                  <button className='MainBTN'>View</button>
+                                  </a>
 
-                      </footer>
-                                      
-                
-              </li>
+                          </footer>
+                                          
+                    
+                  </li>
                   <li>
                          
-                         <img src="img/Portfolio/GarageSallyWebsite.png" alt=''/>                          
+                         <img src="img/Portfolio/garageSally414.png" alt=''/>                          
 
                              <footer className='CardFooter-Container'>                                  
                              <a href="https://garagesallyapp.com/">
-                               <button>View</button>
+                               <button className='MainBTN'>View</button>
                                </a>
 
 
@@ -54,24 +56,39 @@ function WorkExperience(props) {
                          </footer>
                  </li>
 
+                 <li>
+                         
+                         <img src="img/Portfolio/concordIron414.png" alt=''/>                          
+
+                             <footer className='CardFooter-Container'>                                  
+                             <a href="https://www.concordironworks.com/">
+                               <button className='MainBTN'>View</button>
+                               </a>
+
+
+
+                         </footer>
+                 </li>
+
+
   
                      
                    <li>
 
                        
-<img src="img/Portfolio/IBUpholsteryWebsite.png" alt=''/>
+                  <img src="img/Portfolio/ibUpholstery414.png" alt=''/>
 
 
-        <footer className='CardFooter-Container'>                                                                          
-        <a href="https://www.ibupholstery.com/">
-          <button>View</button>
-      </a>
-        </footer>
-</li>   
+                          <footer className='CardFooter-Container'>                                                                          
+                          <a href="https://www.ibupholstery.com/">
+                            <button className='MainBTN'>View</button>
+                        </a>
+                          </footer>
+                  </li>   
 
                   <li>
                       
-                      <img src="img/FreeWebsites/FreeWebsite1.png" alt=''/>
+                      <img src="img/Portfolio/paceBuilders414.png" alt=''/>
                  
                
 
@@ -81,7 +98,7 @@ function WorkExperience(props) {
                                   </a>
 
                                   <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">
-                                    <button>View</button>
+                                    <button className='MainBTN'>View</button>
                                   </a>
 
                               </footer>
@@ -94,11 +111,11 @@ function WorkExperience(props) {
                     <li>
 
                         
-                        <img src="img/Portfolio/SugarRayWebsite.png" alt=''/>
+                        <img src="img/Portfolio/sugarRay414.png" alt=''/>
                                      
                                     <footer className='CardFooter-Container'>                                 
                                   <a href="https://www.thesugarayssweettea.com/">
-                                    <button>View</button> 
+                                    <button className='MainBTN'>View</button> 
                                     </a>
                                     </footer>
                                                 
@@ -108,12 +125,12 @@ function WorkExperience(props) {
                         
                     <li>
 
-                      <img src="img/Portfolio/TheHookUpWebsite.png" alt=''/>
+                      <img src="img/Portfolio/theHookUp414.png" alt=''/>
                                   
                                   <footer className='CardFooter-Container'>                                 
 
                                   <a href="https://www.thehookup671islandbbq.com/">
-                                  <button>View</button> 
+                                  <button className='MainBTN'>View</button> 
                                   </a>
 
                               </footer>
@@ -124,27 +141,42 @@ function WorkExperience(props) {
                          <li>
 
                         
-                        <img src="img/Portfolio/IsmaelRealtorWebsite.png" alt=''/>
+                        <img src="img/Portfolio/ismaelRealtor414.png" alt=''/>
                      
                                     <footer className='CardFooter-Container'>                                 
                                     <a href="https://www.ismaelbanuelosrealtor.com/">
-                                          <button>View</button>
+                                          <button className='MainBTN'>View</button>
                                         </a>
                                
                                 </footer>
                                                 
                           
                         </li>
+                        <li>
+
+                        
+<img src="img/Portfolio/stMicheal414.png" alt=''/>
+
+            <footer className='CardFooter-Container'>                                 
+
+            <a href="https://www.stmichaeloakgrove.com/">
+                  <button className='MainBTN'>View</button>
+                </a>
+
+        </footer>
+                        
+  
+</li>
 
                         <li>
 
                    
-                    <img src="img/Portfolio/DeltaWebsite.png" alt=''/>
+                    <img src="img/Portfolio/delta414.png" alt=''/>
                            
                                 <footer className='CardFooter-Container'>                                 
 
                                 <a href="https://www.deltasportsbar.com/">
-                                      <button>View</button>
+                                      <button className='MainBTN'>View</button>
                                     </a>
 
                             </footer>
@@ -156,12 +188,12 @@ function WorkExperience(props) {
                         <li>
 
                      
-                        <img src="img/Portfolio/JRLandscapingWebsite.png" alt=''/>
+                        <img src="img/Portfolio/jrProLandscaping414.png" alt=''/>
                      
 
                             <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.jrprolandscaping.com/">
-                                  <button>View</button>
+                                  <button className='MainBTN'>View</button>
                               </a>
                             </footer>
                         </li>
@@ -169,55 +201,14 @@ function WorkExperience(props) {
                         
 
                       
-                        <li>
-
-                        
-                        <img src="img/Portfolio/StMichealWebsite.png" alt=''/>
-                        
-                                    <footer className='CardFooter-Container'>                                 
-
-                                    <a href="https://www.stmichaeloakgrove.com/">
-                                          <button>View</button>
-                                        </a>
-
-                                </footer>
-                                                
-                          
-                        </li>
+               
 
 
                        
-                        <li>
-
-                   
-<img src="img/FreeWebsites/FreeWebsite2.png" alt=''/>
-
-
-          <footer className="CardFooter-Container">   
-          <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-            {/* <button   id='FreeDesign'>Purchase Website</button>  */}
-            </a>
-            <a href="https://xd.adobe.com/view/a0dfff20-de8d-4e46-6b67-bbfc029b973f-d6ee/?fullscreen">View UI Design</a>
-
-        </footer>
-</li>
-
-
-<li>
-
-
-<img src="img/FreeWebsites/FreeWebsite3.png" alt=''/>
 
 
 
-<footer className="CardFooter-Container">   
-          <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">                                                                       
-            {/* <button  id="FreeDesign">Purchase Website</button>  */}
-            </a>
-            <a href="https://xd.adobe.com/view/2c35bed9-b4dd-409f-9606-5815b7d37875-7966/?fullscreen">View UI Design</a>
 
-        </footer>
-</li>
 
 
                   
