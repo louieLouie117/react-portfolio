@@ -7,11 +7,11 @@ function Services(props) {
     // service tile
     const [ServiceTile, setServiceTile] = useState('MVP Plus');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('MVP Plus Service: Enhance your MVP with additional features and scalability. Rigorous testing ensures quality over time.');
+    const [ServiceDescription, setServiceDescription] = useState('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('240.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
@@ -35,7 +35,7 @@ const basicServiceHandler = () => {
     //service tile
     setServiceTile('MVP Basic');
     // service description
-    setServiceDescription('MVP Basic Service: We’ll create a streamlined MVP app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -56,7 +56,7 @@ const plusServiceHandler = () => {
     //service tile
     setServiceTile('MVP Plus');
     // service description
-    setServiceDescription('MVP Plus Service: Enhance your MVP with additional features and scalability. Rigorous testing ensures quality over time.');
+    setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
@@ -79,7 +79,7 @@ const premiumServiceHandler = () => {
     //service tile
     setServiceTile('MVP Premium');
     // service description
-    setServiceDescription('MVP Premium Service: Transform your MVP into a robust application. High availability and reliability are our focus.');
+    setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability are our focus.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
