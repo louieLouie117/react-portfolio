@@ -19,6 +19,9 @@ function Services(props) {
 
     // database integration
     const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
+
+    // branding logo integration
+    const [brandingLogoIntegration, setBrandingLogoIntegration] = useState({display: 'none'});
     // total amount
     const [TotalAmount, setTotalAmount] = useState('$560.00');
     // analytics integration
@@ -55,6 +58,8 @@ const basicServiceHandler = () => {
     setAnalyticsIntegration({display: 'none'});
     // database integration
     setDataBaseIntegration({display: 'none'});
+    setBrandingLogoIntegration({display: 'none'});
+
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
@@ -72,7 +77,7 @@ const plusServiceHandler = () => {
     setPurchaseBTNText('Get Plus');
     // payment integration
     // total amount
-    setTotalAmount('$1,760.00');
+    setTotalAmount('$2,980.00');
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     setHighlightAnalytics({color: '#0092db'});
@@ -83,6 +88,8 @@ const plusServiceHandler = () => {
 
     // database integration
     setDataBaseIntegration({display: 'none'});
+    // brandingLogoIntegration
+    setBrandingLogoIntegration({display: 'grid'});
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
@@ -104,7 +111,7 @@ const premiumServiceHandler = () => {
     // total amount
     setTotalAmount('$8,340.00');
     // analytics integration
-    setAnalyticsIntegration({display: 'grid'});
+    setAnalyticsIntegration({display: 'none'});
     // highlight payment
     setHighlightPayment({color: '#0092db'});
     // highlight analytics
@@ -113,6 +120,10 @@ const premiumServiceHandler = () => {
     setDataBaseIntegration({display: 'grid'});
     // payment integration
     setPaymentIntegration({display: 'grid'});
+
+    // brandingLogoIntegration
+    setBrandingLogoIntegration({display: 'none'});
+    
 
 
 
@@ -226,7 +237,16 @@ const premiumServiceHandler = () => {
                                 <section style={analyticsIntegration}>
                                 <ul className='pricing-container'>
                                 <li style={HighlightAnalytics}>Start marketing online............</li>
-                                    <li style={HighlightAnalytics}>$1,000.00</li>
+                                    <li style={HighlightAnalytics}>$720.00</li>
+                                </ul>
+                                </section>
+
+                         
+
+                                <section style={brandingLogoIntegration}>
+                                <ul className='pricing-container'>
+                                <li style={HighlightAnalytics}>Branding & logo...........</li>
+                                    <li style={HighlightAnalytics}>$1,500.00</li>
                                 </ul>
                                 </section>
 
