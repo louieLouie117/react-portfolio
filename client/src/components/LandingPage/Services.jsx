@@ -20,7 +20,7 @@ function Services(props) {
     // database integration
     const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$500.00');
+    const [TotalAmount, setTotalAmount] = useState('$560.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
@@ -96,13 +96,13 @@ const premiumServiceHandler = () => {
     
     setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
-    setMonthlyServicePrice('280.00');
+    setMonthlyServicePrice('340.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
     // payment integration
     setPaymentIntegration({display: 'grid'});
     // total amount
-    setTotalAmount('$8,280.00');
+    setTotalAmount('$8,340.00');
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     // highlight payment
@@ -134,18 +134,22 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Why Every Business Needs a Website.</h2>
+                            <h2>Why every business needs a website.</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/HeroImage.png" alt="" />
+                            <img src="/img/HeroImageMobile.png" alt="" />
                             <p>
                             In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
                             </p>
                             <ul>
         <li><strong>Credibility and Trust:</strong> A professional website builds trust with potential customers.</li>
-        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
+        {/* <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li> */}
         <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
-        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
+        {/* <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li> */}
         <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
+        <li>
+            <strong>Payment Integrations:</strong> A website allows seamless transactions by integrating payment gateways. Whether it’s e-commerce or service-based, customers expect secure and convenient payment options.
+        </li>
+        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li>
     </ul>
                             </div>
                             <footer>
