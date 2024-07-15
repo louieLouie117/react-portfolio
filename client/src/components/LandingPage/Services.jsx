@@ -7,7 +7,7 @@ function Services(props) {
     // service tile
     const [ServiceTile, setServiceTile] = useState('Website Basic');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('Website Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
@@ -53,7 +53,7 @@ const basicServiceHandler = () => {
     // payment integration
     setPaymentIntegration({display: 'none'});
     // total amount
-    setTotalAmount('$500.00');
+    setTotalAmount('$560.00');
     // analytics integration
     setAnalyticsIntegration({display: 'none'});
     // database integration
@@ -66,7 +66,7 @@ const plusServiceHandler = () => {
     //service tile
     setServiceTile('Website Plus');
     // service description
-    setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    setServiceDescription('Plus Service: Elevate your website with added features. Enhance your online presence by incorporating branding elements and a custom logo.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
@@ -96,7 +96,7 @@ const premiumServiceHandler = () => {
     //service tile
     setServiceTile('Website Premium');
     // service description
-    setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability are our focus.');
+    setServiceDescription('Premium Service: Transform your website into a robust application with high availability and reliability. Enjoy integrated database management and secure payment options');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -253,7 +253,7 @@ const premiumServiceHandler = () => {
                                 <section style={paymentIntegration}>
                                 <ul className='pricing-container'>
                                 <li style={HighlightPayment}>Accept online payments...........</li>
-                                    <li style={HighlightPayment}>$1,500.00</li>
+                                    <li style={HighlightPayment}>$2,500.00</li>
                                 </ul>
                                 </section>
 
