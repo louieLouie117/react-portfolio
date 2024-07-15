@@ -52,7 +52,7 @@
 }
 
 .ServicesCard>li>h2{
-    font: 1.7em sans-serif;
+    font: 1.2em sans-serif;
     color: #0080BF;
     width: 350px;
     text-align: center;
@@ -66,6 +66,11 @@
     display: grid;
     justify-items: center;
     row-gap: 30px;
+}
+
+.ServiceCardInfo>ul{
+    display: grid;
+    row-gap: 15px;
 }
 .ServiceCardInfo> p{
     font: 1.3em sans-serif;
@@ -147,6 +152,10 @@
     align-items: flex-end;
 }
 
+.pricing-container>li:last-of-type{
+justify-items: flex-end;
+}
+
 .ServicesCard>li>h3{
     font: 1em sans-serif;
     color: #0080BF;
@@ -191,7 +200,7 @@
     padding: 10px;
     border: none;
     background-color: white;
-    color: rgb(19, 109, 192);
+    color: #136dc0;
     height: 40px;
     width: 100%;
     cursor: pointer;
