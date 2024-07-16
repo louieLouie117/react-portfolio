@@ -15,10 +15,10 @@ function Services(props) {
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
     // payment integration
-    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+    const [setPaymentIntegration] = useState({display: 'none'});
 
     // database integration
-    const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
+    const [setDataBaseIntegration] = useState({display: 'none'});
 
     // branding logo integration
     const [brandingLogoIntegration, setBrandingLogoIntegration] = useState({display: 'none'});
@@ -34,7 +34,7 @@ function Services(props) {
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     // highlight payment
-    const [HighlightPayment, setHighlightPayment] = useState({color: '#0092db'});
+    const [setHighlightPayment] = useState({color: '#0092db'});
     // branding styles
     const [brandingStyles, setBrandingStyles] = useState({color: '#0092db'});
 
