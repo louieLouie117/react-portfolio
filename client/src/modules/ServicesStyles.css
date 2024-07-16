@@ -66,6 +66,7 @@
     display: grid;
     justify-items: center;
     row-gap: 30px;
+    padding-bottom: 30px;
 }
 
 .ServiceCardInfo>ul{

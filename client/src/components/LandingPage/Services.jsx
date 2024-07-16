@@ -13,7 +13,7 @@ function Services(props) {
     // monthly service price
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
     // purchase button text
-    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
+    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
     // payment integration
     const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
 
@@ -35,6 +35,8 @@ function Services(props) {
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     // highlight payment
     const [HighlightPayment, setHighlightPayment] = useState({color: '#0092db'});
+    // branding styles
+    const [brandingStyles, setBrandingStyles] = useState({color: '#0092db'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
@@ -72,24 +74,23 @@ const plusServiceHandler = () => {
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
     setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
     // set monthly service price
-    setMonthlyServicePrice('260.00');
+    setMonthlyServicePrice('150.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
     // payment integration
     // total amount
-    setTotalAmount('$2,980.00');
+    setTotalAmount('$1,650.00');
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     setHighlightAnalytics({color: '#0092db'});
     // highlight payment
-    setHighlightPayment({color: '#0092db'});
     // accept online payments
     setPaymentIntegration({display: 'none'});
 
     // database integration
     setDataBaseIntegration({display: 'none'});
     // brandingLogoIntegration
-    setBrandingLogoIntegration({display: 'grid'});
+    setBrandingLogoIntegration({display: 'none'});
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
@@ -103,15 +104,17 @@ const premiumServiceHandler = () => {
     
     setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
-    setMonthlyServicePrice('340.00');
+    setMonthlyServicePrice('240.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
+
+    
     // payment integration
     setPaymentIntegration({display: 'grid'});
     // total amount
-    setTotalAmount('$8,340.00');
+    setTotalAmount('$6,740.00');
     // analytics integration
-    setAnalyticsIntegration({display: 'none'});
+    setAnalyticsIntegration({display: 'grid'});
     // highlight payment
     setHighlightPayment({color: '#0092db'});
     // highlight analytics
@@ -122,7 +125,12 @@ const premiumServiceHandler = () => {
     setPaymentIntegration({display: 'grid'});
 
     // brandingLogoIntegration
-    setBrandingLogoIntegration({display: 'none'});
+    setBrandingLogoIntegration({display: 'grid'});
+
+    // branding styles
+    setBrandingStyles({color: '#0092db'});
+
+
     
 
 
@@ -152,20 +160,20 @@ const premiumServiceHandler = () => {
                             In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
                             </p>
                             <ul>
-        <li><strong>Credibility and Trust:</strong> A professional website builds trust with potential customers.</li>
-        {/* <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li> */}
+        <li><strong>Credibility and Trust:</strong> A professional website builds trust with customers.</li>
         <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
-        {/* <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li> */}
-        <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
+        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
+        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
+        {/* <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
         <li>
             <strong>Payment Integrations:</strong> A website allows seamless transactions by integrating payment gateways. Whether it’s e-commerce or service-based, customers expect secure and convenient payment options.
         </li>
-        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li>
+        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li> */}
     </ul>
                             </div>
                             <footer>
-                            <a href="https://calendly.com/d/cpbm-dt4-gh7/15min">
-                            <button className='MainBTN'>Schedule Consultation</button>
+                            <a href="https://calendly.com/cardona-luis/30min">
+                            <button className='MainBTN'>Schedule Free Consultation</button>
                             </a>
                             </footer>
 
@@ -222,38 +230,49 @@ const premiumServiceHandler = () => {
                             <main className='AppPricing-Container'>
                             <section>
                                 <ul className='pricing-container'>
-                                    <li>Website design...........</li>
-                                    <li>$250.00</li>
-                                </ul>
-                                </section>
-                                <section>
-                                <ul className='pricing-container'>
-                                    <li>Website development...........</li>
-                                    <li>$250.00</li>
-                                
+                                    <li>Website design and development...........</li>
+                                    <li>$500.00</li>
                                 </ul>
                                 </section>
 
+                                
+
+
+                                {/* <section>
+                                <ul className='pricing-container'>
+                                    <li>Website development...........</li>
+                                    <li>$0.00</li>
+                                
+                                </ul>
+                                </section> */}
+
                                 <section style={analyticsIntegration}>
                                 <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Start marketing online............</li>
-                                    <li style={HighlightAnalytics}>$720.00</li>
+                                <li style={HighlightAnalytics}>Online marketing and analytics............</li>
+                                    <li style={HighlightAnalytics}>$1,000.00</li>
                                 </ul>
                                 </section>
+
+                                {/* <section style={analyticsIntegration}>
+                                <ul className='pricing-container'>
+                                <li style={HighlightAnalytics}>Get social medial marketing ............</li>
+                                    <li style={HighlightAnalytics}>$500.00</li>
+                                </ul>
+                                </section> */}
 
                          
 
                                 <section style={brandingLogoIntegration}>
                                 <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Branding & logo...........</li>
-                                    <li style={HighlightAnalytics}>$1,500.00</li>
+                                <li style={brandingStyles}>Custom logo and social media branding...........</li>
+                                    <li style={brandingStyles}>$5,000.00</li>
                                 </ul>
-                                </section>
+                                </section> 
 
-                                <section style={paymentIntegration}>
+                                {/* <section style={paymentIntegration}>
                                 <ul className='pricing-container'>
                                 <li style={HighlightPayment}>Accept online payments...........</li>
-                                    <li style={HighlightPayment}>$2,500.00</li>
+                                    <li style={HighlightPayment}>$1,500.00</li>
                                 </ul>
                                 </section>
 
@@ -263,7 +282,7 @@ const premiumServiceHandler = () => {
                                 <li style={HighlightPayment}>Database integration...........</li>
                                     <li style={HighlightPayment}>$5,000.00</li>
                                 </ul>
-                                </section>
+                                </section> */}
 
 
                               
