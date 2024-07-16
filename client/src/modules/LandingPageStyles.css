@@ -1591,8 +1591,8 @@ html{
     .myHeader-container{
       row-gap: 20px;
       display: grid;
-      align-items: center;
-      height: 75vh;
+      /* align-items: center; */
+      /* height: 75vh; */
   
     }
     .myHeader-container aside{

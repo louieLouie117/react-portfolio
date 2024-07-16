@@ -3,7 +3,7 @@ import React from 'react'
 function Footer(props) {
   return (
     <div className='footer-container'>
-        <a href="/">LC Solutions</a>
+        <a href="/">LC Website Solutions</a>
         
     </div>
   )
