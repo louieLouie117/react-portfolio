@@ -2,16 +2,7 @@ import ServicesStyles from "../../modules/ServicesStyles.css"
 import React, { useState } from 'react';
 
 function Services(props) {
-    const [contactOptions, setContactOptions] = useState(true)
 
-const ContactMeHandler = e =>{
-  if(e.target.innerText === "Contact me"){
-    setContactOptions(true)
-  }else{
-    setContactOptions(false)
-  }
-
-}
 
     <ServicesStyles></ServicesStyles>
     // service tile
@@ -172,7 +163,7 @@ const premiumServiceHandler = () => {
 
                             <div className="PeaceOfMindInfo">
                             <h3>Have a expert at your fingertips. If you have any question please contact me.</h3>
-                            <div className='Contact-Container' style={{display: contactOptions ? "grid" : "none"}}>
+                            <div className='Contact-Container'>
 
 
                       <main>
