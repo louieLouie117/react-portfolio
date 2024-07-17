@@ -14,11 +14,7 @@ function Services(props) {
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
-    // payment integration
-    const [setPaymentIntegration] = useState({display: 'none'});
-
-    // database integration
-    const [setDataBaseIntegration] = useState({display: 'none'});
+   
 
     // branding logo integration
     const [brandingLogoIntegration, setBrandingLogoIntegration] = useState({display: 'none'});
@@ -33,17 +29,15 @@ function Services(props) {
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
-    // highlight payment
-    const [setHighlightPayment] = useState({color: '#0092db'});
     // branding styles
-    const [brandingStyles, setBrandingStyles] = useState({color: '#0092db'});
+    const [brandingStyles] = useState({color: '#0092db'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
     setServiceTile('Basic Website');
     // service description
-    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('Basic: Obtain a streamlined website tailored to your immediate needs.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -53,14 +47,11 @@ const basicServiceHandler = () => {
     // set purchase button text
     setPurchaseBTNText('Get Basic');
     // payment integration
-    setPaymentIntegration({display: 'none'});
-    // total amount
-    setTotalAmount('$560.00');
-    // analytics integration
+
     setAnalyticsIntegration({display: 'none'});
-    // database integration
-    setDataBaseIntegration({display: 'none'});
     setBrandingLogoIntegration({display: 'none'});
+
+
 
 }
 // plusServiceHandler
@@ -68,7 +59,7 @@ const plusServiceHandler = () => {
     //service tile
     setServiceTile('Website Plus');
     // service description
-    setServiceDescription('Plus Service: Elevate your website with added features. Enhance your online presence by incorporating branding elements and a custom logo.');
+    setServiceDescription('Plus: Enhance your website and kickstart online marketing. Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
@@ -77,27 +68,22 @@ const plusServiceHandler = () => {
     setMonthlyServicePrice('150.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
-    // payment integration
     // total amount
     setTotalAmount('$1,650.00');
+
+    // brandingLogoIntegration
+    setBrandingLogoIntegration({display: 'none'});
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     setHighlightAnalytics({color: '#0092db'});
-    // highlight payment
-    // accept online payments
-    setPaymentIntegration({display: 'none'});
-
-    // database integration
-    setDataBaseIntegration({display: 'none'});
-    // brandingLogoIntegration
-    setBrandingLogoIntegration({display: 'none'});
 }
+  
 // premiumServiceHandler
 const premiumServiceHandler = () => {
     //service tile
     setServiceTile('Website Premium');
     // service description
-    setServiceDescription('Premium Service: Transform your website into a robust application with high availability and reliability. Enjoy integrated database management and secure payment options');
+    setServiceDescription('Premium: Get a custom logo design aligned with your business identity.Elevate your social media presence with regular content posting to engage your audience.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -109,29 +95,13 @@ const premiumServiceHandler = () => {
     setPurchaseBTNText('Get Premium');
 
     
-    // payment integration
-    setPaymentIntegration({display: 'grid'});
-    // total amount
-    setTotalAmount('$6,740.00');
-    // analytics integration
+   // analytics integration
     setAnalyticsIntegration({display: 'grid'});
-    // highlight payment
-    setHighlightPayment({color: '#0092db'});
-    // highlight analytics
     setHighlightAnalytics({color: 'black'});
-    // database integration
-    setDataBaseIntegration({display: 'grid'});
-    // payment integration
-    setPaymentIntegration({display: 'grid'});
-
     // brandingLogoIntegration
     setBrandingLogoIntegration({display: 'grid'});
 
-    // branding styles
-    setBrandingStyles({color: '#0092db'});
 
-
-    
 
 
 
@@ -230,7 +200,7 @@ const premiumServiceHandler = () => {
                             <main className='AppPricing-Container'>
                             <section>
                                 <ul className='pricing-container'>
-                                    <li>Website design and development...........</li>
+                                    <li>Design and development...........</li>
                                     <li>$500.00</li>
                                 </ul>
                                 </section>
@@ -264,7 +234,7 @@ const premiumServiceHandler = () => {
 
                                 <section style={brandingLogoIntegration}>
                                 <ul className='pricing-container'>
-                                <li style={brandingStyles}>Custom logo and social media branding...........</li>
+                                <li style={brandingStyles}>Logo and social media branding...........</li>
                                     <li style={brandingStyles}>$5,000.00</li>
                                 </ul>
                                 </section> 
