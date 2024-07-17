@@ -856,19 +856,8 @@ html{
 
   .Contact-Container{
     display: grid;
-    grid-template-columns: 30px 1fr;
     grid-template-rows: 70px ;
-    position: absolute;
-    left: 0;
-    top: 160px;
-    row-gap: 10px;
-    column-gap: 10px;
-    padding: 20px;
-    align-items: center;
-    width: 340px;
-    background-color: whitesmoke;
-    border-radius: 0 30px 30px 0;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.146);
+    padding: 10px;
 
   }
 
@@ -895,7 +884,7 @@ html{
 
   .Contact-Container>main{
     display: flex;
-    column-gap: 10px;
+    column-gap: 20px;
     justify-self: center;
     padding-top: 5px;
 
@@ -916,7 +905,7 @@ html{
     color: #0080BF;
     font: .8em sans-serif;
     border: none;
-    background-color: whitesmoke;
+    background-color: white;
 
   }
 

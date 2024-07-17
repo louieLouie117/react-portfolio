@@ -50,16 +50,7 @@ window.onload = function() {
 }
 
 
-const [contactOptions, setContactOptions] = useState(false)
 
-const ContactMeHandler = e =>{
-  if(e.target.innerText === "Contact me"){
-    setContactOptions(true)
-  }else{
-    setContactOptions(false)
-  }
-
-}
 
 
 
@@ -111,37 +102,7 @@ const ContactMeHandler = e =>{
 
          </header>
                   
-                  <div className='Contact-Container' style={{display: contactOptions ? "grid" : "none"}}>
-
-                      <header>
-                        <button onClick={ContactMeHandler}>Close</button>
-                      </header>
-
-                      <main>
-                      <a href="tel:931-401-7238">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
-                      <a href="sms:931-401-7238">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
-                      </a>
-
-                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
-                      </a>
-                      <a href="https://www.instagram.com/garagesally.founder/">
-                        <img src="/img/Icons/IconInsta.png" alt="" />
-                      <button>DM</button>
-                      </a>
-
-                      </main>
-               
-
-                    </div>
+                  
 
 {/*       
         <div className="mySkills-container">
