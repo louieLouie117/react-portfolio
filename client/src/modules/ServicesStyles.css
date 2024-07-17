@@ -22,7 +22,7 @@
     display: grid;
     row-gap: 10px;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     align-content: flex-start;
     max-width: 35em;
@@ -141,8 +141,9 @@
 
 .pricing-container{
     display: grid;
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 1fr 100px;
     justify-content: flex-start;
+    row-gap: 10px;
     
 
 }

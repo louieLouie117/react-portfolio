@@ -94,6 +94,8 @@ const premiumServiceHandler = () => {
     // set purchase button text
     setPurchaseBTNText('Get Premium');
 
+    // total amount
+    setTotalAmount('$6,740.00');
     
    // analytics integration
     setAnalyticsIntegration({display: 'grid'});

@@ -26,7 +26,7 @@ function WorkExperience(props) {
         
         <div className="cardItems">
 
-          <h1>Client Portfolio</h1>
+          <h1>Portfolio</h1>
           
                   <ul>   
                   <li>
