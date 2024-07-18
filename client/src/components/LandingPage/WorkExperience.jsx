@@ -12,10 +12,7 @@ function WorkExperience(props) {
   return (
     <div >
       <div className="projectsPage-container" id='PageTop'>
-      <nav className='FilterWebsite-Container'>
-
-                 
-                </nav>
+   
         <main>
                 {/* <picture class="headerImage-container">
                     <source media="(min-width: 1300px)" srcset="/img/desktopImg.png" />
