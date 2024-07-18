@@ -10,7 +10,7 @@ function Services(props) {
     // service description
     const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     // service purchase link
-    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00geVkg6z6MVgyk009');
     // monthly service price
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
     // purchase button text
@@ -42,7 +42,7 @@ const basicServiceHandler = () => {
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
-    setPurchaseLink('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
+    setPurchaseLink('https://buy.stripe.com/00geVkg6z6MVgyk009');
     // set monthly service price
     setMonthlyServicePrice('60.00');
     // set purchase button text
@@ -52,6 +52,7 @@ const basicServiceHandler = () => {
     setAnalyticsIntegration({display: 'none'});
     setBrandingLogoIntegration({display: 'none'});
 
+    setTotalAmount('$560.00');
 
 
 }
@@ -64,7 +65,7 @@ const plusServiceHandler = () => {
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
-    setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
+    setPurchaseLink('https://buy.stripe.com/aEU5kK6vZdbjci48wG');
     // set monthly service price
     setMonthlyServicePrice('150.00');
     // set purchase button text
@@ -89,7 +90,7 @@ const premiumServiceHandler = () => {
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     
-    setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
+    setPurchaseLink('https://buy.stripe.com/bIYbJ86vZ2wFeqc6oz');
     // set monthly service price
     setMonthlyServicePrice('240.00');
     // set purchase button text
