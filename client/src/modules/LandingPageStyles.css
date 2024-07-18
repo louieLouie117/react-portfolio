@@ -177,8 +177,9 @@ html{
     position: relative;
     border-radius: 10px;
     display: grid;
-    background-color: whitesmoke;
-    /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
+    background-color: white;
+    /* height: 1000px; */
+        /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
     /* box-shadow:  0 -10px 10px rgba(0, 0, 0, 0.104); */
 
   }
@@ -1265,7 +1266,8 @@ html{
 
   .devTools-container{
     display: grid;
-    position: relative;background-color: whitesmoke;
+    /* position: relative;background-color: whitesmoke; */
+    background: linear-gradient(180deg, #00aecd, #136DC0);
     justify-content: center;
     row-gap: 20px;
     width: auto;
@@ -1284,14 +1286,18 @@ html{
     grid-row: 1/2;
     height: 10px;
     width: auto;
-    background: #2862AF;
+    /* background: #2862AF; */
   }
   
-  .devTools-container h2{
-    color: #2862AF;
+  .devTools-container>h2{
+    color: white;
     text-align: center;
     font: 2em sans-serif;
     margin-top: 40px;
+  }
+
+  .devTools-container>section> ul h2{
+    color: #0080BF;
   }
   
   .devTools-container ul{
@@ -1580,8 +1586,8 @@ html{
     .myHeader-container{
       row-gap: 20px;
       display: grid;
-      /* align-items: center; */
-      /* height: 75vh; */
+      align-items: center;
+      height: 55vh;
   
     }
     .myHeader-container aside{
@@ -1604,11 +1610,13 @@ html{
 
     .myHeader-container>header>footer>h2{
       width: auto;
+      font: 2.3em sans-serif;
     }
     #frameworks{
       width: 450px;
     
     }
+    
   
     
       .linkCard-container{

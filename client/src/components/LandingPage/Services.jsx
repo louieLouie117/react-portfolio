@@ -157,7 +157,6 @@ const premiumServiceHandler = () => {
 
                 <section>
                     <div className="PeaceOfMind">
-                        <h2>Peace of mind</h2>
                         <main>
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
