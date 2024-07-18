@@ -1286,7 +1286,7 @@ html{
     grid-row: 1/2;
     height: 10px;
     width: auto;
-    background: #2862AF;
+    /* background: #2862AF; */
   }
   
   .devTools-container>h2{
@@ -1610,11 +1610,13 @@ html{
 
     .myHeader-container>header>footer>h2{
       width: auto;
+      font: 2.3em sans-serif;
     }
     #frameworks{
       width: 450px;
     
     }
+    
   
     
       .linkCard-container{
