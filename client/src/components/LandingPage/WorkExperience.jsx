@@ -104,7 +104,7 @@ function WorkExperience(props) {
 
              
                      
-
+{/* 
                     <li>
 
                         
@@ -117,7 +117,7 @@ function WorkExperience(props) {
                                     </footer>
                                                 
                           
-                        </li>
+                        </li> */}
 
                         
                     <li>
