@@ -123,92 +123,16 @@ const premiumServiceHandler = () => {
             </header> */}
 
             <main>
-                <section>
-                    <ul className='ServicesCard'>
-
-                        <li>
-                            <h2>Why every business needs a website.</h2>
-                            <div className='ServiceCardInfo'>
-                            <img src="/img/HeroImageMobile.png" alt="" />
-                            <p>
-                            In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
-                            </p>
-                            <ul>
-        <li><strong>Credibility and Trust:</strong> A professional website builds trust with customers.</li>
-        <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
-        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
-        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
-        {/* <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
-        <li>
-            <strong>Payment Integrations:</strong> A website allows seamless transactions by integrating payment gateways. Whether it’s e-commerce or service-based, customers expect secure and convenient payment options.
-        </li>
-        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li> */}
-    </ul>
-                            </div>
-                            <footer>
-                            <a href="https://calendly.com/cardona-luis/30min">
-                            <button className='MainBTN'>Schedule Free Consultation</button>
-                            </a>
-                            </footer>
-
-
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <div className="PeaceOfMind">
-                        <main>
-                        <img src="/img/PeaceOfMindImg.png" alt="" />
-
-                            <div className="PeaceOfMindInfo">
-                            <h3>Have a expert at your fingertips. If you have any question please contact me.</h3>
-                            <div className='Contact-Container'>
-
-
-                      <main>
-                      <a href="tel:925-809-2738">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
-                      <a href="sms:925-809-2738">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
-                      </a>
-
-                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
-                      </a>
-                      <a href="https://www.instagram.com/garagesally.founder/">
-                        <img src="/img/Icons/IconInsta.png" alt="" />
-                      <button>DM</button>
-                      </a>
-
-                      </main>
                
-
-                    </div>
-
-                            </div>
-
-                        </main>
-                    </div>
-                </section>
+    
 
                 <section className='Cost-Container'>
-                    <header>
-                    <img src="/img/CostImg.png" alt="" />
-                    <h3>Pricing and Services</h3>
-                    {/* <p>You can build a price base on your buisness needs or get full services.</p>
-                    <nav>
-                    <button>Build a price</button>
-                    <button>Full Services</button>
-                    </nav> */}
+                <aside>
 
-                    </header>
+<h1>Get website that fit your business needed.</h1>
+
+</aside>
+
 
                     <main>
                     <ul className='ServicesCard ServiceBackground'>
@@ -329,6 +253,40 @@ const premiumServiceHandler = () => {
                     </ul>
                     </main>
                 </section>
+
+                <section>
+                    <ul className='ServicesCard'>
+
+                        <li>
+                            <h2>Why every business needs a website.</h2>
+                            <div className='ServiceCardInfo'>
+                            <img src="/img/HeroImageMobile.png" alt="" />
+                            <p>
+                            In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
+                            </p>
+                            <ul>
+        <li><strong>Credibility and Trust:</strong> A professional website builds trust with customers.</li>
+        <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
+        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
+        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
+        {/* <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
+        <li>
+            <strong>Payment Integrations:</strong> A website allows seamless transactions by integrating payment gateways. Whether it’s e-commerce or service-based, customers expect secure and convenient payment options.
+        </li>
+        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li> */}
+    </ul>
+                            </div>
+                            <footer>
+                            <a href="https://calendly.com/cardona-luis/30min">
+                            <button className='MainBTN'>Schedule Free Consultation</button>
+                            </a>
+                            </footer>
+
+
+                        </li>
+                    </ul>
+                </section>
+
             </main>
 
 
