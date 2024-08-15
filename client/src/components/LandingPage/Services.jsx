@@ -129,7 +129,7 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                 <aside>
 
-<h1>Get website that fit your business needed.</h1>
+<h1>Get a website that fits your business needed.</h1>
 
 </aside>
 
