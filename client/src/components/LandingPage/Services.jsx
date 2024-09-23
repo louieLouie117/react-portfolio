@@ -8,11 +8,11 @@ function Services(props) {
     // service tile
     const [ServiceTile, setServiceTile] = useState('Website Basic');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness with 50% off for the first year.');
     // service purchase link
-    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00geVkg6z6MVgyk009');
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/aEU8wW5rV0oxgyk9AM?prefilled_promo_code=50OFF');
     // monthly service price
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('50.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
    
@@ -20,7 +20,7 @@ function Services(props) {
     // branding logo integration
     const [brandingLogoIntegration, setBrandingLogoIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$560.00');
+    const [TotalAmount, setTotalAmount] = useState('$550.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
@@ -38,13 +38,13 @@ const basicServiceHandler = () => {
     //service tile
     setServiceTile('Basic Website');
     // service description
-    setServiceDescription('Basic: Obtain a streamlined website tailored to your immediate needs.');
+    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness with 50% off for the first year.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
-    setPurchaseLink('https://buy.stripe.com/00geVkg6z6MVgyk009');
+    setPurchaseLink('https://buy.stripe.com/aEU8wW5rV0oxgyk9AM?prefilled_promo_code=50OFF');
     // set monthly service price
-    setMonthlyServicePrice('60.00');
+    setMonthlyServicePrice('50.00');
     // set purchase button text
     setPurchaseBTNText('Get Basic');
     // payment integration
@@ -52,7 +52,7 @@ const basicServiceHandler = () => {
     setAnalyticsIntegration({display: 'none'});
     setBrandingLogoIntegration({display: 'none'});
 
-    setTotalAmount('$560.00');
+    setTotalAmount('$550.00');
 
 
 }
