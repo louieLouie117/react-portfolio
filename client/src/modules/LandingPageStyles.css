@@ -273,6 +273,7 @@ li ::-webkit-scrollbar {
 .cardItems>h1{
   font: 2em sans-serif;
   padding: 20px;
+  justify-self: center;
 }
 
 .cardItems ul {
@@ -309,7 +310,7 @@ li ::-webkit-scrollbar {
   border-radius: 12px 12px 0 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.74);
   justify-content: center;
-  height: 450px;
+  height: 300px;
   border: solid black 2px;
   border-radius: 20px;
   background-color: white;
@@ -1356,10 +1357,9 @@ h1, h3{
 
 
 .CardFooter-Container>a>button{
-  height: 40px;
+  height: 35px;
   border-radius: 7px;
   cursor: pointer;
-  border: solid 0.5px rgb(145, 145, 145);
   width: 90%;
 }
 
@@ -1395,7 +1395,7 @@ h1, h3{
 }
 
 .MainBTN{
-  font: 1.3em sans-serif;
+  font: 1em sans-serif;
   color: white;
   background: linear-gradient(rgb(0, 174, 205), rgb(19, 109, 192) 50%);
   width: 100%;
