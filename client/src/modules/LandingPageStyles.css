@@ -806,7 +806,7 @@ li ::-webkit-scrollbar {
 
 .myHeader-container{
   display: grid;
-  background: linear-gradient(180deg, #00aecd, #136DC0);
+  /* background: linear-gradient(180deg, #00aecd, #136DC0); */
   /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
 
   justify-items: center;
@@ -1623,9 +1623,9 @@ h1, h3{
   }
 
   
-  .myHeader-container{
+  /* .myHeader-container{
     height: 75vh;
-  }
+  } */
 
   .Cost-Container{
     grid-template-columns: 1fr 1fr;

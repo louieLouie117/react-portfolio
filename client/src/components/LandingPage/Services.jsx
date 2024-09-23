@@ -1,5 +1,8 @@
 import ServicesStyles from "../../modules/ServicesStyles.css"
+
 import React, { useState } from 'react';
+import HeroBanner from '../../components/LandingPage/HeroBanner'
+
 
 function Services(props) {
 
@@ -252,6 +255,11 @@ const premiumServiceHandler = () => {
 
                     </ul>
                     </main>
+                </section>
+
+                <section>
+      <HeroBanner></HeroBanner>
+
                 </section>
 
                 <section>
