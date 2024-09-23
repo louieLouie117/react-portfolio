@@ -6,9 +6,9 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('Website Basic');
+    const [ServiceTile, setServiceTile] = useState('Mobile Website');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness with 50% off for the first year.');
+    const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Obtain a streamlined mobile website tailored to your immediate needs, compatible across all devices. Benefit from regular updates and cost-efficiency, with an exclusive 50% discount for the first year.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/aEU8wW5rV0oxgyk9AM?prefilled_promo_code=50OFF');
     // monthly service price
@@ -36,9 +36,9 @@ function Services(props) {
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('Basic Website');
+    setServiceTile('Mobile Website');
     // service description
-    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness with 50% off for the first year.');
+    setServiceDescription('Website Basic Service: Obtain a streamlined mobile website tailored to your immediate needs, compatible across all devices. Benefit from regular updates and cost-efficiency, with an exclusive 50% discount for the first year.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -59,7 +59,7 @@ const basicServiceHandler = () => {
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('Website Plus');
+    setServiceTile('Website Plus Marketing');
     // service description
     setServiceDescription('Plus: Enhance your website and kickstart online marketing. Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
