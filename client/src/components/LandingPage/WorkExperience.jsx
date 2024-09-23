@@ -23,7 +23,7 @@ function WorkExperience(props) {
         
         <div className="cardItems">
 
-          <h1>Portfolio</h1>
+          <h1>LC Website Solutions</h1>
           
                   <ul>   
                   <li>
