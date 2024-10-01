@@ -12,18 +12,19 @@ function WorkExperience(props) {
   return (
     <div >
       <div className="projectsPage-container" id='PageTop'>
-   
+      <header>
+            <img src="img/Icons/ModernLogoSmall.png" alt="" />
+            <h1>LC Website Solutions</h1>
+          </header>
+
+          
         <main>
-                {/* <picture class="headerImage-container">
-                    <source media="(min-width: 1300px)" srcset="/img/desktopImg.png" />
-                    <source media="(min-width: 725px)" srcset="/img/tabletImg.png" />
-                    <img src="/img/mobileImgLarge.png" alt="" />
-                </picture> */}
-               
-        
+  
+           
         <div className="cardItems">
 
-          <h1>LC Website Solutions</h1>
+
+          
           
                   <ul>   
                   <li>

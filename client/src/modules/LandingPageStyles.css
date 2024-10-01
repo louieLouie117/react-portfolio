@@ -48,7 +48,9 @@ li ::-webkit-scrollbar {
 .LandingPage-Container{
   display: grid;
   /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
-  background: linear-gradient(180deg, #00aecd, #136DC0);
+  /* background: linear-gradient(180deg, #00aecd, #136DC0); */
+  background: linear-gradient(180deg, #000000, #136DC0);
+
 
 
 
@@ -63,10 +65,12 @@ li ::-webkit-scrollbar {
 /* width */
 .cardItems ::-webkit-scrollbar {
   width: 20px;
+  height: 5px;
 }
 
 .devTools-container ::-webkit-scrollbar {
   width: 20px;
+
 }
 
 /* Track */
@@ -180,8 +184,7 @@ li ::-webkit-scrollbar {
   height: auto;
   position: relative;
   display: grid;
-  background-color: white;
-  margin-top: 10px;
+  background-color: #020D18;
   /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
   /* box-shadow:  0 -10px 10px rgba(0, 0, 0, 0.104); */
 
@@ -210,13 +213,19 @@ li ::-webkit-scrollbar {
 
 
 .projectsPage-container>header{
-  display: grid;
-  row-gap: 20px;
-  grid-template-columns: 1.2fr 1fr ;
-  align-content: center;
-  justify-items: center;
-  padding: 10px;
-  margin-bottom: 30px;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color: #020D18;
+
+}
+
+.projectsPage-container>header>h1{
+  font: 1.5em sans-serif;
+  color: white;
+
 }
 
 
