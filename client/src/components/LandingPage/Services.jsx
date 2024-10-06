@@ -6,6 +6,40 @@ import HeroBanner from '../../components/LandingPage/HeroBanner'
 
 function Services(props) {
 
+    const renderBasicService = () => {
+        return (
+            <ul className='pricing-container'>
+                <li>Website design and development.......</li>
+                <li>$500.00</li>
+            </ul>
+        );
+    };
+
+    // render puls service
+    const renderPlusService = () => {
+        return (
+            <ul className='pricing-container' style={PlusServers}>
+            <li>Setup Online Marketing.......</li>
+            <li>$500.00</li>
+            </ul>
+        );
+    };
+
+    const renderPremiumService = () => {
+        return (
+            <ul className='pricing-container' style={brandingLogoIntegration}>
+            <li>App design and development....</li>
+            <li>$1,000.00</li>
+            <li>Logo and Branding.......</li>
+            <li>$2,000.00</li>
+            <li>Database</li>
+            <li>$5,000.00</li>
+            </ul>
+        );
+    };
+    
+    
+
 
     <ServicesStyles></ServicesStyles>
     // service tile
@@ -25,7 +59,7 @@ function Services(props) {
     // total amount
     const [TotalAmount, setTotalAmount] = useState('$550.00');
     // analytics integration
-    const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
+    const [PlusServers, setPlusServers] = useState({display: 'none'});
     // highlight analytics
     const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#0092db'});
 
@@ -52,7 +86,7 @@ const basicServiceHandler = () => {
     setPurchaseBTNText('Get Basic');
     // payment integration
 
-    setAnalyticsIntegration({display: 'none'});
+    setPlusServers({display: 'none'});
     setBrandingLogoIntegration({display: 'none'});
 
     setTotalAmount('$550.00');
@@ -62,7 +96,7 @@ const basicServiceHandler = () => {
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('Website Plus Marketing');
+    setServiceTile('Website & Marketing');
     // service description
     setServiceDescription('Plus: Enhance your website and kickstart online marketing. Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -79,14 +113,14 @@ const plusServiceHandler = () => {
     // brandingLogoIntegration
     setBrandingLogoIntegration({display: 'none'});
     // analytics integration
-    setAnalyticsIntegration({display: 'grid'});
+    setPlusServers({display: 'grid'});
     setHighlightAnalytics({color: '#0092db'});
 }
   
 // premiumServiceHandler
 const premiumServiceHandler = () => {
     //service tile
-    setServiceTile('Website Premium');
+    setServiceTile('Website & App');
     // service description
     setServiceDescription('Premium: Get a custom logo design aligned with your business identity.Elevate your social media presence with regular content posting to engage your audience.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
@@ -103,7 +137,7 @@ const premiumServiceHandler = () => {
     setTotalAmount('$6,740.00');
     
    // analytics integration
-    setAnalyticsIntegration({display: 'grid'});
+    setPlusServers({display: 'grid'});
     setHighlightAnalytics({color: 'black'});
     // brandingLogoIntegration
     setBrandingLogoIntegration({display: 'grid'});
@@ -156,61 +190,19 @@ const premiumServiceHandler = () => {
                             </header>
                             <main className='AppPricing-Container'>
                             <section>
-                                <ul className='pricing-container'>
-                                    <li>Design and development...........</li>
-                                    <li>$500.00</li>
-                                </ul>
+                                {renderBasicService()}
+
+                                </section>
+                                <section>
+                                {renderPlusService()}
                                 </section>
 
-                                
-
-
-                                {/* <section>
-                                <ul className='pricing-container'>
-                                    <li>Website development...........</li>
-                                    <li>$0.00</li>
-                                
-                                </ul>
-                                </section> */}
-
-                                <section style={analyticsIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Online marketing and analytics............</li>
-                                    <li style={HighlightAnalytics}>$1,000.00</li>
-                                </ul>
-                                </section>
-
-                                {/* <section style={analyticsIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Get social medial marketing ............</li>
-                                    <li style={HighlightAnalytics}>$500.00</li>
-                                </ul>
-                                </section> */}
-
-                         
-
-                                <section style={brandingLogoIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={brandingStyles}>Logo and social media branding...........</li>
-                                    <li style={brandingStyles}>$5,000.00</li>
-                                </ul>
-                                </section> 
-
-                                {/* <section style={paymentIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Accept online payments...........</li>
-                                    <li style={HighlightPayment}>$1,500.00</li>
-                                </ul>
+                                <section>
+                                {renderPremiumService()}
                                 </section>
 
 
-                                <section style={dataBaseIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Database integration...........</li>
-                                    <li style={HighlightPayment}>$5,000.00</li>
-                                </ul>
-                                </section> */}
-
+                            
 
                               
 
