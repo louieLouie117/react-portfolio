@@ -266,27 +266,24 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Why every business needs a website.</h2>
+                            <h2>Crafting Your Digital Presence with Passion.</h2>
                             <div className='ServiceCardInfo'>
                             <img src="/img/HeroImageMobile.png" alt="" />
+
                             <p>
-                            In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
+                            In today’s digital world, having a website is no longer a luxury—it’s a necessity. From enterprises to small local businesses, having a website is essential.
                             </p>
-                            <ul>
-        <li><strong>Credibility and Trust:</strong> A professional website builds trust with customers.</li>
-        <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
-        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
-        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
-        {/* <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
-        <li>
-            <strong>Payment Integrations:</strong> A website allows seamless transactions by integrating payment gateways. Whether it’s e-commerce or service-based, customers expect secure and convenient payment options.
-        </li>
-        <li><strong>Database Management:</strong>  Websites collect valuable data on user interactions. Proper database management ensures efficient storage, retrieval, and analysis of this information, aiding business decisions and personalization.</li> */}
-    </ul>
+
+                            <p> I remember the first time I designed a website for a friend’s restaurant. Watching their business flourish online ignited my passion for web design and development. Since then, I’ve helped numerous businesses establish their online presence and grow their brand.</p>
+
+                            <p>Whether you’re looking to create a new website or revamp an existing one, I can help. I specialize in creating custom websites tailored to your unique needs and goals.</p>
+
+                            <p>Schedule an appointment today to discuss your website needs, and let’s create something amazing together.</p>
+      
                             </div>
                             <footer>
                             <a href="https://calendly.com/cardona-luis/30min">
-                            <button className='MainBTN'>Schedule Free Consultation</button>
+                            <button className='MainBTN'>Schedule Appointment</button>
                             </a>
                             </footer>
 
