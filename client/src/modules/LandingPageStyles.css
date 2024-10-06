@@ -47,14 +47,9 @@ li ::-webkit-scrollbar {
 }
 .LandingPage-Container{
   display: grid;
-  /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
-  /* background: linear-gradient(180deg, #00aecd, #136DC0); */
-  background: linear-gradient(180deg, #000000, #136DC0);
+  background: linear-gradient(190deg, black, #0298DC);
+  background: linear-gradient(130deg, whitesmoke, rgb(0, 49, 112));
 
-
-
-
-  /* justify-items: center; */
 }
 
 
@@ -184,7 +179,6 @@ li ::-webkit-scrollbar {
   height: auto;
   position: relative;
   display: grid;
-  background-color: #020D18;
   /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
   /* box-shadow:  0 -10px 10px rgba(0, 0, 0, 0.104); */
 
@@ -218,13 +212,13 @@ li ::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  background-color: #020D18;
 
 }
 
 .projectsPage-container>header>h1{
   font: 1.5em sans-serif;
-  color: white;
+  color: black;
+  /* color: white; */
 
 }
 
@@ -277,7 +271,7 @@ li ::-webkit-scrollbar {
   height: auto;
   align-self: center;
   /* margin-top: -150px; */
-  box-shadow: -5px 10px 13px rgba(0, 0, 0, 0.11);
+  /* box-shadow: -5px 10px 13px rgba(0, 0, 0, 0.11); */
 }
 
 .cardItems>h1{
@@ -292,7 +286,7 @@ li ::-webkit-scrollbar {
   overflow-x: scroll;
   overflow-y: hidden;
   /* scrollbar-width: none; */
-  margin: 0px;
+  margin-top: 30px;
 }
 
 .cardItems ul li:first-child{
