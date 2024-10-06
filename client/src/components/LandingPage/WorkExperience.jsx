@@ -17,22 +17,18 @@ function WorkExperience(props) {
             <h1>LC Website Solutions</h1>
           </header>
 
-          
+
         <main>
   
            
         <div className="cardItems">
-
-
-          
-          
                   <ul>   
                   <li>
                 
 
                     <img src="img/Portfolio/journalPocket414.png" alt=''/>
                           <footer className='CardFooter-Container'>
-                          <a href="https://journalpocketapp.com/">
+                          <a href="https://journalpocket.com/">
                                   <button>View</button>
                                   </a>
 
