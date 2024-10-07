@@ -8,7 +8,7 @@ function Services(props) {
 
     const renderBasicService = () => {
         return (
-            <ul className='pricing-container'>
+            <ul className='pricing-container' style={BasicServicesStyles}>
                 <li>Website design and development.......</li>
                 <li>$500.00</li>
             </ul>
@@ -19,8 +19,12 @@ function Services(props) {
     const renderPlusService = () => {
         return (
             <ul className='pricing-container' style={PlusServers}>
+            <li>Website design and development.......</li>
+            <li>$500.00</li>
             <li>Setup Online Marketing.......</li>
             <li>$500.00</li>
+            <li>Logo and Branding.......</li>
+            <li>$2,000.00</li>
             </ul>
         );
     };
@@ -30,8 +34,7 @@ function Services(props) {
             <ul className='pricing-container' style={brandingLogoIntegration}>
             <li>App design and development....</li>
             <li>$1,000.00</li>
-            <li>Logo and Branding.......</li>
-            <li>$2,000.00</li>
+       
             <li>Database</li>
             <li>$5,000.00</li>
             </ul>
@@ -39,6 +42,7 @@ function Services(props) {
     };
     
     
+    const [BasicServicesStyles, setBasicServicesStyles] = useState({display: 'grid'});
 
 
     <ServicesStyles></ServicesStyles>
@@ -88,7 +92,7 @@ const basicServiceHandler = () => {
 
     setPlusServers({display: 'none'});
     setBrandingLogoIntegration({display: 'none'});
-
+    
     setTotalAmount('$550.00');
 
 
@@ -109,6 +113,9 @@ const plusServiceHandler = () => {
     setPurchaseBTNText('Get Plus');
     // total amount
     setTotalAmount('$1,650.00');
+
+    // display basic service none renderBasicService
+    setBasicServicesStyles({display: 'none'});
 
     // brandingLogoIntegration
     setBrandingLogoIntegration({display: 'none'});
@@ -166,9 +173,11 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                 <aside>
 
-<h1>Get a website that fits your business needed.</h1>
+        <h1>Bring your business online.</h1>
+        <h1>Transform your website into an app.</h1>
+        <h1>Establish a unique brand identity</h1>
 
-</aside>
+        </aside>
 
 
                     <main>

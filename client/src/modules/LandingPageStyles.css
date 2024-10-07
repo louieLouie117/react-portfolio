@@ -225,6 +225,11 @@ li ::-webkit-scrollbar {
 
 }
 
+.projectsPage-container>header>img{
+  height: 45px;
+  width: auto;
+}
+
 
 
 

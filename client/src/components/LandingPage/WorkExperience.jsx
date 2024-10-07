@@ -13,7 +13,7 @@ function WorkExperience(props) {
     <div >
       <div className="projectsPage-container" id='PageTop'>
       <header>
-            <img src="img/Icons/ModernLogoSmall.png" alt="" />
+            <img src="img/Icons/ModernLogo.png" alt="" />
             <h1>LC Website Solutions</h1>
           </header>
 
@@ -97,24 +97,6 @@ function WorkExperience(props) {
 
                               </footer>
                       </li>
-                
-
-             
-                     
-{/* 
-                    <li>
-
-                        
-                        <img src="img/Portfolio/sugarRay414.png" alt=''/>
-                                     
-                                    <footer className='CardFooter-Container'>                                 
-                                  <a href="https://www.thesugarayssweettea.com/">
-                                    <button>View</button> 
-                                    </a>
-                                    </footer>
-                                                
-                          
-                        </li> */}
 
                         
                     <li>
@@ -148,19 +130,19 @@ function WorkExperience(props) {
                         </li>
                         <li>
 
-                        
-<img src="img/Portfolio/stMicheal414.png" alt=''/>
+                                                    
+                            <img src="img/Portfolio/stMicheal414.png" alt=''/>
 
-            <footer className='CardFooter-Container'>                                 
+                                        <footer className='CardFooter-Container'>                                 
 
-            <a href="https://www.stmichaeloakgrove.com/">
-                  <button>View</button>
-                </a>
+                                        <a href="https://www.stmichaeloakgrove.com/">
+                                              <button>View</button>
+                                            </a>
 
-        </footer>
-                        
-  
-</li>
+                                    </footer>
+                                                    
+                              
+                            </li>
 
                         <li>
 
