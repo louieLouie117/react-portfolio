@@ -76,9 +76,8 @@ window.onload = function() {
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
                   <footer>
-                  <h2>I help businesses get online seamlessly.</h2>
-
-                  
+                  <h2>I help businesses grow online.</h2>
+               
 
                   </footer>
 
