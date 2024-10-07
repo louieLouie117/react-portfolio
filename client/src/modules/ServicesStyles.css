@@ -52,6 +52,7 @@
 
 .ServicesCard>li>header>h2{
     color: #0080BF;
+    font: 1.9em sans-serif;
 }
 
 .ServicesCard>li>h2{
@@ -128,13 +129,12 @@
 }
 
 .Cost-Container>aside h1{
-    font: 1.8em sans-serif;
+    font: 2em sans-serif;
     color: white;
     text-align: left;    
     padding: 28px;
-
-    /* Show on text*/
     text-shadow: 2px 2px 14px #00000046;
+    text-align: center;
 }   
 
 
@@ -168,9 +168,7 @@
     align-items: flex-end;
 }
 
-.pricing-container>li:last-of-type{
-justify-items: flex-end;
-}
+
 
 .ServicesCard>li>h3{
     font: 1em sans-serif;

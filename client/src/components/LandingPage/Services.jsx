@@ -21,22 +21,27 @@ function Services(props) {
             <ul className='pricing-container' style={PlusServers}>
             <li>Website design and development.......</li>
             <li>$500.00</li>
+            
             <li>Setup Online Marketing.......</li>
             <li>$500.00</li>
+
             <li>Logo and Branding.......</li>
-            <li>$2,000.00</li>
+            <li>$500.00</li>
             </ul>
         );
     };
 
     const renderPremiumService = () => {
         return (
-            <ul className='pricing-container' style={brandingLogoIntegration}>
-            <li>App design and development....</li>
+            <ul className='pricing-container' style={PremiumServicesStyles}>
+            <li>App design.......</li>
             <li>$1,000.00</li>
+
+            <li>App development.......</li>
+            <li>$2,000.00</li>
        
-            <li>Database</li>
-            <li>$5,000.00</li>
+            <li>Database.........</li>
+            <li>$3,500.00</li>
             </ul>
         );
     };
@@ -47,7 +52,7 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('Mobile Website');
+    const [ServiceTile, setServiceTile] = useState('Bring your business online.');
     // service description
     const [ServiceDescription, setServiceDescription] = useState('Website Basic Service: Obtain a streamlined mobile website tailored to your immediate needs, compatible across all devices. Benefit from regular updates and cost-efficiency, with an exclusive 50% discount for the first year.');
     // service purchase link
@@ -59,7 +64,7 @@ function Services(props) {
    
 
     // branding logo integration
-    const [brandingLogoIntegration, setBrandingLogoIntegration] = useState({display: 'none'});
+    const [PremiumServicesStyles, setPremiumServicesStyles] = useState({display: 'none'});
     // total amount
     const [TotalAmount, setTotalAmount] = useState('$550.00');
     // analytics integration
@@ -72,12 +77,11 @@ function Services(props) {
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     // branding styles
-    const [brandingStyles] = useState({color: '#0092db'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('Mobile Website');
+    setServiceTile('Bring your business online.');
     // service description
     setServiceDescription('Website Basic Service: Obtain a streamlined mobile website tailored to your immediate needs, compatible across all devices. Benefit from regular updates and cost-efficiency, with an exclusive 50% discount for the first year.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -91,7 +95,9 @@ const basicServiceHandler = () => {
     // payment integration
 
     setPlusServers({display: 'none'});
-    setBrandingLogoIntegration({display: 'none'});
+    setPremiumServicesStyles({display: 'none'});
+
+    setBasicServicesStyles({display: 'grid'});
     
     setTotalAmount('$550.00');
 
@@ -100,7 +106,7 @@ const basicServiceHandler = () => {
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('Website & Marketing');
+    setServiceTile('Establish a unique brand identity.');
     // service description
     setServiceDescription('Plus: Enhance your website and kickstart online marketing. Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -117,17 +123,23 @@ const plusServiceHandler = () => {
     // display basic service none renderBasicService
     setBasicServicesStyles({display: 'none'});
 
-    // brandingLogoIntegration
-    setBrandingLogoIntegration({display: 'none'});
+    // PremiumServicesStyles
+    setPremiumServicesStyles({display: 'none'});
     // analytics integration
     setPlusServers({display: 'grid'});
+
+    // BasicServicesStyles 
+    setBasicServicesStyles({display: 'none'});
     setHighlightAnalytics({color: '#0092db'});
 }
   
 // premiumServiceHandler
 const premiumServiceHandler = () => {
+
+    setBasicServicesStyles({display: 'none'});
+    setPlusServers({display: 'none'});
     //service tile
-    setServiceTile('Website & App');
+    setServiceTile('Transform your website into an app.');
     // service description
     setServiceDescription('Premium: Get a custom logo design aligned with your business identity.Elevate your social media presence with regular content posting to engage your audience.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
@@ -143,11 +155,10 @@ const premiumServiceHandler = () => {
     // total amount
     setTotalAmount('$6,740.00');
     
-   // analytics integration
-    setPlusServers({display: 'grid'});
     setHighlightAnalytics({color: 'black'});
-    // brandingLogoIntegration
-    setBrandingLogoIntegration({display: 'grid'});
+    // PremiumServicesStyles
+    setPremiumServicesStyles({display: 'grid'});
+
 
 
 
@@ -173,9 +184,7 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                 <aside>
 
-        <h1>Bring your business online.</h1>
-        <h1>Transform your website into an app.</h1>
-        <h1>Establish a unique brand identity</h1>
+        <h1>Custom Solutions for Every Business Need.</h1>
 
         </aside>
 
