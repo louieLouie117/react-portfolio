@@ -70,7 +70,7 @@ function Services(props) {
     // analytics integration
     const [PlusServers, setPlusServers] = useState({display: 'none'});
     // highlight analytics
-    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#0092db'});
+    const [ setHighlightAnalytics] = useState({color: '#0092db'});
 
     // updated button to link to stripe
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
