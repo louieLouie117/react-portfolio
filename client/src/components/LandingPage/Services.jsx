@@ -34,13 +34,16 @@ function Services(props) {
     const renderPremiumService = () => {
         return (
             <ul className='pricing-container' style={PremiumServicesStyles}>
-            <li>App design.......</li>
+            <li>App design.................</li>
             <li>$1,000.00</li>
 
-            <li>App development.......</li>
-            <li>$2,000.00</li>
+            <li>App development.................</li>
+            <li>$1,000.00</li>
        
-            <li>Database.........</li>
+            <li>Analytics...................</li>
+            <li>$1,000.00</li>
+
+            <li>Database...................</li>
             <li>$3,500.00</li>
             </ul>
         );
@@ -135,13 +138,15 @@ const plusServiceHandler = () => {
   
 // premiumServiceHandler
 const premiumServiceHandler = () => {
+    setPremiumServicesStyles({display: 'grid'});
+
 
     setBasicServicesStyles({display: 'none'});
     setPlusServers({display: 'none'});
     //service tile
     setServiceTile('Transform your website into an app.');
     // service description
-    setServiceDescription('Premium: Get a custom logo design aligned with your business identity.Elevate your social media presence with regular content posting to engage your audience.');
+    setServiceDescription('Premium: Convert your website into an app and integrate a database. Take advantage of advanced analytics and tracking to monitor user behavior and improve your online presence.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -157,9 +162,6 @@ const premiumServiceHandler = () => {
     
     setHighlightAnalytics({color: 'black'});
     // PremiumServicesStyles
-    setPremiumServicesStyles({display: 'grid'});
-
-
 
 
 
@@ -237,6 +239,15 @@ const premiumServiceHandler = () => {
                                 
                                 </ul>
                                 </section>
+
+                                <section>
+                                    
+                                    <ul className='pricing-container'>
+                                        <li>Total........................................................</li>
+                                        <li>{TotalAmount}</li>
+                                    
+                                    </ul>
+                                    </section>
                               
                             </main>
                             <footer>
@@ -245,14 +256,7 @@ const premiumServiceHandler = () => {
                             <button className='MainBTN' >{purchaseBTNText}</button>
 
                             </a>
-                            <section>
-                                    
-                                    <ul className='pricing-container'>
-                                        <li>Total........................................................</li>
-                                        <li>{TotalAmount}</li>
-                                    
-                                    </ul>
-                                    </section>
+                            
                             </footer>
                         </li>
 
