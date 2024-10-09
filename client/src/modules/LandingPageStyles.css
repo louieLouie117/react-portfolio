@@ -846,7 +846,7 @@ li ::-webkit-scrollbar {
 }
 
 .myHeader-container>header>footer>h2{
-  color: white;
+  color: black;
   font: 2.5em sans-serif;
   padding: 30px;
 }
@@ -1082,21 +1082,21 @@ h1, h3{
 
 .name-container h1{
   font: 1.8em sans-serif;
-  color: whitesmoke;
+  color: black;
 
 }
 
 
 .name-container h2{
   font: 1.19em sans-serif;
-  color: whitesmoke;
+  color: black;
 
 }
 
 
 .name-container h3{
   font: 1.8em sans-serif;
-  color: whitesmoke;
+  color: black;
 
 }
 
@@ -1642,7 +1642,6 @@ h1, h3{
   } */
 
   .Cost-Container{
-    grid-template-columns: 1fr 1fr;
     column-gap: 150px;
   }
   #frameworks{

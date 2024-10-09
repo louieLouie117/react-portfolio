@@ -28,7 +28,7 @@
     padding: 20px;
     border-radius: 10px;
     align-content: flex-start;
-    /* max-width: 35em; */
+    max-width: 60em;
     overflow: scroll;
 
 }
@@ -161,10 +161,11 @@
 
 }
 
-.pricing-container>li{
+.pricing-container>li>h2{
     display: grid;
     justify-items: flex-start;
     align-items: flex-end;
+    font: 4em sans-serif;
 }
 
 
@@ -195,9 +196,6 @@
 }
 
 
-.AppPricing-Container>section:last-of-type{
-    padding-top: 40px;
- }
 .MonthlyServicesInfo{
     margin-top: 10px;
 }
@@ -244,7 +242,6 @@
 
     .Cost-Container{
         padding: 40px;
-        height: 80vh;
     }
 
     .Cost-Container>aside h1{
