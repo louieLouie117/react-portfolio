@@ -5,17 +5,18 @@ import HeroBanner from '../../components/LandingPage/HeroBanner';
 function Services(props) {
 
     <ServicesStyles></ServicesStyles>
+
     const [ServiceTile, setServiceTile] = useState('Bring your business online.');
     const [ServiceDescription, setServiceDescription] = useState('Obtain a streamlined mobile website tailored to your immediate needs, compatible across all devices.');
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/aEU8wW5rV0oxgyk9AM?prefilled_promo_code=50OFF');
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('50.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('100.00');
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Website');
     const [TotalAmount, setTotalAmount] = useState('$500.00');
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({ backgroundColor: '#136db0', color: 'white' });
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({ backgroundColor: 'white', color: '#0092db' });
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({ backgroundColor: 'white', color: '#0092db' });
 
-    const [monthlyServices, setMonthlyServices] = useState('Updates and Maintenance');
+    const [monthlyServices, setMonthlyServices] = useState('Enjoy 50% off on Updates and Maintenance for the first year');
    
 
     const basicServiceHandler = () => {
@@ -27,7 +28,7 @@ function Services(props) {
         setPurchaseLink('https://buy.stripe.com/aEU8wW5rV0oxgyk9AM?prefilled_promo_code=50OFF');
         setMonthlyServicePrice('100.00');
         setPurchaseBTNText('Get Website');
-        setMonthlyServices('Updates and Maintenance');
+        setMonthlyServices('Enjoy 50% off on Updates and Maintenance for the first year');
         setTotalAmount('$500.00');
     };
 
@@ -65,7 +66,7 @@ function Services(props) {
                     <li>
                         <h2>Start Your Digital Presence.</h2>
                         <div className='ServiceCardInfo'>
-                            <p>In today’s digital world, having a website is no longer a luxury—it’s a necessity. From enterprises to small local businesses, having a website is essential.</p>
+                            <p>In today’s digital world, having a website or an app is no longer a luxury—it’s a necessity. From enterprises to small local businesses, having a digital presence is essential.</p>
                             <img src="/img/HeroImageMobile.png" alt="" />
                             <section className='Cost-Container'>
                                 <main>
@@ -112,7 +113,7 @@ function Services(props) {
                         <HeroBanner />
                         <p>I remember the first time I designed a website for a friend’s restaurant. Watching their business flourish online ignited my passion for web design and development. Since then, I’ve helped businesses establish their online presence and grow their brand.</p>
 
-                        <p>Whether you’re looking to create a new website or revamp an existing one, or embrace an app. I can help.</p>
+                        <p>Whether you’re looking to create a new website, revamp an existing one, or develop an app, I can help.</p>
 
                         <p>Schedule an appointment today to discuss your digital needs, and let’s create something amazing together.</p>
                         <footer>

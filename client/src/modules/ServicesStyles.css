@@ -25,7 +25,7 @@
     display: grid;
     row-gap: 30px;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     align-content: flex-start;
     max-width: 60em;
@@ -157,6 +157,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     justify-content: flex-start;
+    align-items: flex-end;
     
 
 }
