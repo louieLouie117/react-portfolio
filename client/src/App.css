@@ -37,6 +37,9 @@
   }
 } */
 
+.hidden{
+  display: none;
+}
 
 .Documentation-View{
   display: grid;

@@ -46,7 +46,7 @@ function Services(props) {
     };
 
     const premiumServiceHandler = () => {
-        setServiceTile('Develop a Custom App or Convert Your Website into an App.');
+        setServiceTile('Get an App or Transform your website into an app.');
         setServiceDescription('Get an app or convert your website into an app with an integrate a database. Take advantage of advanced analytics and improve your online presence.');
         setPremiumServiceBTNStyles({ backgroundColor: '#136db0', color: 'white' });
         setBasicServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });

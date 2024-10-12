@@ -13,8 +13,8 @@ function WorkExperience(props) {
     <div >
       <div className="projectsPage-container" id='PageTop'>
       <header>
-            <img src="img/Icons/ModernLogo.png" alt="" />
-            <h1>LC Digital Solutions</h1>
+            <img src="img/LogoWeb.png" alt="" />
+            <h1 className='hidden'>LC Website Solutions</h1>
           </header>
 
 
