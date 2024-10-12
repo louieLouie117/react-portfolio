@@ -1,11 +1,11 @@
 html{
-  background: whitesmoke;
+  background: white;
 }
 
 .App {
   display: grid;
   margin: 0 auto;
-  background: whitesmoke;
+  background: white;
 
 }
 
@@ -48,7 +48,7 @@ li ::-webkit-scrollbar {
 .LandingPage-Container{
   display: grid;
   /* background: linear-gradient(190deg, black, #0298DC); */
-  background: linear-gradient(190deg, whitesmoke, #002F61);
+  background: linear-gradient(180deg, white, #4b85bc);
 
 }
 
@@ -226,7 +226,7 @@ li ::-webkit-scrollbar {
 }
 
 .projectsPage-container>header>img{
-  height: 45px;
+  height: 100px;
   width: auto;
 }
 
