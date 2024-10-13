@@ -39,13 +39,12 @@
 }
 
 .ServicesCard>li form textarea{
-    width: 310px;
+    width: auto;
     height: 100px;
     padding: 20px;
 }
 
 .ServicesCard>li form select{
-    width: 350px;
     height: 40px;
     padding: 10px;
 }
