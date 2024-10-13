@@ -4,6 +4,116 @@ import HeroBanner from '../../components/LandingPage/HeroBanner';
 
 function Services(props) {
 
+    const [appDetails, setAppDetails] = useState('');
+    const [BudgetSelected, setBudgetSelected] = useState('Select Budget');
+
+    const handleAppDetailsChange = (event) => {
+        setAppDetails(event.target.value);
+    };
+
+   
+
+    const sendEstimate = () => {
+        console.log('Estimate sent for:', appDetails);
+        //check if textarea is empty
+        if (appDetails === '') {
+            alert('Please provide a brief description of the app you would like to create.');
+            return;
+        }
+
+        //check if budget is selected
+        if (BudgetSelected === 'Select Budget') {
+            alert('Please select a budget range.');
+            return;
+        }
+    
+        const subject = encodeURIComponent('App estimate request.');
+        const body = encodeURIComponent(`App Description:\n${appDetails}\n\nBudget:\n${BudgetSelected}\n\nThank you for your interest in app development services. I understand that getting an app can be very complicated, and I will provide details on what your app will need and a timeline on how long the app will take. Please feel free to add any questions you might have in this email before sending it. Looking forward to working with you!`);
+        const mailtoLink = `mailto:lcwebsitesolutions@outlook.com?subject=${subject}&body=${body}`;
+    
+        window.location.href = mailtoLink;
+    };
+
+    const [RenderWebsiteServices, setRenderWebsiteServices] = useState({display: 'grid', gap: '10px'});
+
+    const renderWebsiteServices = () =>{
+        return(
+            <li style={RenderWebsiteServices} >
+                <header>
+                    <h2>{ServiceTile}</h2>
+                </header>
+                {ServiceDescription}
+
+                <main className='AppPricing-Container'>
+                    <section>
+                        <div className="MonthlyServicesInfo"></div>
+                    </section>
+                    <section>
+                        <ul className='pricing-container'>
+                            <li><h2>{TotalAmount}</h2></li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <a id="PurchaseLink" href={purchaseLink}>
+                        <button className='MainBTN'>{purchaseBTNText}</button>
+                    </a>
+                    <ul className='pricing-container'>
+                        <li>{monthlyServices}........</li>
+                        <li>${monthlyServicePrice}/m</li>
+                    </ul>
+                </footer>
+            </li>
+        );
+    }
+
+    const [RenderAppServices , setRenderAppServices] = useState({display: 'none', gap: '10px'});
+
+    const handleBudgetChange = (event) => {
+        setBudgetSelected(event.target.value);
+    };
+    const renderAppServices = () => {
+        return (
+            <li style={RenderAppServices} >
+            <header>
+            <h2>{ServiceTile}</h2>
+            </header>
+            {ServiceDescription}
+            
+            <form onSubmit={(e) => { e.preventDefault(); sendEstimate(); }}>
+            <textarea
+            value={appDetails}
+            onChange={handleAppDetailsChange}
+            placeholder="Please provide a brief description of the app you would like to create."
+            rows="4"
+            cols="50"
+            />
+            <select id="budget" name="budget" value={BudgetSelected} onChange={handleBudgetChange}>
+            <option value="Select Budget">Select Budget</option>
+            <option value="$1000-$2000">$1000-$2000</option>
+            <option value="$2000-$5000">$2000-$5000</option>
+            <option value="$5000-$10000">$5000-$10000</option>
+            <option value="$10000-$20000">$10000-$20000</option>
+            <option value="$20000-$50000">$20000-$50000</option>
+            </select>
+          
+            <button className='MainBTN' type="submit">Email Description.</button>
+            </form>
+            <footer>
+                   
+                    <ul className='pricing-container'>
+                        <li>{monthlyServices}........</li>
+                        <li>${monthlyServicePrice}/m</li>
+                    </ul>
+                </footer>
+            </li>
+        );
+    };
+
+
+
+    
+
     <ServicesStyles></ServicesStyles>
 
     const [ServiceTile, setServiceTile] = useState('Bring your business online.');
@@ -30,10 +140,14 @@ function Services(props) {
         setPurchaseBTNText('Get Website');
         setMonthlyServices('Enjoy 50% off on Updates and Maintenance for the first year');
         setTotalAmount('$500.00');
+        setRenderAppServices({display: 'none'});
+        setRenderWebsiteServices({display: 'grid'});
+
+
     };
 
     const plusServiceHandler = () => {
-        setServiceTile('Launch your online marketing and establish your social media presence.');
+        setServiceTile('Launch your online marketing.');
         setServiceDescription('Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
         setPlusServiceBTNStyles({ backgroundColor: '#136db0', color: 'white' });
         setBasicServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
@@ -43,11 +157,16 @@ function Services(props) {
         setPurchaseBTNText('Get Marketing');
         setMonthlyServices('Medial and Online Marketing');
         setTotalAmount('$1,650.00');
+        setRenderAppServices({display: 'none'});
+        setRenderWebsiteServices({display: 'grid'});
+
+
+
     };
 
     const premiumServiceHandler = () => {
         setServiceTile('Get an App or Transform your website into an app.');
-        setServiceDescription('Get an app or convert your website into an app with an integrate a database. Take advantage of advanced analytics and improve your online presence.');
+        setServiceDescription('Take advantage of database, advanced analytics and improve your online presence.');
         setPremiumServiceBTNStyles({ backgroundColor: '#136db0', color: 'white' });
         setBasicServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
         setPlusServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
@@ -55,12 +174,17 @@ function Services(props) {
         setMonthlyServicePrice('240.00');
         setPurchaseBTNText('Get App');
         setMonthlyServices('Updates and Maintenance');
-        setTotalAmount('$6,500.00');
-    };
+        setTotalAmount('');
+        setRenderAppServices({display: 'grid', gap: '10px'});
+        setRenderWebsiteServices({display: 'none'});
 
+    };
+  
+   
 
     return (
         <div className='Services-Container'>
+
             <main>
                 <ul className='ServicesCard'>
                     <li>
@@ -76,39 +200,15 @@ function Services(props) {
                                             <button style={plusServiceBTNStyles} onClick={plusServiceHandler}>Marketing</button>
                                             <button style={premiumServiceBTNStyles} onClick={premiumServiceHandler}>App</button>
                                         </div>
-                                        <li>
-                                            <header>
-                                                <h2>{ServiceTile}</h2>
-                                            </header>
-                                            <main className='AppPricing-Container'>
-                                                <section>
-                                                    <div className="MonthlyServicesInfo"></div>
-                                                </section>
-                                                <section>
-                                                    <ul className='pricing-container'>
-                                                        <li><h2>{TotalAmount}</h2></li>
-                                                    </ul>
-                                                </section>
-                                            </main>
-                                            {ServiceDescription}
-                                            <footer>
-                                                <a id="PurchaseLink" href={purchaseLink}>
-                                                    <button className='MainBTN'>{purchaseBTNText}</button>
-                                                </a>
-                                                <ul className='pricing-container'>
-                                                    <li>{monthlyServices}........</li>
-                                                    <li>${monthlyServicePrice}/m</li>
-                                                </ul>
-                                            </footer>
-                                        </li>
+                                        {renderWebsiteServices()}
+                                        {renderAppServices()}
                                     </ul>
                                 </main>
                             </section>
                         </div>
                     </li>
                 </ul>
-                <section></section>
-                <ul className='ServicesCard'>
+                <ul  className='ServicesCard'>
                     <li>
                         <HeroBanner />
                         <p>I remember the first time I designed a website for a friend’s restaurant. Watching their business flourish online ignited my passion for web design and development. Since then, I’ve helped businesses establish their online presence and grow their brand.</p>
