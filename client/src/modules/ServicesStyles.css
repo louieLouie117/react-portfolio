@@ -33,6 +33,23 @@
 
 }
 
+.ServicesCard>li form{
+    display: grid;
+    row-gap: 20px;
+}
+
+.ServicesCard>li form textarea{
+    width: 310px;
+    height: 100px;
+    padding: 20px;
+}
+
+.ServicesCard>li form select{
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+}
+
 
 .ServicesCard>li>main{
     display: grid;
@@ -51,7 +68,7 @@
 
 .ServicesCard>li>header>h2{
     color: #0080BF;
-    font: 1.9em sans-serif;
+    font: 1.8em sans-serif;
 }
 
 .ServicesCard>li>h2{
