@@ -147,16 +147,16 @@ function Services(props) {
     };
 
     const plusServiceHandler = () => {
-        setServiceTile('Launch your online marketing.');
-        setServiceDescription('Integrated Geo-targeted marketing for local visibility and keyword optimization for search engines.');
+        setServiceTile('Launch your online and social medial marketing.');
+        setServiceDescription("For a one-time fee, I'll handle the setup of your marketing campaign and social media presence, creating tailored strategies and visuals. Enjoy a stress-free, polished start to your digital marketing efforts, with ongoing support through my monthly Digital Marketing Package.");
         setPlusServiceBTNStyles({ backgroundColor: '#136db0', color: 'white' });
         setBasicServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
         setPremiumServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
         setPurchaseLink('https://buy.stripe.com/aEU5kK6vZdbjci48wG');
         setMonthlyServicePrice('150.00');
         setPurchaseBTNText('Get Marketing');
-        setMonthlyServices('Medial and Online Marketing');
-        setTotalAmount('$1,650.00');
+        setMonthlyServices('Digital Marketing Package');
+        setTotalAmount('$1,000.00');
         setRenderAppServices({display: 'none'});
         setRenderWebsiteServices({display: 'grid'});
 
@@ -166,7 +166,7 @@ function Services(props) {
 
     const premiumServiceHandler = () => {
         setServiceTile('Get an App or Transform your website into an app.');
-        setServiceDescription('Take advantage of database, advanced analytics and improve your online presence.');
+        setServiceDescription("Need a custom app? I'll create an intuitive app with a robust database tailored to your needs. Boost engagement, accessibility, and brand loyalty. Let's elevate your digital presence.");
         setPremiumServiceBTNStyles({ backgroundColor: '#136db0', color: 'white' });
         setBasicServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
         setPlusServiceBTNStyles({ backgroundColor: 'white', color: '#136db0' });
