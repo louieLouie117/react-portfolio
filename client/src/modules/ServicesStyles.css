@@ -1,5 +1,6 @@
 .Services-Container{
     /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
+    background-color: white;
     padding-bottom: 40px;
 }
 
@@ -25,7 +26,7 @@
     display: grid;
     row-gap: 30px;
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     align-content: flex-start;
     max-width: 60em;
@@ -280,7 +281,7 @@
     }
 
     .ServiceCardInfo{
-        width: 60em;
+        width: 45em;
     }
  
     .PeaceOfMind{
