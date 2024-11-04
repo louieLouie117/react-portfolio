@@ -1469,13 +1469,16 @@ h1, h3{
 
 
 .footer-container{
-  display: grid;
-  /* background-color: #f39e4e;   */
-  justify-content: center;
-  padding: 20px;
-  height: 50px;
-  align-items: center;
+  display: flex;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
 }
+
+
 
 .footer-container>a{
   font: 1.3em sans-serif;

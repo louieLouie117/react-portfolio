@@ -23,25 +23,7 @@ function ToolsTechnologies(props) {
                                   
                           </footer>
                               <p>Free mentorship.</p>
-                              {/* <main>
-                          <a href="tel:925-809-2738">
-                            <img src="/img/Icons/IconPhone.png" alt="" />
-                          <button>Call</button>
-    
-                          </a>
-    
-                          <a href="sms:925-809-2738">
-                            <img src="/img/Icons/IconText.png" alt="" />
-                          <button>Text</button>
-                          </a>
-    
-                          <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                            <img src="/img/Icons/IconEmail.png" alt="" />
-                            <button>Email</button>
-                          </a>
-                         
-    
-                          </main> */}
+                            
     
                         </div>
     
