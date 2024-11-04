@@ -1713,5 +1713,17 @@ h1, h3{
         justify-content: center;
       }
       
+
+      .footer-container {
+        display: none;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        bottom: unset;
+        right: 0;
+        left: unset;
+        z-index: 100;
+        width: 7%;
+      }
     
     }

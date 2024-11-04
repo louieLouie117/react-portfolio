@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <div className='footer-container'>
         {/* <a href="/">LC Website Solutions</a>        */}
-
+                  
                       <button className='MainBTN'>
                           <a href="tel:925-809-2738">
                             <img src="/img/Icons/IconPhone.png" alt="" />
