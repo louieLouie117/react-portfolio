@@ -12,10 +12,10 @@ function WorkExperience(props) {
   return (
     <div >
       <div className="projectsPage-container" id='PageTop'>
-      <header>
+      {/* <header>
             <img src="img/LogoWeb.png" alt="" />
             <h1 className='hidden'>LC Website Solutions</h1>
-          </header>
+          </header> */}
 
 
         <main>

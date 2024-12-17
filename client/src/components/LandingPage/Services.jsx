@@ -1,6 +1,5 @@
 import ServicesStyles from "../../modules/ServicesStyles.css";
 import React, { useState } from 'react';
-import HeroBanner from '../../components/LandingPage/HeroBanner';
 
 function Services(props) {
 
@@ -210,7 +209,6 @@ function Services(props) {
                 </ul>
                 <ul  className='ServicesCard'>
                     <li>
-                        <HeroBanner />
                         <p>I remember the first time I designed a website for a friend’s restaurant. Watching their business flourish online ignited my passion for web design and development. Since then, I’ve helped businesses establish their online presence and grow their brand.</p>
 
                         <p>Whether you’re looking to create a new website, revamp an existing one, or develop an app, I can help.</p>

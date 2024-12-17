@@ -6,6 +6,8 @@ html{
   display: grid;
   margin: 0 auto;
   background: white;
+  /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
+  height: 100vh;
 
 }
 
@@ -47,9 +49,82 @@ li ::-webkit-scrollbar {
 }
 .LandingPage-Container{
   display: grid;
-  /* background: linear-gradient(190deg, black, #0298DC); */
-  background: linear-gradient(180deg, white, #4b85bc);
+  /* background: linear-gradient(180deg, white, #4b85bc); */
 
+}
+.ServicesCard {
+  display: grid;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
+
+}
+
+
+.ServicesCard>li::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+
+.ServicesCard>li{
+  display: grid;
+  row-gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+  align-content: flex-start;
+  max-width: 60em;
+  overflow: scroll;
+
+}
+
+.ServicesCard>li form{
+  display: grid;
+  row-gap: 20px;
+}
+
+.ServicesCard>li form textarea{
+  width: auto;
+  height: 100px;
+  padding: 20px;
+}
+
+.ServicesCard>li form select{
+  height: 40px;
+  padding: 10px;
+}
+
+
+.ServicesCard>li>main{
+  display: grid;
+  padding-bottom: 20px;
+  align-content: flex-start;
+}
+
+.ServicesCard>li>main>h3{
+  font: 1em sans-serif;
+  color: #0080BF;
+}
+
+.ServicesCard>li>header{
+  font: 1em sans-serif;
+}
+
+.ServicesCard>li>header>h2{
+  color: #0080BF;
+  font: 1.8em sans-serif;
+}
+
+.ServicesCard>li>h2{
+  font: 1.5em sans-serif;
+  color: #0080BF;
+  width: 350px;
+  padding: 5px;
+  /* cursor: pointer; */
+
+}
+.ServicesCard>li p{
+  font: 1.3em sans-serif;
 }
 
 
@@ -294,7 +369,6 @@ li ::-webkit-scrollbar {
   overflow-x: scroll;
   overflow-y: hidden;
   /* scrollbar-width: none; */
-  margin-top: 30px;
 }
 
 .cardItems ul li:first-child{
@@ -320,7 +394,7 @@ li ::-webkit-scrollbar {
   border-radius: 12px 12px 0 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.74);
   justify-content: center;
-  height: 250px;
+  height: 300px;
   border: solid black 2px;
   border-radius: 20px;
   background-color: white;
@@ -639,7 +713,6 @@ li ::-webkit-scrollbar {
   row-gap: 5px;
   justify-content: center;
   cursor: pointer;
-  /* background: red; */
   /* transform: rotate(20deg); */
 }
 
@@ -819,12 +892,14 @@ li ::-webkit-scrollbar {
   display: grid;
   /* background: linear-gradient(180deg, #00aecd, #136DC0); */
   /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
-
-  justify-items: center;
   font: 1em sans-serif;
-  padding-top: 20px;
-  margin-top: -4px;
-  /* animation: liquidBackground 5s infinite alternate; */
+  height: 97vh;
+  padding: 30px;
+}
+
+.myHeader-container>header{
+  display: grid;
+  justify-content: center;
 }
 
 
@@ -848,7 +923,7 @@ li ::-webkit-scrollbar {
 .myHeader-container>header>footer>h2{
   color: black;
   font: 2.5em sans-serif;
-  padding: 30px;
+  padding: 20px;
 }
 
 .myHeader-container>header>footer>p{
@@ -1042,7 +1117,6 @@ h1, h3{
   /* width: 99vw; */
   /* justify-content: center; */
   margin: 0 auto;
-  padding: 30px;
   color: whitesmoke;
 
 
@@ -1411,11 +1485,10 @@ h1, h3{
 .MainBTN{
   font: 1em sans-serif;
   color: white;
-  background: linear-gradient(rgb(0, 174, 205), rgb(19, 109, 192) 50%);
-  width: 100%;
+  background: none;
   height: 50px;
   border: none;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.266);
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.266); */
   border-radius: 7px;
   margin: 5px;
   cursor: pointer;
@@ -1469,13 +1542,11 @@ h1, h3{
 
 
 .footer-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   z-index: 100;
-  width: 100%;
+  /* width: 100%; */
 }
 
 
@@ -1599,7 +1670,6 @@ h1, h3{
 
 .about-me{
   display: grid;
-  /* background-color: red; */
   max-width: 65em;
   justify-self: center;
 }
@@ -1715,15 +1785,7 @@ h1, h3{
       
 
       .footer-container {
-        display: none;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        bottom: unset;
-        right: 0;
-        left: unset;
-        z-index: 100;
-        width: 7%;
+        justify-items: center;
       }
     
     }
