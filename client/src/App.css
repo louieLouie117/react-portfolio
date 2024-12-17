@@ -59,7 +59,8 @@ code{
   display: grid;
   padding: 10px;
   width: auto;
-  color: rgb(113, 197, 250);
+  background-color: #2862AF;
+
   /* color: white; */
   /* justify-items: center; */
 
